@@ -100,6 +100,30 @@ a {
   color: var(--muted);
 }
 
+.index-tools {
+  margin-top: 18px;
+}
+
+.notes-search {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  font: inherit;
+  outline: none;
+}
+
+.notes-search::placeholder {
+  color: var(--muted);
+}
+
+.notes-search:focus {
+  border-color: rgba(214, 164, 109, 0.35);
+  background: rgba(255,255,255,0.07);
+}
+
 .notes-grid {
   margin-top: 22px;
   display: grid;
@@ -141,6 +165,14 @@ a {
   margin-top: auto;
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.notes-empty {
+  padding: 20px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--muted);
+  text-align: center;
 }
 
 /* páginas internas */
@@ -193,6 +225,52 @@ a {
   max-width: 760px;
 }
 
+.page-media {
+  margin-top: 24px;
+}
+
+.note-photo-card {
+  margin: 0;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: rgba(255,255,255,0.04);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.note-photo-card img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.note-photo-card figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.note-photo-placeholder {
+  display: none;
+  min-height: 280px;
+  border: 1px dashed rgba(255,255,255,0.18);
+  border-radius: var(--radius-lg);
+  place-items: center;
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+  background: rgba(255,255,255,0.03);
+  line-height: 1.7;
+}
+
+.note-photo-card.is-empty .note-photo-placeholder {
+  display: grid;
+}
+
 .notes-layout {
   margin-top: 24px;
   display: grid;
@@ -240,12 +318,70 @@ a {
   font-size: 1.5rem;
 }
 
+.note-helper {
+  position: relative;
+  z-index: 1;
+  margin: -4px 0 18px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.note-placeholder {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
 .note-content {
   position: relative;
   z-index: 1;
-  line-height: 1.9;
   color: #f2ede6;
-  white-space: pre-line;
+  white-space: normal;
+}
+
+.note-content p {
+  margin: 0 0 1.15rem;
+  line-height: 1.9;
+}
+
+.note-content p:last-child {
+  margin-bottom: 0;
+}
+
+.note-content strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.note-content em {
+  font-style: italic;
+}
+
+.note-content blockquote {
+  margin: 1.4rem 0;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+}
+
+.note-content hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+.note-content ul,
+.note-content ol {
+  margin: 0 0 1.2rem 1.25rem;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.note-content li + li {
+  margin-top: 0.4rem;
 }
 
 .note-card--mica {
@@ -315,5 +451,13 @@ a {
   .page-header,
   .note-card {
     padding: 22px;
+  }
+
+  .note-photo-card {
+    padding: 14px;
+  }
+
+  .note-photo-card img {
+    max-height: 340px;
   }
 }
