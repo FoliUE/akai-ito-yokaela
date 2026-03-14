@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -35,10 +35,15 @@
     </section>
 
     <section class="notes-layout">
-      <article class="note-card note-card--mica">
+      <article class="note-card note-card--mica note-card--spoiler">
+        <input
+          type="checkbox"
+          id="spoiler-mica-06"
+          class="spoiler-toggle"
+        >
         <span class="note-label">Mica</span>
         <h2>Me gustan los finales felices</h2>
-        <p class="note-date">28/08/18</p>
+        <p class="note-helper">28/08/18</p>
 
         <div class="note-content">
           <p>
@@ -62,6 +67,11 @@
             Me gustan los finales felices... esos que no son finales...
           </p>
         </div>
+      
+
+        <label for="spoiler-mica-06" class="spoiler-overlay">
+          <span class="spoiler-button">Ver nota de Mica</span>
+        </label>
       </article>
 
       <article class="note-card note-card--leo">

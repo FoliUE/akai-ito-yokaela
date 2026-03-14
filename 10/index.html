@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -35,10 +35,15 @@
     </section>
 
     <section class="notes-layout">
-      <article class="note-card note-card--mica">
+      <article class="note-card note-card--mica note-card--spoiler">
+        <input
+          type="checkbox"
+          id="spoiler-mica-10"
+          class="spoiler-toggle"
+        >
         <span class="note-label">Mica</span>
         <h2>Mi garganta quiere gritar</h2>
-        <p class="note-date">20/09/18</p>
+        <p class="note-helper">20/09/18</p>
 
         <div class="note-content">
           <p>
@@ -53,6 +58,11 @@
             Qué curioso que por la noche sea cuando mi garganta más quiera gritar, más quiera hacerse escuchar, justo cuando todos están durmiendo.
           </p>
         </div>
+      
+
+        <label for="spoiler-mica-10" class="spoiler-overlay">
+          <span class="spoiler-button">Ver nota de Mica</span>
+        </label>
       </article>
 
       <article class="note-card note-card--leo">
