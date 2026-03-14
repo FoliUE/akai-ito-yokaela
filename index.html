@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akai Ito — Leo & Mica</title>
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="theme-home">
+  <main class="home">
+    <section class="hero">
+      <p class="eyebrow">Akai Ito</p>
+      <h1>Para Mica</h1>
+      <p class="hero-text">
+        Este sitio guarda nuestras notas, nuestros cruces, lo que vos escribiste
+        y lo que yo sentí al leerte. Una página por vez. Una parte tuya, una parte mía.
+      </p>
+    </section>
+
+    <section class="index-section">
+      <div class="section-head">
+        <h2>Hojas</h2>
+        <p>Cada hoja tiene una nota tuya y una respuesta mía.</p>
+      </div>
+
+      <div class="index-tools">
+        <input
+          id="search-notes"
+          class="notes-search"
+          type="text"
+          placeholder="Buscar por número o título..."
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="notes-grid" id="notes-grid"></div>
+    </section>
+  </main>
+
+  <script src="./hojas.js"></script>
+  <script>
+    const grid = document.getElementById("notes-grid");
+    const searchInput = document.getElementById("search-notes");
+
+    function pad(num) {
+      return String(num).padStart(2, "0");
+    }
+
+    function renderNotes(filter = "") {
+      const query = filter.trim().toLowerCase();
+
+      const visibles = HOJAS.filter((hoja) => {
+        const numero = pad(hoja.numero);
+        const titulo = (hoja.titulo || "").toLowerCase();
+        return numero.includes(query) || titulo.includes(query);
+      });
+
+      if (visibles.length === 0) {
+        grid.innerHTML = `
+          <div class="notes-empty">
+            No encontré hojas con ese criterio.
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = visibles.map((hoja) => {
+        const numero = pad(hoja.numero);
+        const titulo = hoja.titulo || `Hoja ${numero}`;
+        const subtitulo = hoja.subtitulo || "Abrir página";
+
+        return `
+          <a class="note-link" href="./${numero}/">
+            <span class="note-number">${numero}</span>
+            <span class="note-title">${titulo}</span>
+            <span class="note-subtitle">${subtitulo}</span>
+          </a>
+        `;
+      }).join("");
+    }
+
+    searchInput.addEventListener("input", (e) => {
+      renderNotes(e.target.value);
+    });
+
+    renderNotes();
+  </script>
+</body>
+</html>
