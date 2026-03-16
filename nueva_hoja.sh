@@ -20,7 +20,7 @@ mkdir -p "$ROOT/$folder"
 mkdir -p "$ROOT/assets/img"
 touch "$ROOT/assets/img/.gitkeep"
 
-touch "$ROOT/assets/img/$folder.jpg"
+touch "$ROOT/assets/img/$folder.jpeg"
 
 cat > "$ROOT/$folder/index.html" <<EOF
 <!doctype html>
@@ -50,16 +50,16 @@ cat > "$ROOT/$folder/index.html" <<EOF
       <figure class="note-photo-card">
         <!-- ==================================================
              FOTO DE LA HOJA
-             Guardá la imagen en: assets/img/$folder.jpg
+             Guardá la imagen en: assets/img/$folder.jpeg
              También podés usar .png o .webp, cambiando el src.
              ================================================== -->
         <img
-          src="../assets/img/$folder.jpg"
+          src="../assets/img/$folder.jpeg"
           alt="Recuerdo de la hoja $folder"
           onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');"
         >
         <div class="note-photo-placeholder">
-          Agregá una foto en <strong>assets/img/$folder.jpg</strong>
+          Agregá una foto en <strong>assets/img/$folder.jpeg</strong>
         </div>
         <figcaption>
           Una imagen para acompañar esta hoja.
@@ -126,5 +126,5 @@ EOF
 echo "----------------------------------------"
 echo "Nueva hoja creada: $folder/"
 echo "Archivo: $folder/index.html"
-echo "Imagen esperada: assets/img/$folder.jpg"
+echo "Imagen esperada: assets/img/$folder.jpeg"
 echo "----------------------------------------"
