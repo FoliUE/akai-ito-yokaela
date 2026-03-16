@@ -1,4 +1,4 @@
-const TOTAL_HOJAS = 52;
+const TOTAL_HOJAS = 80;
 
 const TITULOS = {
   1: "La música también abraza",
@@ -52,7 +52,35 @@ const TITULOS = {
   49: "Lo que todavía florece",
   50: "Yo sigo acá",
   51: "Estudiar tu voz",
-  52: "Ser uno mismo"
+  52: "Ser uno mismo",
+  53: "Ser tesoro, no reemplazo",
+  54: "Sin GPS, pero acá",
+  55: "Gracias por el piano",
+  56: "Elegir quién se queda",
+  57: "Un timón para vos",
+  58: "El frío de la soledad",
+  59: "Hecha para ser amada",
+  60: "El borde del abismo",
+  61: "Hasta que algo lo detenga",
+  62: "No apagues la nuestra",
+  63: "Donde por fin descansa el alma",
+  64: "Volver a coincidir",
+  65: "La chispa que no se olvida",
+  66: "You are more...",
+  67: "Tu lugar seguro",
+  68: "Lo que alguna vez esperaste",
+  69: "La pequeña magia",
+  70: "Donde no alcanza la luz",
+  71: "Esperando el ruido",
+  72: "Lo que el olvido no alcanza",
+  73: "Nunca dejes de aplaudir",
+  74: "Vivirlo como si fuera poco",
+  75: "La mano extra",
+  76: "En la oscuridad",
+  77: "Hasta el último nivel",
+  78: "Que el tiempo se note",
+  79: "La paz de la madrugada",
+  80: "No estás sola"
 };
 
 const HOJAS = Array.from({ length: TOTAL_HOJAS }, (_, i) => {
