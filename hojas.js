@@ -1,9 +1,9 @@
-const TOTAL_HOJAS = 80;
+const TOTAL_HOJAS_ARCHIVO = 80;
 
-const TITULOS = {
+const TITULOS_ARCHIVO = {
   1: "La música también abraza",
   2: "Otra vez",
-  3: "Lo que solo existe al dormir",
+  3: "Lo que sólo existe al dormir",
   4: "En ese limbo tortuoso",
   5: "La manta y el vino",
   6: "Finales que no terminan",
@@ -83,12 +83,94 @@ const TITULOS = {
   80: "No estás sola"
 };
 
-const HOJAS = Array.from({ length: TOTAL_HOJAS }, (_, i) => {
-  const numero = i + 1;
+const NOTAS_NUEVAS = [
+  // Agregá acá las próximas notas nuevas.
+  // En `new-notes`, la numeración sigue el orden cronológico de la etapa nueva.
+  // Si alguna vez agregás una hoja entre medio, conviene renumerar carpetas y metadata.
+  // Usá rutas como `./new-notes/01/`.
+  // NUEVAS_NOTAS:START
+  {
+    numero: 1,
+    href: "./new-notes/01/",
+    titulo: "Sos mi familia",
+    subtitulo: "Abrir nota actual"
+  },
+  {
+    numero: 2,
+    href: "./new-notes/02/",
+    titulo: "No había marcha atrás",
+    subtitulo: "Abrir nota actual"
+  },
+  {
+    numero: 3,
+    href: "./new-notes/03/",
+    titulo: "El amor de mi vida",
+    subtitulo: "Abrir nota actual"
+  },
+  {
+    numero: 4,
+    href: "./new-notes/04/",
+    titulo: "Una isla bajo miles de estrellas",
+    subtitulo: "Abrir nota actual"
+  },
+  {
+    numero: 5,
+    href: "./new-notes/05/",
+    titulo: "Para siempre",
+    subtitulo: "Abrir nota actual"
+  },
+  // NUEVAS_NOTAS:END
+];
+
+function pad(numero) {
+  return String(numero).padStart(2, "0");
+}
+
+const NOTAS_VIEJAS = Array.from({ length: TOTAL_HOJAS_ARCHIVO }, (_, indice) => {
+  const numero = indice + 1;
+  const slug = pad(numero);
 
   return {
     numero,
-    titulo: TITULOS[numero] || `Hoja ${String(numero).padStart(2, "0")}`,
-    subtitulo: "Abrir página"
+    href: `./old-notes/${slug}/`,
+    titulo: TITULOS_ARCHIVO[numero] || `Hoja ${slug}`,
+    subtitulo: "Abrir hoja del archivo"
   };
 });
+
+const COLECCIONES_NOTAS = [
+  {
+    id: "nuevas",
+    label: "Notas nuevas",
+    badge: "Presente",
+    kicker: "Presente",
+    titulo: "Notas nuevas",
+    descripcion:
+      "Este espacio queda como entrada principal para las notas de ahora, de esta etapa feliz que siguen construyendo juntos.",
+    ayuda: "Las hojas nuevas se muestran por la primera fecha que aparece dentro de cada hoja.",
+    searchPlaceholder: "Buscar en notas nuevas...",
+    emptyTitle: "Todavía no hay notas nuevas publicadas",
+    emptyText:
+      "Cuando sumes una nueva hoja, este va a ser su lugar natural y va a abrir primero desde la portada.",
+    order: "asc",
+    cardCta: "Abrir nota actual",
+    defaultTab: true,
+    notes: NOTAS_NUEVAS
+  },
+  {
+    id: "viejas",
+    label: "Notas viejas",
+    badge: "Archivo",
+    kicker: "Archivo",
+    titulo: "Notas viejas",
+    descripcion:
+      "Acá quedan resguardadas las hojas 01 a 80, separadas del presente para que lo nuevo tenga su propio lugar.",
+    ayuda: "Estas hojas forman parte del archivo anterior y se consultan aparte.",
+    searchPlaceholder: "Buscar en notas viejas...",
+    emptyTitle: "No hay notas viejas cargadas",
+    emptyText: "Cuando exista material archivado, se listará acá.",
+    order: "asc",
+    cardCta: "Abrir hoja del archivo",
+    notes: NOTAS_VIEJAS
+  }
+];
