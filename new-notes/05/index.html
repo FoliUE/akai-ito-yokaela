@@ -34,6 +34,11 @@
             </p>
           </blockquote>
         </div>
+
+        <button class="music-launcher" id="music-launcher" hidden type="button">
+          Reproducir cancion
+        </button>
+        <p class="music-status" id="music-status">Intentando reproducir la cancion al abrir esta hoja.</p>
       </article>
     </section>
 
@@ -41,5 +46,90 @@
       Hecho con amor, nota por nota.
     </footer>
   </main>
+  <div class="youtube-audio-player" id="youtube-audio-player" aria-hidden="true"></div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    const MUSIC_VIDEO_ID = "lB_XmsyiL-I";
+    const MUSIC_VOLUME = 40;
+    const launcher = document.getElementById("music-launcher");
+    const status = document.getElementById("music-status");
+    const playerHost = document.getElementById("youtube-audio-player");
+
+    let musicPlayer = null;
+    let hasTriedAutoplay = false;
+
+    function updateMusicStatus(message) {
+      status.textContent = message;
+    }
+
+    function showLauncher(message) {
+      launcher.hidden = false;
+      updateMusicStatus(message);
+    }
+
+    function hideLauncher(message) {
+      launcher.hidden = true;
+      updateMusicStatus(message);
+    }
+
+    function startMusicPlayback() {
+      if (!musicPlayer || typeof musicPlayer.playVideo !== "function") {
+        return;
+      }
+
+      musicPlayer.setVolume(MUSIC_VOLUME);
+      musicPlayer.unMute();
+      musicPlayer.playVideo();
+      hideLauncher("Reproduciendo la cancion de fondo.");
+    }
+
+    launcher.addEventListener("click", () => {
+      startMusicPlayback();
+    });
+
+    function onPlayerReady() {
+      if (hasTriedAutoplay) {
+        return;
+      }
+
+      hasTriedAutoplay = true;
+      startMusicPlayback();
+    }
+
+    function onPlayerStateChange(event) {
+      if (!window.YT || !window.YT.PlayerState) {
+        return;
+      }
+
+      if (event.data === window.YT.PlayerState.PLAYING) {
+        hideLauncher("Reproduciendo la cancion de fondo.");
+      }
+    }
+
+    function onAutoplayBlocked() {
+      showLauncher("Tu navegador bloqueo el autoplay con sonido. Toca el boton para iniciar la cancion.");
+    }
+
+    window.onYouTubeIframeAPIReady = function () {
+      musicPlayer = new window.YT.Player(playerHost, {
+        videoId: MUSIC_VIDEO_ID,
+        playerVars: {
+          autoplay: 1,
+          controls: 0,
+          fs: 0,
+          loop: 1,
+          modestbranding: 1,
+          playsinline: 1,
+          rel: 0,
+          playlist: MUSIC_VIDEO_ID
+        },
+        events: {
+          onReady: onPlayerReady,
+          onStateChange: onPlayerStateChange,
+          onAutoplayBlocked
+        }
+      });
+    };
+  </script>
 </body>
 </html>
