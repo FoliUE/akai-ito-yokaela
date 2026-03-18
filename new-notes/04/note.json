@@ -1,0 +1,24 @@
+{
+  "numero": 4,
+  "collection": "nuevas",
+  "titulo": "Una isla bajo miles de estrellas",
+  "descripcion": "A veces una sola cita alcanza para guardar exactamente lo que un beso hizo sentir.",
+  "subtitulo": "Abrir nota actual",
+  "fecha": "17/03/26",
+  "sortDate": "2026-03-17",
+  "theme": "theme-present-notes",
+  "cover": {
+    "src": "../../assets/img/new-notes/04.jpeg",
+    "alt": "Recuerdo de la hoja nueva 04"
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note"
+    },
+    {
+      "id": "leo",
+      "file": "leo.note"
+    }
+  ]
+}

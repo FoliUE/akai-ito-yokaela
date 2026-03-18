@@ -1,0 +1,24 @@
+{
+  "numero": 3,
+  "collection": "nuevas",
+  "titulo": "El amor de mi vida",
+  "descripcion": "Hay certezas que se sienten en el cuerpo entero: cuando el amor aparece de verdad, ya no se parece a nada de lo anterior.",
+  "subtitulo": "Abrir nota actual",
+  "fecha": "08/03/26",
+  "sortDate": "2026-03-08",
+  "theme": "theme-present-notes",
+  "cover": {
+    "src": "../../assets/img/new-notes/03.jpeg",
+    "alt": "Recuerdo de la hoja nueva 03"
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note"
+    },
+    {
+      "id": "leo",
+      "file": "leo.note"
+    }
+  ]
+}

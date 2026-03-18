@@ -16,7 +16,7 @@ let activeCollectionId = getCollectionIdFromUrl();
 let renderSequence = 0;
 
 const DATE_PATTERN = /\b(\d{2})\/(\d{2})\/(\d{2,4})\b/;
-const sortDateCache = new Map();
+const noteMetaCache = new Map();
 
 function escapeHtml(value = "") {
   return String(value)
@@ -90,51 +90,56 @@ function getSortValue(note) {
   return `number:${String(fallbackNumber).padStart(6, "0")}`;
 }
 
-async function resolveSortDateFromHref(note) {
-  if (!note?.href) {
+async function resolveNoteMetadata(note) {
+  if (!note?.metaHref) {
     return null;
   }
 
-  if (sortDateCache.has(note.href)) {
-    return sortDateCache.get(note.href);
+  if (noteMetaCache.has(note.metaHref)) {
+    return noteMetaCache.get(note.metaHref);
   }
 
-  try {
-    const response = await fetch(note.href, { cache: "no-store" });
+  const metadataPromise = fetch(note.metaHref, { cache: "no-store" })
+    .then(async (response) => {
+      if (!response.ok) {
+        return null;
+      }
 
-    if (!response.ok) {
-      sortDateCache.set(note.href, null);
-      return null;
-    }
+      return response.json();
+    })
+    .catch(() => null);
 
-    const html = await response.text();
-    const firstDateMatch = html.match(DATE_PATTERN);
-    const resolvedSortDate = parseSortDate(firstDateMatch?.[0] || "");
+  noteMetaCache.set(note.metaHref, metadataPromise);
+  return metadataPromise;
+}
 
-    sortDateCache.set(note.href, resolvedSortDate);
-    return resolvedSortDate;
-  } catch {
-    sortDateCache.set(note.href, null);
-    return null;
+function hydrateNoteFromMetadata(collection, note, metadata) {
+  if (!metadata) {
+    return;
+  }
+
+  note.titulo = metadata.titulo || note.titulo || `${collection.label} ${pad(note.numero)}`;
+  note.subtitulo = metadata.subtitulo || note.subtitulo || collection.cardCta || "Abrir nota";
+  note.descripcion = metadata.descripcion || note.descripcion || "";
+  note.fecha = metadata.fecha || note.fecha || "";
+  note.etiqueta = metadata.etiqueta || note.etiqueta || "";
+
+  const resolvedSortDate = parseSortDate(metadata.sortDate || metadata.fecha || note.sortDate);
+
+  if (resolvedSortDate) {
+    note.sortDate = resolvedSortDate;
   }
 }
 
-async function hydrateCollectionSortDates(collection) {
+async function hydrateCollectionMetadata(collection) {
   if (collection.id !== "nuevas") {
     return;
   }
 
   await Promise.all(
     collection.notes.map(async (note) => {
-      if (parseSortDate(note.sortDate)) {
-        return;
-      }
-
-      const resolvedSortDate = await resolveSortDateFromHref(note);
-
-      if (resolvedSortDate) {
-        note.sortDate = resolvedSortDate;
-      }
+      const metadata = await resolveNoteMetadata(note);
+      hydrateNoteFromMetadata(collection, note, metadata);
     })
   );
 }
@@ -240,7 +245,7 @@ async function renderCollection() {
     toggle.setAttribute("aria-pressed", String(isActive));
   });
 
-  await hydrateCollectionSortDates(collection);
+  await hydrateCollectionMetadata(collection);
 
   if (currentSequence !== renderSequence) {
     return;

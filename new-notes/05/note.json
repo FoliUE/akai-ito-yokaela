@@ -1,0 +1,30 @@
+{
+  "numero": 5,
+  "collection": "nuevas",
+  "titulo": "Para siempre",
+  "descripcion": "Una sola pregunta puede contener toda una vida entera por delante.",
+  "subtitulo": "Abrir nota actual",
+  "fecha": "17/03/26",
+  "sortDate": "2026-03-17",
+  "layout": "single",
+  "theme": "theme-present-notes",
+  "cover": {
+    "src": "../../assets/img/new-notes/05.jpeg",
+    "alt": "Recuerdo de la hoja nueva 05"
+  },
+  "authors": [
+    {
+      "id": "leo",
+      "file": "leo.note"
+    }
+  ],
+  "music": {
+    "youtubeId": "lB_XmsyiL-I",
+    "volume": 40,
+    "autoplay": true,
+    "buttonLabel": "Reproducir canción",
+    "loadingMessage": "Intentando reproducir la canción al abrir esta hoja.",
+    "playingMessage": "Reproduciendo la canción de fondo.",
+    "blockedMessage": "Tu navegador bloqueó el autoplay con sonido. Tocá el botón para iniciar la canción."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "numero": 1,
+  "collection": "nuevas",
+  "titulo": "Sos mi familia",
+  "descripcion": "Hay amores que dejan de sentirse como una historia aparte y se vuelven casa, familia y destino.",
+  "subtitulo": "Abrir nota actual",
+  "fecha": "14/01/26",
+  "sortDate": "2026-01-14",
+  "theme": "theme-present-notes",
+  "cover": {
+    "src": "../../assets/img/new-notes/01.jpeg",
+    "alt": "Recuerdo de la hoja nueva 01"
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note"
+    },
+    {
+      "id": "leo",
+      "file": "leo.note"
+    }
+  ]
+}
