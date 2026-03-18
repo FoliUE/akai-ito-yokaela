@@ -132,10 +132,6 @@ function hydrateNoteFromMetadata(collection, note, metadata) {
 }
 
 async function hydrateCollectionMetadata(collection) {
-  if (collection.id !== "nuevas") {
-    return;
-  }
-
   await Promise.all(
     collection.notes.map(async (note) => {
       const metadata = await resolveNoteMetadata(note);

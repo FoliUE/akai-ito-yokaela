@@ -1,5 +1,8 @@
 # Formatos para `mica.note` y `leo.note`
 
+El camino recomendado ahora es usar el editor visual en `tools/notes-manager/`.
+Este archivo queda como referencia legacy por si alguna vez querés editar una nota a mano.
+
 Si abrís `tools/notes-manager/nueva_hoja.bat`, `tools/notes-manager/nueva_hoja.sh` o `tools/notes-manager/nueva_hoja.command`, el programa ya trae esta ayuda adentro.
 Mientras pegás contenido nuevo podés escribir:
 

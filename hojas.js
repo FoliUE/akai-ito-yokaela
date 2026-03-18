@@ -97,6 +97,18 @@ function buildNewNoteEntry(numero) {
   };
 }
 
+function buildOldNoteEntry(numero) {
+  const slug = pad(numero);
+
+  return {
+    numero,
+    href: `./old-notes/${slug}/`,
+    metaHref: `./old-notes/${slug}/note.json`,
+    titulo: TITULOS_ARCHIVO[numero] || `Hoja ${slug}`,
+    subtitulo: "Abrir hoja del archivo"
+  };
+}
+
 const NOTAS_NUEVAS = [
   // Agregá acá las próximas notas nuevas.
   // Cada carpeta de `new-notes/XX/` tiene su propia `note.json`.
@@ -110,17 +122,7 @@ const NOTAS_NUEVAS = [
   // NUEVAS_NOTAS:END
 ];
 
-const NOTAS_VIEJAS = Array.from({ length: TOTAL_HOJAS_ARCHIVO }, (_, indice) => {
-  const numero = indice + 1;
-  const slug = pad(numero);
-
-  return {
-    numero,
-    href: `./old-notes/${slug}/`,
-    titulo: TITULOS_ARCHIVO[numero] || `Hoja ${slug}`,
-    subtitulo: "Abrir hoja del archivo"
-  };
-});
+const NOTAS_VIEJAS = Array.from({ length: TOTAL_HOJAS_ARCHIVO }, (_, indice) => buildOldNoteEntry(indice + 1));
 
 const COLECCIONES_NOTAS = [
   {

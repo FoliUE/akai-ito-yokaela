@@ -510,6 +510,33 @@ a {
   line-height: 1.6;
 }
 
+.note-preview-editor .note-photo-card--cover.is-cover-adjustable {
+  position: relative;
+  cursor: grab;
+  user-select: none;
+  touch-action: none;
+}
+
+.note-preview-editor .note-photo-card--cover.is-cover-adjustable.is-dragging {
+  cursor: grabbing;
+}
+
+.note-preview-editor .cover-editor-badge {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  max-width: 220px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(34, 25, 60, 0.72);
+  color: #f0e5ff;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+}
+
 .note-photo-placeholder {
   display: none;
   min-height: var(--photo-height);
@@ -605,6 +632,70 @@ a {
   white-space: normal;
 }
 
+.note-block {
+  --note-block-font-size: inherit;
+  --note-block-line-height: inherit;
+  --note-block-font-family: inherit;
+  --note-block-text-align: inherit;
+  font-size: var(--note-block-font-size);
+  line-height: var(--note-block-line-height);
+  font-family: var(--note-block-font-family);
+  text-align: var(--note-block-text-align);
+}
+
+.note-block--size-sm {
+  --note-block-font-size: 0.92rem;
+  --note-block-line-height: 1.8;
+}
+
+.note-block--size-md {
+  --note-block-font-size: 1.04rem;
+  --note-block-line-height: 1.92;
+}
+
+.note-block--size-lg {
+  --note-block-font-size: 1.16rem;
+  --note-block-line-height: 1.88;
+}
+
+.note-block--size-xl {
+  --note-block-font-size: 1.32rem;
+  --note-block-line-height: 1.72;
+}
+
+.note-block--size-hero {
+  --note-block-font-size: clamp(1.9rem, 4vw, 3.5rem);
+  --note-block-line-height: 1.22;
+}
+
+.note-block--family-body {
+  --note-block-font-family: "Aptos", "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.note-block--family-serif {
+  --note-block-font-family: Georgia, "Times New Roman", serif;
+}
+
+.note-block--family-display {
+  --note-block-font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+}
+
+.note-block--family-script {
+  --note-block-font-family: "Segoe Script", "Lucida Handwriting", cursive;
+}
+
+.note-block--align-left {
+  --note-block-text-align: left;
+}
+
+.note-block--align-center {
+  --note-block-text-align: center;
+}
+
+.note-block--align-right {
+  --note-block-text-align: right;
+}
+
 .note-content p {
   margin: 0 0 1.15rem;
   line-height: 1.9;
@@ -645,6 +736,151 @@ a {
   margin-bottom: 0;
 }
 
+.note-quote--visual {
+  --visual-quote-padding: 1.4rem 1.2rem;
+  --visual-quote-margin: 1.4rem 0;
+  --visual-quote-line-height: 1.5;
+  --visual-quote-letter-spacing: normal;
+  --visual-quote-text-transform: none;
+  --visual-quote-font-size: inherit;
+  --visual-quote-row-gap: 0.65rem;
+  --visual-quote-justify: center;
+  margin: var(--visual-quote-margin) !important;
+  padding: var(--visual-quote-padding) !important;
+  width: min(100%, var(--visual-quote-max-width, 100%));
+  max-width: 100%;
+  min-height: var(--visual-quote-min-height, auto);
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  line-height: var(--visual-quote-line-height);
+  letter-spacing: var(--visual-quote-letter-spacing);
+  text-transform: var(--visual-quote-text-transform);
+  font-size: var(--visual-quote-font-size);
+}
+
+.note-quote-visual__rows {
+  display: grid;
+  gap: var(--visual-quote-row-gap);
+}
+
+.note-quote-visual__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: var(--visual-quote-justify);
+  gap: 0.6rem;
+}
+
+.note-quote-visual__row + .note-quote-visual__row {
+  margin-top: 0;
+}
+
+.note-quote-visual__text {
+  display: inline-block;
+}
+
+.note-quote-visual__image {
+  --visual-quote-image-width: 120px;
+  --visual-quote-image-height: 120px;
+  --visual-quote-image-padding: 0;
+  --visual-quote-image-background: rgba(255, 255, 255, 0.06);
+  --visual-quote-image-position: 50% 50%;
+  --visual-quote-image-radius: 12px;
+  --visual-quote-image-border: 1px solid rgba(255, 255, 255, 0.08);
+  --visual-quote-image-fit: cover;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--visual-quote-image-width);
+  height: var(--visual-quote-image-height);
+  padding: var(--visual-quote-image-padding);
+  border-radius: var(--visual-quote-image-radius);
+  overflow: hidden;
+  background: var(--visual-quote-image-background);
+  border: var(--visual-quote-image-border);
+  vertical-align: middle;
+}
+
+.note-quote-visual__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: var(--visual-quote-image-fit);
+  object-position: var(--visual-quote-image-position);
+}
+
+.note-quote-visual__image-fallback {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1rem, 5vw, 2.2rem);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.note-quote-visual__image.is-empty .note-quote-visual__image-fallback {
+  display: flex;
+}
+
+.note-quote-strip {
+  --quote-strip-margin: 1.5rem 0;
+  --quote-strip-gap: 1rem;
+  --quote-strip-side-width: 72px;
+  --quote-strip-min-height: 320px;
+  --quote-strip-quote-max-width: 320px;
+  --quote-strip-quote-padding: 1.25rem 1rem;
+  margin: var(--quote-strip-margin);
+  display: grid;
+  grid-template-columns: var(--quote-strip-side-width) minmax(0, 1fr) var(--quote-strip-side-width);
+  gap: var(--quote-strip-gap);
+  align-items: center;
+}
+
+.note-quote-strip__center {
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.note-quote-strip__center .note-quote {
+  margin: 0;
+  width: min(100%, var(--quote-strip-quote-max-width));
+  max-width: 100%;
+  padding: var(--quote-strip-quote-padding);
+}
+
+.note-quote-strip__side {
+  --quote-strip-image-padding: 0;
+  --quote-strip-image-background: rgba(255, 255, 255, 0.03);
+  --quote-strip-image-position: 50% 50%;
+  --quote-strip-image-radius: 18px;
+  --quote-strip-image-border: 1px solid rgba(255, 255, 255, 0.04);
+  --quote-strip-image-fit: cover;
+  margin: 0;
+  min-height: var(--quote-strip-min-height);
+  border-radius: var(--quote-strip-image-radius);
+  overflow: hidden;
+  background: var(--quote-strip-image-background);
+  border: var(--quote-strip-image-border);
+}
+
+.note-quote-strip__side img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: var(--quote-strip-image-fit);
+  object-position: var(--quote-strip-image-position);
+  padding: var(--quote-strip-image-padding);
+  box-sizing: border-box;
+}
+
+.note-quote-strip__side.is-empty .note-photo-placeholder {
+  display: grid;
+  min-height: var(--quote-strip-min-height);
+}
+
 .note-quote-author {
   margin-top: 0.75rem !important;
   color: var(--muted);
@@ -678,6 +914,20 @@ a {
   object-fit: var(--inline-image-fit, cover);
   background: var(--inline-image-bg, transparent);
   padding: var(--inline-image-padding, 0);
+}
+
+@media (max-width: 720px) {
+  .note-quote-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .note-quote-strip__side {
+    min-height: 180px;
+  }
+
+  .note-quote-strip__side.is-empty .note-photo-placeholder {
+    min-height: 180px;
+  }
 }
 
 .note-content hr {

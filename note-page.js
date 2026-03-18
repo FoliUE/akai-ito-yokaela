@@ -20,6 +20,10 @@ const DEFAULT_MUSIC_TEXT = {
   blockedMessage: "Tu navegador bloqueó el autoplay con sonido. Tocá el botón para iniciar la canción."
 };
 
+const VALID_FONT_SIZES = new Set(["default", "sm", "md", "lg", "xl", "hero"]);
+const VALID_FONT_FAMILIES = new Set(["default", "body", "serif", "display", "script"]);
+const VALID_ALIGNS = new Set(["default", "left", "center", "right"]);
+
 function escapeHtml(value = "") {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -141,7 +145,8 @@ function extractQuoteAuthor(lines = []) {
     contentLines.pop();
   }
 
-  const lastLine = contentLines[contentLines.length - 1]?.trim() || "";
+  const lastEntry = contentLines[contentLines.length - 1];
+  const lastLine = lastEntry ? lastEntry.trim() : "";
 
   if (!/^[-—]\s+/.test(lastLine)) {
     return {
@@ -182,6 +187,234 @@ function linesToParagraphs(lines = []) {
   return paragraphs;
 }
 
+function normalizeStyle(style = {}) {
+  const rawStyle = style && typeof style === "object" ? style : {};
+  const fontSize = VALID_FONT_SIZES.has(rawStyle.fontSize) ? rawStyle.fontSize : "default";
+  const fontFamily = VALID_FONT_FAMILIES.has(rawStyle.fontFamily) ? rawStyle.fontFamily : "default";
+  const align = VALID_ALIGNS.has(rawStyle.align) ? rawStyle.align : "default";
+
+  return { fontSize, fontFamily, align };
+}
+
+function normalizeFlags(rawFlags = [], blockType = "") {
+  const inputFlags = Array.isArray(rawFlags)
+    ? rawFlags
+    : rawFlags instanceof Set
+      ? [...rawFlags]
+      : [rawFlags];
+  const normalized = inputFlags
+    .map((flag) => String(flag || "").trim().toLowerCase())
+    .filter(Boolean);
+
+  if (blockType === "hero-quote") {
+    if (!normalized.includes("hero")) {
+      normalized.push("hero");
+    }
+    if (!normalized.includes("center")) {
+      normalized.push("center");
+    }
+  }
+
+  return new Set(normalized);
+}
+
+function normalizeImageOptions(options = {}) {
+  const rawOptions = options && typeof options === "object" ? options : {};
+
+  return {
+    src: String(rawOptions.src || "").trim(),
+    alt: String(rawOptions.alt || "").trim(),
+    caption: String(rawOptions.caption || "").trim(),
+    height: String(rawOptions.height || "").trim(),
+    fit: String(rawOptions.fit || "cover").trim() || "cover",
+    padding: String(rawOptions.padding || rawOptions.imgPadding || "").trim(),
+    background: String(rawOptions.background || rawOptions.imgBackground || "").trim(),
+    position: String(rawOptions.position || "").trim(),
+    margin: String(rawOptions.margin || "").trim()
+  };
+}
+
+function normalizeVisualQuoteImageOptions(options = {}) {
+  const rawOptions = options && typeof options === "object" ? options : {};
+  const fit = String(rawOptions.fit || "cover").trim().toLowerCase();
+
+  return {
+    src: String(rawOptions.src || "").trim(),
+    alt: String(rawOptions.alt || "").trim(),
+    width: String(rawOptions.width || "").trim(),
+    height: String(rawOptions.height || "").trim(),
+    fit: fit === "contain" ? "contain" : "cover",
+    padding: String(rawOptions.padding || "").trim(),
+    background: String(rawOptions.background || "").trim(),
+    position: String(rawOptions.position || "").trim(),
+    radius: String(rawOptions.radius || "").trim(),
+    border: String(rawOptions.border || "").trim()
+  };
+}
+
+function buildVisualQuoteItem(rawItem = {}) {
+  const item = rawItem && typeof rawItem === "object" ? rawItem : {};
+  const kind = String(item.kind || item.type || "text").trim().toLowerCase();
+
+  if (kind === "image") {
+    return {
+      id: item.id || `item-${Math.random().toString(36).slice(2, 8)}`,
+      kind: "image",
+      options: normalizeVisualQuoteImageOptions(item.options || item)
+    };
+  }
+
+  return {
+    id: item.id || `item-${Math.random().toString(36).slice(2, 8)}`,
+    kind: "text",
+    text: String(item.text || "").trim()
+  };
+}
+
+function normalizeVisualQuoteRows(rows = []) {
+  const sourceRows = Array.isArray(rows) ? rows : [];
+
+  return sourceRows
+    .map((row) => {
+      const rawRow = row && typeof row === "object" ? row : {};
+      const items = Array.isArray(rawRow.items)
+        ? rawRow.items.map((item) => buildVisualQuoteItem(item)).filter((item) => item.kind === "image" || item.text)
+        : [];
+
+      if (!items.length) {
+        return null;
+      }
+
+      return {
+        id: rawRow.id || `row-${Math.random().toString(36).slice(2, 8)}`,
+        items
+      };
+    })
+    .filter(Boolean);
+}
+
+function normalizeVisualQuoteLayout(layout = {}) {
+  const rawLayout = layout && typeof layout === "object" ? layout : {};
+  const textTransform = String(rawLayout.textTransform || "").trim().toLowerCase();
+
+  return {
+    maxWidth: String(rawLayout.maxWidth || "").trim(),
+    minHeight: String(rawLayout.minHeight || "").trim(),
+    padding: String(rawLayout.padding || "").trim(),
+    margin: String(rawLayout.margin || "").trim(),
+    lineHeight: String(rawLayout.lineHeight || "").trim(),
+    letterSpacing: String(rawLayout.letterSpacing || "").trim(),
+    textTransform: textTransform === "uppercase" || textTransform === "none" ? textTransform : "",
+    fontSize: String(rawLayout.fontSize || "").trim(),
+    authorSize: String(rawLayout.authorSize || "").trim(),
+    rowGap: String(rawLayout.rowGap || "").trim()
+  };
+}
+
+function normalizeQuoteStripLayout(layout = {}) {
+  const rawLayout = layout && typeof layout === "object" ? layout : {};
+
+  return {
+    margin: String(rawLayout.margin || "").trim(),
+    gap: String(rawLayout.gap || "").trim(),
+    sideWidth: String(rawLayout.sideWidth || "").trim(),
+    minHeight: String(rawLayout.minHeight || "").trim(),
+    quoteMaxWidth: String(rawLayout.quoteMaxWidth || "").trim(),
+    quotePadding: String(rawLayout.quotePadding || "").trim()
+  };
+}
+
+function buildBlock(rawBlock = {}) {
+  const type = String(rawBlock.type || "paragraph").trim().toLowerCase();
+  const style = normalizeStyle(rawBlock.style);
+
+  if (type === "visual-quote") {
+    return {
+      id: rawBlock.id || `block-${Math.random().toString(36).slice(2, 8)}`,
+      type: "visual-quote",
+      style,
+      rows: normalizeVisualQuoteRows(rawBlock.rows),
+      author: String(rawBlock.author || "").trim(),
+      layout: normalizeVisualQuoteLayout(rawBlock.layout)
+    };
+  }
+
+  if (type === "quote-strip") {
+    const paragraphSource = Array.isArray(rawBlock.paragraphs)
+      ? rawBlock.paragraphs
+      : typeof rawBlock.text === "string"
+        ? rawBlock.text.split("\n\n")
+        : [];
+
+    return {
+      id: rawBlock.id || `block-${Math.random().toString(36).slice(2, 8)}`,
+      type: "quote-strip",
+      style,
+      author: String(rawBlock.author || "").trim(),
+      paragraphs: paragraphSource
+        .map((paragraph) => String(paragraph || "").replace(/\n\s*\n+/g, "\n").trim())
+        .filter(Boolean),
+      leftImage: normalizeVisualQuoteImageOptions(rawBlock.leftImage),
+      rightImage: normalizeVisualQuoteImageOptions(rawBlock.rightImage),
+      layout: normalizeQuoteStripLayout(rawBlock.layout)
+    };
+  }
+
+  if (type === "html") {
+    return {
+      id: rawBlock.id || `block-${Math.random().toString(36).slice(2, 8)}`,
+      type: "html",
+      style,
+      html: String(rawBlock.html || "")
+    };
+  }
+
+  if (type === "image") {
+    return {
+      id: rawBlock.id || `block-${Math.random().toString(36).slice(2, 8)}`,
+      type: "image",
+      style,
+      options: normalizeImageOptions(rawBlock.options)
+    };
+  }
+
+  if (type === "divider") {
+    return {
+      id: rawBlock.id || `block-${Math.random().toString(36).slice(2, 8)}`,
+      type: "divider",
+      style
+    };
+  }
+
+  if (type === "paragraph") {
+    return {
+      id: rawBlock.id || `block-${Math.random().toString(36).slice(2, 8)}`,
+      type: "paragraph",
+      style,
+      text: String(rawBlock.text || "").trim(),
+      preserveBreaks: rawBlock.preserveBreaks === true || rawBlock.preserveBreaks === "true"
+    };
+  }
+
+  const normalizedType = type === "hero_quote" ? "hero-quote" : type;
+  const paragraphSource = Array.isArray(rawBlock.paragraphs)
+    ? rawBlock.paragraphs
+    : typeof rawBlock.text === "string"
+      ? rawBlock.text.split("\n\n")
+      : [];
+
+  return {
+    id: rawBlock.id || `block-${Math.random().toString(36).slice(2, 8)}`,
+    type: normalizedType,
+    style,
+    flags: normalizeFlags(rawBlock.flags || [], normalizedType),
+    author: String(rawBlock.author || "").trim(),
+    paragraphs: paragraphSource
+      .map((paragraph) => String(paragraph || "").trim())
+      .filter(Boolean)
+  };
+}
+
 function parseBlocks(rawBody = "") {
   const normalized = String(rawBody).replaceAll("\r\n", "\n").trim();
 
@@ -198,10 +431,10 @@ function parseBlocks(rawBody = "") {
     const text = paragraphLines.join(" ").trim();
 
     if (text) {
-      blocks.push({
+      blocks.push(buildBlock({
         type: "paragraph",
         text
-      });
+      }));
     }
 
     paragraphLines = [];
@@ -237,7 +470,7 @@ function parseBlocks(rawBody = "") {
 
     if (trimmedLine === "---") {
       flushParagraph();
-      blocks.push({ type: "divider" });
+      blocks.push(buildBlock({ type: "divider" }));
       return;
     }
 
@@ -259,42 +492,134 @@ function parseBlocks(rawBody = "") {
 }
 
 function buildDirectiveBlock(directive) {
-  const flags = new Set(directive.flags || []);
-
   if (directive.type === "image") {
-    return {
+    return buildBlock({
       type: "image",
       options: parseDirectiveOptions(directive.lines)
-    };
+    });
   }
 
   if (directive.type === "divider") {
-    return { type: "divider" };
+    return buildBlock({ type: "divider" });
   }
 
-  if (directive.type === "html") {
-    return {
-      type: "html",
-      html: directive.lines.join("\n").trim()
-    };
-  }
-
+  const normalizedType = directive.type === "hero-quote" || directive.type === "hero_quote"
+    ? "hero-quote"
+    : directive.type;
   const { author, lines } = extractQuoteAuthor(directive.lines);
   const paragraphs = linesToParagraphs(lines);
-  const type = directive.type === "hero-quote" || directive.type === "hero_quote"
-    ? "quote"
-    : directive.type;
 
-  if (directive.type === "hero-quote" || directive.type === "hero_quote") {
-    flags.add("hero");
-    flags.add("center");
-  }
+  return buildBlock({
+    type: normalizedType,
+    author,
+    flags: directive.flags,
+    paragraphs
+  });
+}
+
+function compactAuthorBlocks(blocks = []) {
+  return blocks.reduce((accumulator, block) => {
+    const previous = accumulator[accumulator.length - 1];
+
+    if (
+      previous &&
+      previous.type === "paragraph" &&
+      block.type === "paragraph" &&
+      JSON.stringify(previous.style || {}) === JSON.stringify(block.style || {})
+    ) {
+      const leftText = String(previous.text || "").trim();
+      const rightText = String(block.text || "").trim();
+      previous.text = [leftText, rightText].filter(Boolean).join("\n\n");
+      previous.preserveBreaks = previous.preserveBreaks === true || block.preserveBreaks === true;
+      return accumulator;
+    }
+
+    accumulator.push(block);
+    return accumulator;
+  }, []);
+}
+
+function normalizeAuthorDocument(authorId, rawDocument = {}) {
+  const preset = AUTHOR_PRESETS[authorId] || AUTHOR_PRESETS.leo;
+  const document = rawDocument && typeof rawDocument === "object" ? rawDocument : {};
+  const meta = document.meta && typeof document.meta === "object" ? document.meta : {};
+  const blocks = Array.isArray(document.blocks)
+    ? compactAuthorBlocks(document.blocks.map((block) => buildBlock(block)))
+    : [];
 
   return {
-    type,
-    author,
-    flags,
-    paragraphs
+    meta: {
+      label: String(meta.label || preset.label).trim() || preset.label,
+      title: String(meta.title || preset.emptyTitle).trim() || preset.emptyTitle,
+      helper: String(meta.helper || "").trim(),
+      spoiler: meta.spoiler === true || meta.spoiler === "true",
+      variant: String(meta.variant || "").trim(),
+      placeholder: meta.placeholder === true || meta.placeholder === "true",
+      placeholderBody: String(meta.placeholderBody || preset.emptyBody).trim() || preset.emptyBody
+    },
+    blocks
+  };
+}
+
+function buildLoadedAuthor(authorConfig = {}, document = {}) {
+  const preset = AUTHOR_PRESETS[authorConfig.id] || AUTHOR_PRESETS.leo;
+  const normalizedDocument = normalizeAuthorDocument(authorConfig.id || "leo", document);
+  const meta = normalizedDocument.meta;
+
+  return {
+    id: authorConfig.id,
+    file: authorConfig.file,
+    label: meta.label || preset.label,
+    cardClass: preset.cardClass,
+    meta,
+    blocks: normalizedDocument.blocks,
+    emptyTitle: meta.title || preset.emptyTitle,
+    emptyBody: meta.placeholderBody || preset.emptyBody
+  };
+}
+
+function normalizeNoteMeta(noteMeta = {}) {
+  const rawMeta = noteMeta && typeof noteMeta === "object" ? noteMeta : {};
+  const numero = Number(rawMeta.numero || 0);
+  const cover = rawMeta.cover && typeof rawMeta.cover === "object" ? rawMeta.cover : {};
+  const normalizedAuthors = Array.isArray(rawMeta.authors)
+    ? rawMeta.authors
+      .filter((author) => author && typeof author === "object")
+      .map((author) => ({
+        id: String(author.id || "leo").trim().toLowerCase(),
+        file: String(author.file || "").trim(),
+        visible: author.visible !== false
+      }))
+    : [];
+
+  return {
+    ...rawMeta,
+    numero,
+    collection: rawMeta.collection === "viejas" ? "viejas" : "nuevas",
+    titulo: String(rawMeta.titulo || "Nota").trim() || "Nota",
+    descripcion: String(rawMeta.descripcion || "").trim(),
+    subtitulo: String(rawMeta.subtitulo || "Abrir nota actual").trim() || "Abrir nota actual",
+    fecha: String(rawMeta.fecha || "").trim(),
+    sortDate: String(rawMeta.sortDate || "").trim(),
+    theme: String(rawMeta.theme || (rawMeta.collection === "viejas" ? "theme-archive-notes" : "theme-present-notes")),
+    layout: String(rawMeta.layout || "").trim(),
+    numeroEtiqueta: String(rawMeta.numeroEtiqueta || "").trim(),
+    footerText: String(
+      rawMeta.footerText || (rawMeta.collection === "viejas"
+        ? "Hecho con amor, hoja por hoja."
+        : "Hecho con amor, nota por nota.")
+    ).trim(),
+    customCss: String(rawMeta.customCss || ""),
+    cover: {
+      src: String(cover.src || "").trim(),
+      alt: String(cover.alt || `Recuerdo de la hoja ${pad(numero || 0)}`).trim(),
+      caption: String(cover.caption || "").trim(),
+      enabled: cover.enabled !== false,
+      height: String(cover.height || "").trim(),
+      position: String(cover.position || "").trim()
+    },
+    music: rawMeta.music && typeof rawMeta.music === "object" ? rawMeta.music : null,
+    authors: normalizedAuthors
   };
 }
 
@@ -318,9 +643,29 @@ function renderMultilineText(text = "", preserveBreaks = false) {
   return lines.map((line) => formatInline(line)).join("<br>");
 }
 
+function buildBlockClasses(block = {}, extraClasses = []) {
+  const classes = ["note-block", ...extraClasses];
+  const style = normalizeStyle(block.style);
+
+  if (style.align !== "default") {
+    classes.push(`note-block--align-${style.align}`);
+  }
+
+  if (style.fontSize !== "default") {
+    classes.push(`note-block--size-${style.fontSize}`);
+  }
+
+  if (style.fontFamily !== "default") {
+    classes.push(`note-block--family-${style.fontFamily}`);
+  }
+
+  return classes;
+}
+
 function renderQuoteBlock(block) {
-  const classes = ["note-quote"];
-  const preserveBreaks = block.type === "song" || block.type === "dialogue" || block.flags.has("breaks");
+  const flags = normalizeFlags(block.flags, block.type);
+  const classes = buildBlockClasses(block, ["note-quote"]);
+  const preserveBreaks = block.type === "song" || block.type === "dialogue" || flags.has("breaks");
 
   if (block.type === "song") {
     classes.push("note-block--song");
@@ -330,19 +675,19 @@ function renderQuoteBlock(block) {
     classes.push("note-block--dialogue");
   }
 
-  if (block.flags.has("center")) {
+  if (flags.has("center")) {
     classes.push("note-block--center");
   }
 
-  if (block.flags.has("large")) {
+  if (flags.has("large")) {
     classes.push("note-block--large");
   }
 
-  if (block.flags.has("caps")) {
+  if (flags.has("caps")) {
     classes.push("note-block--caps");
   }
 
-  if (block.flags.has("hero")) {
+  if (block.type === "hero-quote" || flags.has("hero")) {
     classes.push("note-quote--hero");
   }
 
@@ -353,7 +698,7 @@ function renderQuoteBlock(block) {
   const contentHtml = paragraphs
     .map((paragraph) => {
       const innerHtml = renderMultilineText(paragraph, preserveBreaks);
-      const wrappedHtml = block.flags.has("hero")
+      const wrappedHtml = classes.includes("note-quote--hero")
         ? `<em>${innerHtml}</em>`
         : innerHtml;
 
@@ -373,8 +718,126 @@ function renderQuoteBlock(block) {
   `;
 }
 
+function renderVisualQuoteItem(item) {
+  if (item.kind === "image") {
+    const options = normalizeVisualQuoteImageOptions(item.options);
+    const styleTokens = [];
+
+    if (options.width) {
+      styleTokens.push(`--visual-quote-image-width: ${escapeHtml(options.width)}`);
+    }
+    if (options.height) {
+      styleTokens.push(`--visual-quote-image-height: ${escapeHtml(options.height)}`);
+    }
+    if (options.padding) {
+      styleTokens.push(`--visual-quote-image-padding: ${escapeHtml(options.padding)}`);
+    }
+    if (options.background) {
+      styleTokens.push(`--visual-quote-image-background: ${escapeHtml(options.background)}`);
+    }
+    if (options.position) {
+      styleTokens.push(`--visual-quote-image-position: ${escapeHtml(options.position)}`);
+    }
+    if (options.radius) {
+      styleTokens.push(`--visual-quote-image-radius: ${escapeHtml(options.radius)}`);
+    }
+    if (options.border) {
+      styleTokens.push(`--visual-quote-image-border: ${escapeHtml(options.border)}`);
+    }
+    if (options.fit === "contain") {
+      styleTokens.push("--visual-quote-image-fit: contain");
+    }
+
+    const styleAttr = styleTokens.length ? ` style="${styleTokens.join("; ")};"` : "";
+
+    return `
+      <span class="note-quote-visual__image"${styleAttr}>
+        <img
+          src="${escapeHtml(options.src || "")}"
+          alt="${escapeHtml(options.alt || "Imagen dentro de la cita")}"
+          onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');"
+        >
+        <span class="note-quote-visual__image-fallback">PNG</span>
+      </span>
+    `;
+  }
+
+  return `<span class="note-quote-visual__text">${formatInline(item.text || "")}</span>`;
+}
+
+function renderVisualQuoteBlock(block) {
+  const classes = buildBlockClasses(block, ["note-quote", "note-quote--visual"]);
+  const layout = normalizeVisualQuoteLayout(block.layout);
+  const style = normalizeStyle(block.style);
+  const justifyMap = {
+    left: "flex-start",
+    right: "flex-end",
+    center: "center",
+    default: "center"
+  };
+  const styleTokens = [
+    `--visual-quote-justify: ${justifyMap[style.align] || "center"}`
+  ];
+
+  if (layout.maxWidth) {
+    styleTokens.push(`--visual-quote-max-width: ${escapeHtml(layout.maxWidth)}`);
+  }
+  if (layout.minHeight) {
+    styleTokens.push(`--visual-quote-min-height: ${escapeHtml(layout.minHeight)}`);
+  }
+  if (layout.padding) {
+    styleTokens.push(`--visual-quote-padding: ${escapeHtml(layout.padding)}`);
+  }
+  if (layout.margin) {
+    styleTokens.push(`--visual-quote-margin: ${escapeHtml(layout.margin)}`);
+  }
+  if (layout.lineHeight) {
+    styleTokens.push(`--visual-quote-line-height: ${escapeHtml(layout.lineHeight)}`);
+  }
+  if (layout.letterSpacing) {
+    styleTokens.push(`--visual-quote-letter-spacing: ${escapeHtml(layout.letterSpacing)}`);
+  }
+  if (layout.textTransform) {
+    styleTokens.push(`--visual-quote-text-transform: ${escapeHtml(layout.textTransform)}`);
+  }
+  if (layout.fontSize) {
+    styleTokens.push(`--visual-quote-font-size: ${escapeHtml(layout.fontSize)}`);
+  }
+  if (layout.authorSize) {
+    styleTokens.push(`--visual-quote-author-size: ${escapeHtml(layout.authorSize)}`);
+  }
+  if (layout.rowGap) {
+    styleTokens.push(`--visual-quote-row-gap: ${escapeHtml(layout.rowGap)}`);
+  }
+
+  const styleAttr = styleTokens.length ? ` style="${styleTokens.join("; ")};"` : "";
+  const rows = Array.isArray(block.rows) && block.rows.length
+    ? block.rows
+    : [{ id: `row-${block.id}`, items: [{ kind: "text", text: "" }] }];
+  const rowsHtml = rows
+    .map((row) => `
+      <div class="note-quote-visual__row">
+        ${row.items.map((item) => renderVisualQuoteItem(item)).join("")}
+      </div>
+    `)
+    .join("");
+  const authorHtml = block.author
+    ? `<p class="note-quote-author">${layout.authorSize ? `<span style="font-size:${escapeHtml(layout.authorSize)};">— ${formatInline(block.author)}</span>` : `— ${formatInline(block.author)}`}</p>`
+    : "";
+
+  return `
+    <blockquote class="${classes.join(" ")}"${styleAttr}>
+      <div class="note-quote-visual__rows">
+        ${rowsHtml}
+      </div>
+      ${authorHtml}
+    </blockquote>
+  `;
+}
+
 function renderImageBlock(block) {
-  const options = block.options || {};
+  const options = normalizeImageOptions(block.options);
+  const figureClasses = buildBlockClasses(block, ["note-photo-card", "note-inline-image"]);
   const figureStyles = [];
   const imageStyles = [];
   const imgClassNames = [];
@@ -393,18 +856,15 @@ function renderImageBlock(block) {
 
   if (options.fit === "contain") {
     imageStyles.push("--inline-image-fit: contain");
-  }
-
-  if (options.imgPadding || options.padding) {
-    imageStyles.push(`--inline-image-padding: ${escapeHtml(options.imgPadding || options.padding)}`);
-  }
-
-  if (options.imgBackground || options.background) {
-    imageStyles.push(`--inline-image-bg: ${escapeHtml(options.imgBackground || options.background)}`);
-  }
-
-  if (options.fit === "contain") {
     imgClassNames.push("note-inline-image__img--contain");
+  }
+
+  if (options.padding) {
+    imageStyles.push(`--inline-image-padding: ${escapeHtml(options.padding)}`);
+  }
+
+  if (options.background) {
+    imageStyles.push(`--inline-image-bg: ${escapeHtml(options.background)}`);
   }
 
   const figureStyleAttr = figureStyles.length
@@ -420,7 +880,7 @@ function renderImageBlock(block) {
     : "";
 
   return `
-    <figure class="note-photo-card note-inline-image"${figureStyleAttr}>
+    <figure class="${figureClasses.join(" ")}"${figureStyleAttr}>
       <img
         src="${escapeHtml(options.src || "")}"
         alt="${escapeHtml(options.alt || "Imagen de la nota")}"
@@ -436,13 +896,123 @@ function renderImageBlock(block) {
   `;
 }
 
+function renderQuoteStripImage(options = {}, side = "left") {
+  const normalizedOptions = normalizeVisualQuoteImageOptions(options);
+  const styleTokens = [];
+
+  if (normalizedOptions.padding) {
+    styleTokens.push(`--quote-strip-image-padding: ${escapeHtml(normalizedOptions.padding)}`);
+  }
+  if (normalizedOptions.background) {
+    styleTokens.push(`--quote-strip-image-background: ${escapeHtml(normalizedOptions.background)}`);
+  }
+  if (normalizedOptions.position) {
+    styleTokens.push(`--quote-strip-image-position: ${escapeHtml(normalizedOptions.position)}`);
+  }
+  if (normalizedOptions.radius) {
+    styleTokens.push(`--quote-strip-image-radius: ${escapeHtml(normalizedOptions.radius)}`);
+  }
+  if (normalizedOptions.border) {
+    styleTokens.push(`--quote-strip-image-border: ${escapeHtml(normalizedOptions.border)}`);
+  }
+  if (normalizedOptions.fit === "contain") {
+    styleTokens.push("--quote-strip-image-fit: contain");
+  }
+
+  const styleAttr = styleTokens.length ? ` style="${styleTokens.join("; ")};"` : "";
+  const placeholderText = side === "right" ? "PNG derecho" : "PNG izquierdo";
+
+  return `
+    <figure class="note-quote-strip__side"${styleAttr}>
+      <img
+        src="${escapeHtml(normalizedOptions.src || "")}"
+        alt="${escapeHtml(normalizedOptions.alt || placeholderText)}"
+        onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');"
+      >
+      <div class="note-photo-placeholder">
+        ${escapeHtml(placeholderText)}
+      </div>
+    </figure>
+  `;
+}
+
+function renderQuoteStripBlock(block) {
+  const layout = normalizeQuoteStripLayout(block.layout);
+  const paragraphs = Array.isArray(block.paragraphs) && block.paragraphs.length
+    ? block.paragraphs.map((paragraph) => String(paragraph || "").replace(/\n\s*\n+/g, "\n").trim()).filter(Boolean)
+    : [""];
+  const styleTokens = [];
+
+  if (layout.margin) {
+    styleTokens.push(`--quote-strip-margin: ${escapeHtml(layout.margin)}`);
+  }
+  if (layout.gap) {
+    styleTokens.push(`--quote-strip-gap: ${escapeHtml(layout.gap)}`);
+  }
+  if (layout.sideWidth) {
+    styleTokens.push(`--quote-strip-side-width: ${escapeHtml(layout.sideWidth)}`);
+  }
+  if (layout.minHeight) {
+    styleTokens.push(`--quote-strip-min-height: ${escapeHtml(layout.minHeight)}`);
+  }
+  if (layout.quoteMaxWidth) {
+    styleTokens.push(`--quote-strip-quote-max-width: ${escapeHtml(layout.quoteMaxWidth)}`);
+  }
+  if (layout.quotePadding) {
+    styleTokens.push(`--quote-strip-quote-padding: ${escapeHtml(layout.quotePadding)}`);
+  }
+
+  const styleAttr = styleTokens.length ? ` style="${styleTokens.join("; ")};"` : "";
+  const quoteHtml = renderQuoteBlock({
+    type: "quote",
+    style: block.style,
+    flags: ["center", "breaks"],
+    paragraphs,
+    author: block.author || ""
+  });
+
+  return `
+    <section class="note-quote-strip"${styleAttr}>
+      ${renderQuoteStripImage(block.leftImage, "left")}
+      <div class="note-quote-strip__center">
+        ${quoteHtml}
+      </div>
+      ${renderQuoteStripImage(block.rightImage, "right")}
+    </section>
+  `;
+}
+
+function renderParagraphBlock(block) {
+  const classes = buildBlockClasses(block, ["note-block--paragraph"]);
+  const paragraphs = String(block.text || "")
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+
+  if (!paragraphs.length) {
+    return `<p class="${classes.join(" ")}"></p>`;
+  }
+
+  return paragraphs
+    .map((paragraph) => `<p class="${classes.join(" ")}">${renderMultilineText(paragraph, block.preserveBreaks === true)}</p>`)
+    .join("");
+}
+
 function renderBlock(block) {
   if (block.type === "paragraph") {
-    return `<p>${renderMultilineText(block.text)}</p>`;
+    return renderParagraphBlock(block);
+  }
+
+  if (block.type === "visual-quote") {
+    return renderVisualQuoteBlock(block);
+  }
+
+  if (block.type === "quote-strip") {
+    return renderQuoteStripBlock(block);
   }
 
   if (block.type === "divider") {
-    return "<hr>";
+    return `<hr class="${buildBlockClasses(block).join(" ")}">`;
   }
 
   if (block.type === "image") {
@@ -473,21 +1043,49 @@ function getCollectionData(collectionId = "nuevas") {
 }
 
 async function loadAuthor(authorConfig = {}) {
-  const preset = AUTHOR_PRESETS[authorConfig.id] || AUTHOR_PRESETS.leo;
-  const response = await fetch(`./${authorConfig.file}`, { cache: "no-store" });
-  const rawContent = response.ok ? await response.text() : "";
-  const { meta, body } = parseFrontmatter(rawContent);
+  if (authorConfig.document) {
+    return buildLoadedAuthor(authorConfig, authorConfig.document);
+  }
 
-  return {
-    id: authorConfig.id,
-    file: authorConfig.file,
-    label: meta.label || preset.label,
-    cardClass: preset.cardClass,
-    meta,
-    blocks: parseBlocks(body),
-    emptyTitle: meta.title || preset.emptyTitle,
-    emptyBody: meta.placeholderBody || preset.emptyBody
-  };
+  const preset = AUTHOR_PRESETS[authorConfig.id] || AUTHOR_PRESETS.leo;
+  const fileName = authorConfig.file || `${authorConfig.id}.note`;
+
+  try {
+    const response = await fetch(`./${fileName}`, { cache: "no-store" });
+
+    if (!response.ok) {
+      return buildLoadedAuthor(authorConfig, {
+        meta: {
+          label: preset.label,
+          title: preset.emptyTitle,
+          placeholderBody: preset.emptyBody,
+          placeholder: true
+        },
+        blocks: []
+      });
+    }
+
+    if (fileName.endsWith(".json")) {
+      return buildLoadedAuthor(authorConfig, await response.json());
+    }
+
+    const rawContent = await response.text();
+    const { meta, body } = parseFrontmatter(rawContent);
+    return buildLoadedAuthor(authorConfig, {
+      meta,
+      blocks: parseBlocks(body)
+    });
+  } catch (_error) {
+    return buildLoadedAuthor(authorConfig, {
+      meta: {
+        label: preset.label,
+        title: preset.emptyTitle,
+        placeholderBody: preset.emptyBody,
+        placeholder: true
+      },
+      blocks: []
+    });
+  }
 }
 
 function buildPlaceholderHtml(author) {
@@ -495,6 +1093,18 @@ function buildPlaceholderHtml(author) {
     <p class="note-placeholder">
       ${formatInline(author.emptyBody)}
     </p>
+  `;
+}
+
+function renderMusicControls(musicConfig = {}) {
+  const buttonLabel = musicConfig.buttonLabel || DEFAULT_MUSIC_TEXT.buttonLabel;
+  const loadingMessage = musicConfig.loadingMessage || DEFAULT_MUSIC_TEXT.loadingMessage;
+
+  return `
+    <button class="music-launcher" id="music-launcher" hidden type="button">
+      ${escapeHtml(buttonLabel)}
+    </button>
+    <p class="music-status" id="music-status">${escapeHtml(loadingMessage)}</p>
   `;
 }
 
@@ -513,7 +1123,7 @@ function renderAuthorCard(author, noteMeta, cardIndex) {
 
   const title = author.meta.title || author.emptyTitle;
   const helper = author.meta.helper || "";
-  const hasContent = author.blocks.length > 0 && author.meta.placeholder !== true;
+  const hasContent = author.blocks.length > 0;
   const noteContentHtml = hasContent
     ? author.blocks.map((block) => renderBlock(block)).join("")
     : buildPlaceholderHtml(author);
@@ -532,7 +1142,9 @@ function renderAuthorCard(author, noteMeta, cardIndex) {
   const fallbackMusicAuthor = Array.isArray(noteMeta.authors) && noteMeta.authors.length
     ? noteMeta.authors[noteMeta.authors.length - 1].id
     : author.id;
-  const musicTarget = noteMeta.music?.attachToAuthor || fallbackMusicAuthor;
+  const musicTarget = noteMeta.music && noteMeta.music.attachToAuthor
+    ? noteMeta.music.attachToAuthor
+    : fallbackMusicAuthor;
   const musicHtml = noteMeta.music && musicTarget === author.id
     ? renderMusicControls(noteMeta.music)
     : "";
@@ -552,24 +1164,16 @@ function renderAuthorCard(author, noteMeta, cardIndex) {
   `;
 }
 
-function renderMusicControls(musicConfig = {}) {
-  const buttonLabel = musicConfig.buttonLabel || DEFAULT_MUSIC_TEXT.buttonLabel;
-  const loadingMessage = musicConfig.loadingMessage || DEFAULT_MUSIC_TEXT.loadingMessage;
-
-  return `
-    <button class="music-launcher" id="music-launcher" hidden type="button">
-      ${escapeHtml(buttonLabel)}
-    </button>
-    <p class="music-status" id="music-status">${escapeHtml(loadingMessage)}</p>
-  `;
-}
-
 function renderCover(cover = {}) {
   if (cover === false || cover.enabled === false || !cover.src) {
     return "";
   }
 
   const figureStyles = [];
+
+  if (cover.height) {
+    figureStyles.push(`--photo-height: ${escapeHtml(cover.height)}`);
+  }
 
   if (cover.position) {
     figureStyles.push(`--photo-position: ${escapeHtml(cover.position)}`);
@@ -585,10 +1189,10 @@ function renderCover(cover = {}) {
 
   return `
     <section class="page-media">
-      <figure class="note-photo-card"${figureStyleAttr}>
+      <figure class="note-photo-card note-photo-card--cover"${figureStyleAttr}>
         <img
           src="${escapeHtml(cover.src)}"
-          alt="${escapeHtml(cover.alt || `Recuerdo de la hoja ${pad(cover.numero || "")}`)}"
+          alt="${escapeHtml(cover.alt || `Recuerdo de la hoja ${pad(cover.numero || 0)}`)}"
           onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');"
         >
         <div class="note-photo-placeholder">
@@ -600,6 +1204,26 @@ function renderCover(cover = {}) {
   `;
 }
 
+function syncCustomCss(customCss = "") {
+  const styleId = "note-custom-style";
+  let styleNode = document.getElementById(styleId);
+
+  if (!customCss.trim()) {
+    if (styleNode) {
+      styleNode.remove();
+    }
+    return;
+  }
+
+  if (!styleNode) {
+    styleNode = document.createElement("style");
+    styleNode.id = styleId;
+    document.head.appendChild(styleNode);
+  }
+
+  styleNode.textContent = customCss;
+}
+
 function renderPageState(root, title, message) {
   root.innerHTML = `
     <section class="page-state">
@@ -609,15 +1233,17 @@ function renderPageState(root, title, message) {
   `;
 }
 
-function renderNotePage(root, noteMeta, authors) {
+function renderNotePage(root, rawNoteMeta, rawAuthors = []) {
+  const noteMeta = normalizeNoteMeta(rawNoteMeta);
   const collection = getCollectionData(noteMeta.collection);
-  const visibleAuthors = authors.filter((author) => author);
+  const visibleAuthors = rawAuthors.filter(Boolean);
   const isSingle = noteMeta.layout === "single" || visibleAuthors.length <= 1;
   const pageLabel = noteMeta.numeroEtiqueta || `${collection.pageLabel} ${pad(noteMeta.numero || 0)}`;
 
   document.body.className = noteMeta.theme || (noteMeta.collection === "viejas"
     ? "theme-archive-notes"
     : "theme-present-notes");
+  syncCustomCss(noteMeta.customCss || "");
 
   document.title = `${pageLabel} -- ${noteMeta.titulo}`;
 
@@ -639,11 +1265,11 @@ function renderNotePage(root, noteMeta, authors) {
     </section>
 
     <footer class="page-footer">
-      Hecho con amor, nota por nota.
+      ${escapeHtml(noteMeta.footerText || "Hecho con amor, nota por nota.")}
     </footer>
   `;
 
-  if (noteMeta.music?.youtubeId) {
+  if (noteMeta.music && noteMeta.music.youtubeId) {
     initMusicPlayer(noteMeta.music);
   }
 }
@@ -758,12 +1384,12 @@ async function initNotePage() {
       throw new Error("No pude cargar la metadata de la nota.");
     }
 
-    const noteMeta = await response.json();
+    const noteMeta = normalizeNoteMeta(await response.json());
     const authorConfigs = Array.isArray(noteMeta.authors) && noteMeta.authors.length
       ? noteMeta.authors.filter((author) => author.visible !== false)
       : [
-          { id: "mica", file: "mica.note" },
-          { id: "leo", file: "leo.note" }
+          { id: "mica", file: "mica.note.json" },
+          { id: "leo", file: "leo.note.json" }
         ];
     const authors = await Promise.all(authorConfigs.map((author) => loadAuthor(author)));
 
@@ -777,4 +1403,20 @@ async function initNotePage() {
   }
 }
 
-void initNotePage();
+window.NotePageRenderer = {
+  AUTHOR_PRESETS,
+  buildBlock,
+  buildLoadedAuthor,
+  loadAuthor,
+  normalizeAuthorDocument,
+  normalizeNoteMeta,
+  parseBlocks,
+  parseFrontmatter,
+  renderBlock,
+  renderNotePage,
+  renderPageState
+};
+
+if (!window.__NOTE_PAGE_DISABLE_AUTO_INIT__) {
+  void initNotePage();
+}
