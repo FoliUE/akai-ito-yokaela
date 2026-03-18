@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Mi garganta quiere gritar",
+    "helper": "20/09/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-d6b4158c",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Cantar, lo que me libera el alma y me tira de nuevo a la tierra, me eriza la piel y me saca las lágrimas; levanta alegrías y aplaca las penas...\n\nNo tendré la mejor voz, ni el registro más amplio ni el más alto, mi color no será el favorito de nadie ni tampoco el más dulce, pero que me sale de la tripa, no hay dudas.\n\nQué curioso que por la noche sea cuando mi garganta más quiera gritar, más quiera hacerse escuchar, justo cuando todos están durmiendo.",
+      "preserveBreaks": false
+    }
+  ]
+}

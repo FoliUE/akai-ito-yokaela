@@ -1,0 +1,33 @@
+{
+  "numero": 2,
+  "collection": "nuevas",
+  "titulo": "No había marcha atrás",
+  "descripcion": "Hay momentos donde el amor deja de ser sospecha y se vuelve una certeza que ya no tiene vuelta atrás.",
+  "subtitulo": "Abrir nota actual",
+  "fecha": "13/02/26",
+  "sortDate": "2026-02-13",
+  "theme": "theme-present-notes",
+  "footerText": "Hecho con amor, nota por nota.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/new-notes/02.jpeg",
+    "alt": "Recuerdo de la hoja nueva 02",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": "51.6% 27.7%"
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": false
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ],
+  "layout": "single"
+}

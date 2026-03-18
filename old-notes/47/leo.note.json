@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Otra vez",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-ef6a53e0",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No lo sé, pero ya jugaron conmigo varias veces, muchas veces me ilusionaron, muchas veces me usaron, no sé si lo hacían porque estaban aburridas, o les divierte lastimar a la gente.\n\nMi desconfianza en las personas oculta la triste realidad de lo mucho que jugaron conmigo, lo mucho que me hirieron.\n\nLas primeras veces, mensajes o situaciones que podían llegar a hacerme pensar algo con vos, trataba de reprimirlo y pensar que solo estaba siendo usado, otra vez.",
+      "preserveBreaks": false
+    }
+  ]
+}

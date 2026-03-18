@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Cuando no llega lo esperado",
+    "helper": "Sin fecha",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-8a291325",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¿Cuándo es que no dejamos de sorprendernos?\n\n¿Cuando no recibimos lo que esperábamos?",
+      "preserveBreaks": false
+    }
+  ]
+}

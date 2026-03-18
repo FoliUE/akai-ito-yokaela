@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Only When it's you",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-9b530e3f",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "The world feels loud when I'm alone\n\nEvery thought just cuts like stone\n\nI've been chasing echoes in the dark\n\nTrying to find where you left your mark\n\nAnd I don't know how to feel this right\n\nWhen everything breaks in, the quiet of night\n\nI only feel safe when it's you\n\nWhen the world fades and the noise breaks through\n\nYou're the silence inside of the storm\n\nYou're the reason I try to be more\n\nI can fall, I can break, I can lose\n\nBut it only hurts\n\nOnly when it's you\n\nThey say time heals, but it lies\n\nSome wounds live behind the eyes\n\nYou were the voice that pulled me free\n\nNow it's just static where you used to be\n\nAnd I don't want a love that feels like less\n\nIf it's not your name tangled in my brain\n\nI only feel safe when it's you\n\nWhen the world fades and the noise breaks through\n\nYou're the silence inside of the storm\n\nYou're the reason I try to be more\n\nI can fall, I can break, I can lose\n\nBut it only hurts\n\nOnly when it's you\n\nI don't need the world to understand\n\nI just need your hand in my hand\n\nIf I disappear, let it be known\n\nI was never whole when I was alone\n\nI only feel safe when it's you\n\nNot a soul, not a sound cuts through\n\nYou're the fire that still burns low\n\nYou're the ache I'll never show\n\nI can fall, I can break, I can lose\n\nBut it only hurts\n\nYeah, it only hurts when it's you",
+      "preserveBreaks": true
+    },
+    {
+      "id": "block-bf4ceb05",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "right"
+      },
+      "text": "-- Only When its you -- Bleeding Verse",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Lo que yo sí me imagino",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-619ef744",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Yo me imagino una vida en la que tus ideas no se pierdan, sino que encuentren un lugar donde quedarse siendo hermosas.”"
+      ],
+      "author": "",
+      "flags": []
+    },
+    {
+      "id": "block-0ceb8069",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Yo me imagino que, si cada persona tuviera una melodía, la tuya sería de esas que no se olvidan aunque pase el tiempo.”"
+      ],
+      "author": "",
+      "flags": []
+    },
+    {
+      "id": "block-bbb8d082",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Y también me imagino que algún día te vas a reír tan fuerte, tan libre, que ya no vas a escupir un miedo, sino a dejarlo atrás.”"
+      ],
+      "author": "",
+      "flags": []
+    }
+  ]
+}

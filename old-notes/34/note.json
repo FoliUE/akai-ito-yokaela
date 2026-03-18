@@ -1,0 +1,32 @@
+{
+  "numero": 34,
+  "collection": "viejas",
+  "titulo": "Comenzar de nuevo",
+  "descripcion": "A veces crecer también es animarse a vaciar lo viejo para dejar lugar a una versión nueva de uno mismo.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/34.jpeg",
+    "alt": "Recuerdo de la hoja 34",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

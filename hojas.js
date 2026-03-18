@@ -83,60 +83,46 @@ const TITULOS_ARCHIVO = {
   80: "No estás sola"
 };
 
-const NOTAS_NUEVAS = [
-  // Agregá acá las próximas notas nuevas.
-  // En `new-notes`, la numeración sigue el orden cronológico de la etapa nueva.
-  // Si alguna vez agregás una hoja entre medio, conviene renumerar carpetas y metadata.
-  // Usá rutas como `./new-notes/01/`.
-  // NUEVAS_NOTAS:START
-  {
-    numero: 1,
-    href: "./new-notes/01/",
-    titulo: "Sos mi familia",
-    subtitulo: "Abrir nota actual"
-  },
-  {
-    numero: 2,
-    href: "./new-notes/02/",
-    titulo: "No había marcha atrás",
-    subtitulo: "Abrir nota actual"
-  },
-  {
-    numero: 3,
-    href: "./new-notes/03/",
-    titulo: "El amor de mi vida",
-    subtitulo: "Abrir nota actual"
-  },
-  {
-    numero: 4,
-    href: "./new-notes/04/",
-    titulo: "Una isla bajo miles de estrellas",
-    subtitulo: "Abrir nota actual"
-  },
-  {
-    numero: 5,
-    href: "./new-notes/05/",
-    titulo: "Para siempre",
-    subtitulo: "Abrir nota actual"
-  },
-  // NUEVAS_NOTAS:END
-];
-
 function pad(numero) {
   return String(numero).padStart(2, "0");
 }
 
-const NOTAS_VIEJAS = Array.from({ length: TOTAL_HOJAS_ARCHIVO }, (_, indice) => {
-  const numero = indice + 1;
+function buildNewNoteEntry(numero) {
+  const slug = pad(numero);
+
+  return {
+    numero,
+    href: `./new-notes/${slug}/`,
+    metaHref: `./new-notes/${slug}/note.json`
+  };
+}
+
+function buildOldNoteEntry(numero) {
   const slug = pad(numero);
 
   return {
     numero,
     href: `./old-notes/${slug}/`,
+    metaHref: `./old-notes/${slug}/note.json`,
     titulo: TITULOS_ARCHIVO[numero] || `Hoja ${slug}`,
     subtitulo: "Abrir hoja del archivo"
   };
-});
+}
+
+const NOTAS_NUEVAS = [
+  // Agregá acá las próximas notas nuevas.
+  // Cada carpeta de `new-notes/XX/` tiene su propia `note.json`.
+  // El alta automática se encarga de crear la carpeta y sumar esta línea.
+  // NUEVAS_NOTAS:START
+  buildNewNoteEntry(1),
+  buildNewNoteEntry(2),
+  buildNewNoteEntry(3),
+  buildNewNoteEntry(4),
+  buildNewNoteEntry(5),
+  // NUEVAS_NOTAS:END
+];
+
+const NOTAS_VIEJAS = Array.from({ length: TOTAL_HOJAS_ARCHIVO }, (_, indice) => buildOldNoteEntry(indice + 1));
 
 const COLECCIONES_NOTAS = [
   {
@@ -147,7 +133,7 @@ const COLECCIONES_NOTAS = [
     titulo: "Notas nuevas",
     descripcion:
       "Este espacio queda como entrada principal para las notas de ahora, de esta etapa feliz que siguen construyendo juntos.",
-    ayuda: "Las hojas nuevas se muestran por la primera fecha que aparece dentro de cada hoja.",
+    ayuda: "Las hojas nuevas leen su metadata desde cada note.json, sin tener que reescribir el HTML completo.",
     searchPlaceholder: "Buscar en notas nuevas...",
     emptyTitle: "Todavía no hay notas nuevas publicadas",
     emptyText:

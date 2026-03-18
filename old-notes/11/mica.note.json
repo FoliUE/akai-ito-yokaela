@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Ser uno de vez en cuando",
+    "helper": "20/09/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-0a4a89ba",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¿Alguna vez hicieron el amor drogados? ¿Vieron esa sensación de alineación que nos da? ¿Por qué será que la disfrutamos tanto?\n\nEn ese momento solo importa sentir las cosas al extremo, sin importar cuán expuestos estemos, cuán frágiles seamos, solo importa ser...\n\nImporta el otro de la misma forma egoísta que importamos nosotros, porque por un momento, él y yo somos uno.\n\nSer uno de vez en cuando es hermoso. Es sentir lo que le duele al otro, lo que le hace feliz, lo que le da pena y placer...\n\nHagamos más el amor, droguémonos de amor... o con amor, como más les guste.",
+      "preserveBreaks": false
+    }
+  ]
+}

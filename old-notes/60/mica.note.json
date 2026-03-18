@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Del otro lado",
+    "helper": "16/07/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-2b43453c",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Estás parada al borde de un abismo. Del otro lado están todos los demás. Tanto vos como ellos saben que sos completamente capaz de saltarlo y llegar al otro lado, sin embargo no lo lográs.",
+        "Del otro lado hay gente que te vitorea, otros que te miran como menos y hay algunos indiferentes. Te da la impresión de que algunos se van, pero no querés mirar y asegurarte, porque temés que así sea.",
+        "Cada vez que te caés volvés a subir por tu lado del abismo para intentarlo otra vez. Sos completamente consciente de que podrías caer y subir desde el otro lado, pero sabés, estás convencidísima de que hacerlo solo le va a restar mérito a tu hazaña.",
+        "Entonces te garabateás una sonrisa en la cara, desde allá no podés verlo darte cuenta, ¿o no?",
+        "Entonces volvés a intentarlo, pero te da la sensación de que cuanto más lo intentes más imposible es realizarlo”"
+      ],
+      "author": "Martin Cupo",
+      "flags": []
+    }
+  ]
+}

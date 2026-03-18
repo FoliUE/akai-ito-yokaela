@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Hasta para navegar sin rumbo",
+    "helper": "05/07/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-30f79653",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Mientras veía las redes sociales de ciertos artistas que admiro, me agarró miedo.\n\nPor un segundo imaginé que cuando te dedicás de lleno a la música va a haber un momento donde te hartes de ella y que solo la veas como un trabajo que te agrada un poco más que los otros. Me daría miedo que de golpe la vida se quede sin timón.\n\nHasta para navegar sin rumbo necesitás timón.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-3b8881ba",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“No es lindo cansarse de reír?” — M.Z."
+      ],
+      "author": "",
+      "flags": []
+    },
+    {
+      "id": "block-76e4abc0",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Había olvidad la curiosidad de la inocencia” — M.Z."
+      ],
+      "author": "",
+      "flags": []
+    }
+  ]
+}

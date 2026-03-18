@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Algo o alguien que lo detenga",
+    "helper": "12/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-1720533c",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Se me vinieron a la cabeza miles de gestos tuyos...",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-8ae73630",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "—Quizás no busca ninguna de las dos, simplemente gira hasta que algo o alguien lo detenga."
+      ],
+      "author": "Leo",
+      "flags": []
+    }
+  ]
+}

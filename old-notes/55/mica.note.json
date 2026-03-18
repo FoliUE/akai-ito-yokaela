@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "El piano",
+    "helper": "12/05/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-9d52fb43",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "—Te quería agradecer...\n\n—¿Por qué?\n\n—Al darme el piano, considero que de alguna manera casi literal y pseudo poética me salvaste la vida.\n\n—Y nunca te dije gracias.\n\n—Por todo lo que implicó ese piano.\n\n—No solo algo para distraerme.\n\n—Tocar cuatro notas de porquería de soannus, o poder tocar look what you've done me elevaron como persona.\n\n—En parte me sentí realizado.\n\n—Y fue gracias a vos y el piano.\n\n—Perdón por tardar 4 meses en agradecerte...",
+      "preserveBreaks": false
+    }
+  ]
+}

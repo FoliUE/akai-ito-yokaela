@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Te correspondo completamente",
+    "helper": "12/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-80634a0a",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Te amo, te amo de verdad, te amo como nunca amé a nadie.\n\nEspero que puedas disfrutar mi amor, sentirlo, y que sea recíproco.\n\nSoy tuyo, te correspondo completamente.",
+      "preserveBreaks": false
+    }
+  ]
+}

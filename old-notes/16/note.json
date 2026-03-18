@@ -1,0 +1,32 @@
+{
+  "numero": 16,
+  "collection": "viejas",
+  "titulo": "Que el mundo conspire a su favor",
+  "descripcion": "Hay deseos que dejan de ser de uno mismo y se vuelven una forma de cuidar a quienes amamos.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/16.jpeg",
+    "alt": "Recuerdo de la hoja 16",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

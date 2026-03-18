@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "El placer de leer",
+    "helper": "20/08/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-ec8b7b98",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No conocía el placer de leer, de explorar las puertas que se te abren en el alma, de abandonarse a la imaginación, a la belleza y el misterio de la ficción y del lenguaje. Todo eso para mí nació con aquella novela.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-c847200f",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“-Bueno, eres muy joven todavía. Pero es esa misma sensación, esa chispa de la primera vez que no se olvida. Este es un mundo de sombras, Daniel, y la magia es un bien escaso.",
+        "Aquel libro me enseñó que leer podría hacerme vivir más y más intensamente, que podía devolverme la vista que había perdido. Solo por eso, aquel libro que a nadie le importaba cambió mi vida.”"
+      ],
+      "author": "La sombra del viento - Carlos Ruiz Zafón",
+      "flags": []
+    }
+  ]
+}

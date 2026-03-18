@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Rendido a tus pies",
+    "helper": "08/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-e14a19b3",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Menos mal que CREO que la cursilería que te acabo de mandar viene de alguien que querés...\n\nTe escribí un texto exageradamente largo pero refleja todo lo que siento por vos, todo lo que me pasa.\n\nTenés el poder único de hacerme el hombre más feliz del universo, o el más roto y destruido del universo.\n\nRenuncié al miedo de que me rompas el corazón en el momento que volviste manejando mi auto, SABIENDO que estaba completamente rendido a tus pies.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "No vas a estar nunca más sola",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-f2f5f7a8",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No hay más oscuridad, no hay más vacío, no lo voy a permitir, ¿me escuchaste?\n\nMe muero por haber estado en tus momentos más oscuros y darte luz, compañía, amor, pero a decir verdad yo no estaba mucho mejor que vos, mi amor.\n\nHoy se acabó todo eso, o al menos si aparece, sabé que yo siempre voy a estar para iluminarte el camino.\n\nVolvé a mí, mi amor, siempre que te sientas en la oscuridad, siempre pensá y volvé a mí, por favor.\n\nNo estás más sola, no vas a estar nunca más sola.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-d4f310ba",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Con vos hasta el último nivel”"
+      ],
+      "author": "",
+      "flags": []
+    }
+  ]
+}

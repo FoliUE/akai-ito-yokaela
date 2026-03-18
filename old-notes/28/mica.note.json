@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Quiero gritarlo",
+    "helper": "04/01/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-f6bc0378",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Una noche fría de verano, luego de haber tomado sol todo el día con el cuerpo al rojo vivo. Un buzo, un balcón, un vino y un cigarrillo. El silencio de la calle y las luces de otros departamentos que delatan el travieso juego del insomnio, compañeros inconscientes del desvelo.\n\nPero a pesar de esto, no es el color de mi piel lo que me consume, ni el fuego del pecho, sino la sensación que me queda después de asumir algo que me da miedo. El querer a alguien, el quererlo de verdad.\n\nDarme cuenta de eso y pensar qué haré al respecto. Pero no quiero enfriarme, o al menos no por dentro. Quiero disfrutarlo, sentirlo, sentir que es recíproco.\n\nQuiero gritarlo pero apenas me animo a susurrarlo para mis adentros.",
+      "preserveBreaks": false
+    }
+  ]
+}

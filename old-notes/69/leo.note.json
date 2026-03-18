@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Vos siempre fuiste una de esas personas",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-fe54468a",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Pareciera como que leí esto en el momento en que te vi...\n\nEn el momento que te vi sentí esa conexión sincera que no se fuerza, que simplemente pasa, y que cuando pasa se vuelve imposible de olvidar.\n\nCon mi desconfianza en las personas, verte y que me pase eso de ser yo mismo completamente, transparente, compartirte todo, buscar momentos para expandir nuestro vínculo...\n\nVos siempre fuiste una de esas personas mágicas para mí.\n\nTodo se nos dio tan natural, intenso, rápido, y aun así tan natural... Sin forzar nada... simplemente pasó.\n\nPasó lo mejor que le podía pasar a mi vida. Un profundo amor arraigado al alma, capaz de desgarrarla y destruir todo a su paso, o de cobijarla y cuidarla como lo más preciado del universo.",
+      "preserveBreaks": false
+    }
+  ]
+}

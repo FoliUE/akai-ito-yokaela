@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Buscar consuelo",
+    "helper": "22/08/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-7bd90780",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Uno está mal, busca el confort en un amigo.\n\nAparece otro, reclamando que lo viste al otro y no a él.\n\nTe sentís peor.",
+      "preserveBreaks": false
+    }
+  ]
+}

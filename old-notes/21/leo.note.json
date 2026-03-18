@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Vos tenés el mío",
+    "helper": "11/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-6958116e",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Yo creo que el corazón es más fuerte, podemos escribir en un árbol nuestras iniciales, y que perdure cientos de años, podemos hacerlo en un candado y tirar la llave al fondo del mar, puedo tatuarme tus iniciales en mi pecho, pero el corazón es más fuerte.\n\nCuando ama profundamente con tal pureza, eso no se borra, es más fuerte que un objeto rotulado o tinta en la piel, el corazón no olvida, y vos tenés el mío, hoy y para toda la eternidad.",
+      "preserveBreaks": false
+    }
+  ]
+}

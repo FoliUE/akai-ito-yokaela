@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Todavía no puedo sonreír por ella",
+    "helper": "21/10/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-861adc69",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Hoy me pasó mucho de de pensar mucho en las personas que no están.\n\nUn día de la madre, como otros años, pensé en mi abuela que hace 11 años que no está conmigo, pensé en personas que hoy en día no caminan a mi lado, pero particularmente pensé en Lina.\n\nLina era la mamá de una vieja amiga mía, que durante mi adolescencia temprana fue una mujer muy importante en mi vida. Era una época donde mi mamá estaba enfocada en mis dos hermanos menores y, con lo independiente que yo era, ella no estaba tan arriba mío como cualquier chico quiere (pero no admite quererlo).\n\nLina, que solo tenía a mi amiga, me ayudaba y me cuidaba 3 veces por semana, me buscaba del colegio, arreglaba mis anteojos y me retaba si traía una nota baja de la escuela...\n\nPasé muchos años sin verla, luego de que corté mi amistad con su hija, pero fue una imagen muy fuerte en mi vida. Varios años después ella pierde una pelea contra el cáncer. Juro que pasé por pérdidas, pocos me dolieron como esta. Y hoy en día, día de la madre como los otros, pienso en ella.\n\nPero todavía no puedo sonreír por ella, todavía quedan algunas lágrimas que sacar antes de que salgan las sonrisas.",
+      "preserveBreaks": false
+    }
+  ]
+}

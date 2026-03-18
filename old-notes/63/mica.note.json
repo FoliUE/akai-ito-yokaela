@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "“Buenas noches, descansa”",
+    "helper": "18/08/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-27dfb037",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "“Buenas noches, descansa”\n\nA veces no quiero decir esa frase, quiero que esa persona se quede y sigamos hablando de por qué el universo es tan extenso. Pero entiendo que el sueño aparece y gana siempre la batalla, corta pensamientos y te sumerge en un letargo cuento.\n\nLo que veo es que a mí no me viene a visitar seguido, no sé qué habré hecho que lo enfureció y dejó de pasar regularmente. Ahora tengo que usar trampillas para atraerlo a mí y así poderme acostar a su lado por lo que quede de luna, que si bien no es mucha, es un descanso para mi cerebro.",
+      "preserveBreaks": false
+    }
+  ]
+}

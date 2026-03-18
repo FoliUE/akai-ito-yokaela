@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Espero haber sido esa mano",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-d66e0631",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Sos la única con la que me arriesgué tanto, sos con la única que logro vencer mis miedos, la única con la que mis ojos no están tapados. Pasó con varias juntadas de por medio, mientras te iba conociendo, desde que te vi en un escenario tocando el bajo.\n\nEspero que aquella noche en el auto, donde borracho inconscientemente abrí la puerta que después me dijiste que con eso te sentiste muy segura, y te dije que me encantabas, haya sido la mano extra que necesitabas para que empecemos esta unión que no nos va a separar nunca, nunca.",
+      "preserveBreaks": false
+    }
+  ]
+}

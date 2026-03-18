@@ -1,0 +1,32 @@
+{
+  "numero": 63,
+  "collection": "viejas",
+  "titulo": "Donde por fin descansa el alma",
+  "descripcion": "A veces el sueño no llega solo, como si también necesitara encontrar un lugar seguro; y hay presencias que, sin darse cuenta, terminan volviéndose la paz que faltaba.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/63.jpeg",
+    "alt": "Recuerdo de la hoja 63",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

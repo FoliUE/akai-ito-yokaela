@@ -1,0 +1,32 @@
+{
+  "numero": 3,
+  "collection": "viejas",
+  "titulo": "Lo que solo existe al dormir",
+  "descripcion": "Dos sueños, dos despertares.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/03.jpeg",
+    "alt": "Recuerdo de la hoja 03",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

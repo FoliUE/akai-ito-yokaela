@@ -1,0 +1,32 @@
+{
+  "numero": 78,
+  "collection": "viejas",
+  "titulo": "Que el tiempo se note",
+  "descripcion": "Hay una belleza profunda en dejar que el tiempo haga su trabajo: transformar, marcar, madurar y volver más valioso todo aquello que sigue eligiendo quedarse.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/78.jpeg",
+    "alt": "Recuerdo de la hoja 78",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

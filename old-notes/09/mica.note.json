@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Quiero una pausa",
+    "helper": "20/09/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-54a9192e",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No es que quiera morir, no lo elijo si es que esa es tu pregunta, solo que no me siento con ganas de vivir.\n\nNo me siento con ganas de hablar con gente, de caminar bajo el sol, de respirar, de nada... Quiero una pausa...\n\nPienso que todos lo queremos en un momento, solo que no sabemos qué nombre ponerle a esa pausa, y solo decimos “me quiero morir”. Pero no todos quieren renunciar a la vida para siempre.\n\nSí existe la gente que desea la muerte más que nada. Está la persona que se encarga de buscarla personalmente, y la que solo puede esperar a que llegue... Pero no es mi caso.\n\nSolo quiero una pausa del mundo que me rodea, de la gente que habita y de los pensamientos que me invaden. Sé que no voy a solucionar nada con eso, que esa pausa no va a arreglar las cosas que me hacen quererla, pero la necesito.\n\nPor el momento me tendré que conformar con las pausas que me regala la noche, sola en mi pieza con mi cuaderno y mi música, con mi sombra distendida en la oscuridad del lugar y mi cerebro, que busca apagarse al menos por un rato.",
+      "preserveBreaks": false
+    }
+  ]
+}

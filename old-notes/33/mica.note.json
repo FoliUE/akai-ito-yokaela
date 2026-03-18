@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Me quedo acá, me escondo",
+    "helper": "23/01/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-fc820b41",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¿Qué tanto miedo puedo tener a que me vean llorar?\n\n¿Qué tanto pánico a verme débil? A ser frágil, ser humana.\n\nNecesito esta pared, esta distancia de las emociones, creer que no son todo por lo que vivo.\n\n¿Qué significa “ser fuerte”?\n\nIncluso cuando no hay nadie viendo me cuesta soltar ese muro por un rato, para no sentirme muerta y que el frío de la lágrima me recuerde que mi mejilla tiene color.\n\n¿Alguien necesita ser fría, verdad? ¿O todo esto es innecesario?\n\nObvio que es una gran zona de confort, no hay nada que te quiebre pero tampoco nada que te renueve. Sos la misma habitación, sin nada nuevo, sin nadie nuevo habitando el lugar.\n\nSi bien yo no puedo sacar esa barrera, tampoco puedo permitir que entre alguien, ¿o sí? Puedo tenerlo lo suficientemente cerca, pero nunca adentro, sería peligroso.\n\nPodría ver que no es tan malo ser frágil, podría sentirme mejor, podría respirar aire nuevo en este cuarto...\n\nPero también podría dañarme, podrían usar eso para hacerme desaparecer, podrían matarme o podrían conocerme completamente...\n\nAsí que me quedo acá, me escondo, capaz en algún momento tenga la señal para salir nuevamente y llorar un rato.\n\nMientras tanto sigo escribiendo para escapar.",
+      "preserveBreaks": false
+    }
+  ]
+}

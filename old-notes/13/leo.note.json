@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Lo que siento cuando te veo",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-ff7a39ea",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Debe ser lo mismo que me llama y me invita a mirarte, eso mismo que no transmite una foto, te veo a través de la computadora, a través de una foto de cámara o una foto de celular, y después te veo, majestuosa, preciosa, en frente mío.\n\nUna foto nunca jamás va a poder expresar lo que siento en el pecho cuando te veo de frente.\n\nLas fotos sirven para sellar recuerdos en un formato digital y fácil de compartir, y en algunos casos pueden ser un punto de acceso a un recuerdo, pero no se compara ni un poco con el poder de la mente de imaginación, el recuerdo vivo en el cerebro o latente en el corazón, o el momento en que estás frente a mí toda hermosa, esa belleza no la capta una cámara, la capta un corazón que late por vos.",
+      "preserveBreaks": false
+    }
+  ]
+}

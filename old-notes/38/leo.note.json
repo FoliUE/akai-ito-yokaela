@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Aún nos queda lo mejor",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-821494eb",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "“Y de la vida que soñamos aún nos queda lo mejor”"
+      ],
+      "author": "Dorian",
+      "flags": [
+        "center"
+      ]
+    }
+  ]
+}

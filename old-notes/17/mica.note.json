@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Lo que se apaga",
+    "helper": "06/11/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-1c0ece9f",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Tengo la teoría de que por cada amor que tenemos, por cada amor que nos rompen un poco el corazón, nos apagamos un poco más.\n\nPero no solo por el miedo, sino porque ya empezamos a notar que hay ciertas cosas que no existen, que pensamos que es de una forma y descubrimos que no. Entonces es ahí cuando nos apagamos.\n\n¿Qué será lo próximo que se apagará?",
+      "preserveBreaks": false
+    }
+  ]
+}

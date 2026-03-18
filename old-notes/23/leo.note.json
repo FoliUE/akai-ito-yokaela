@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Te amo como sos",
+    "helper": "11/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-1354cf30",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Espero darte toda la fortaleza mental que necesites para hacerte ver que tu peso, tu cara, tus piernas, tu altura y tu espalda, hacen a la mujer con la que quiero vivir el resto de mi vida, te amo como sos, profundamente te amo, como nunca amé a nadie en esta vida.\n\nYa no tenés que estar más alerta, ya no estás más sola, no estás sola... nunca más...\n\nAcá estoy yo, sea que lo quieras o no, sea que me quieras o no, sea que quieras hacer las cosas solas o no. Siempre te voy a apoyar, siempre te voy a cuidar, siempre te voy a amar, y siempre te voy a admirar.",
+      "preserveBreaks": false
+    }
+  ]
+}

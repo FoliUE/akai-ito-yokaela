@@ -1,0 +1,32 @@
+{
+  "numero": 62,
+  "collection": "viejas",
+  "titulo": "No apagues la nuestra",
+  "descripcion": "Hay despedidas que solo se entienden cuando ya pasaron, y amores que se vuelven tan esenciales que la sola idea de perderlos se siente como quedarse sin mundo.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/62.jpeg",
+    "alt": "Recuerdo de la hoja 62",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

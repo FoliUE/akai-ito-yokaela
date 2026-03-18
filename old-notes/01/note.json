@@ -1,0 +1,32 @@
+{
+  "numero": 1,
+  "collection": "viejas",
+  "titulo": "La música también abraza",
+  "descripcion": "Dos notas separadas por los años, unidas por las canciones.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/01.jpeg",
+    "alt": "Recuerdo de la hoja 01",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": "47.5% 49.5%"
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

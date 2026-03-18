@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "La cursilería correcta",
+    "helper": "05/09/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-6b3eae62",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¿Vieron que nos agarran esos ataques de que odiamos la cursilería? Bueno, yo creo que no es así, lo que odiamos es que no venga de quien nosotros queremos.\n\nEsas palabras que si nos imaginaríamos que la persona que amamos nos la dijera, nos abriría el corazón tan rápido que se nos saldría del pecho.\n\nPero cuando viene de alguien que no nos gusta hacen el efecto contrario, nos espanta, nos parecen empalagosas y pierden encanto.\n\nSi seremos complicados los humanos...",
+      "preserveBreaks": false
+    }
+  ]
+}

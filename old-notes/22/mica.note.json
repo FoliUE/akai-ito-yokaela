@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Before rain",
+    "helper": "27/11/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-3457720f",
+      "type": "html",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "html": "<div style=\"\n            background: linear-gradient(180deg, rgba(120, 92, 62, 0.14), rgba(64, 42, 25, 0.08));\n            border: 1px solid rgba(88, 57, 36, 0.22);\n            border-radius: 18px;\n            padding: 1.2rem;\n            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.14);\n          \">\n          <blockquote class=\"note-quote\" style=\"\n              margin: 0;\n              text-align: center;\n              font-family: Georgia, &#x27;Times New Roman&#x27;, serif;\n              font-size: clamp(1.5rem, 3vw, 2.4rem);\n              line-height: 1.25;\n              letter-spacing: 0.08em;\n              text-transform: uppercase;\n            \">\n            <p>\n              YOU ARE THE<br>\n              SMELL BEFORE<br>\n              RAIN.\n            </p>\n\n            <p>\n              YOU ARE THE<br>\n              BLOOD IN MY<br>\n              VEINS.\n            </p>\n          </blockquote>\n\n          <p style=\"\n              margin-top: 1rem;\n              text-align: center;\n              font-style: italic;\n              font-size: 1rem;\n              opacity: 0.9;\n            \">\n            (Tú eres el aroma después de la lluvia, tú eres la sangre en mis venas.)\n          </p>\n        </div>"
+    }
+  ]
+}

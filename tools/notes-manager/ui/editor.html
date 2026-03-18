@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yokaela Notes Manager</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/tools/notes-manager/ui/editor.css">
+</head>
+<body>
+  <div class="editor-app">
+    <aside class="app-sidebar">
+      <div class="sidebar-brand">
+        <p class="sidebar-kicker">Editor visual</p>
+        <h1>Yokaela Notes</h1>
+        <p class="sidebar-copy">
+          Armá la hoja como se va a ver en la página: bloques, citas, canciones, imágenes y tipografía.
+        </p>
+      </div>
+
+      <div class="collection-tabs" id="collectionTabs"></div>
+
+      <div class="sidebar-actions">
+        <button class="primary-button" id="createNoteButton" type="button">Nueva hoja</button>
+        <button class="ghost-button" id="reloadNotesButton" type="button">Actualizar lista</button>
+      </div>
+
+      <label class="search-field">
+        <span>Buscar nota</span>
+        <input id="noteSearchInput" type="search" placeholder="Título o número">
+      </label>
+
+      <div class="notes-list" id="notesList"></div>
+    </aside>
+
+    <main class="app-main">
+      <header class="workspace-header">
+        <div>
+          <p class="workspace-kicker">Maquetación con preview real</p>
+          <h2 id="workspaceTitle">Elegí o creá una hoja</h2>
+          <p class="workspace-status" id="workspaceStatus">
+            El editor va guardando la estructura de la nota en archivos editables por Python.
+          </p>
+        </div>
+
+        <div class="workspace-actions">
+          <button class="ghost-button" id="duplicateBlockButton" type="button" hidden>Duplicar bloque seleccionado</button>
+          <button class="primary-button" id="saveNoteButton" type="button" disabled>Guardar cambios</button>
+        </div>
+      </header>
+
+      <div class="workspace-grid">
+        <section class="editor-column">
+          <section class="panel-card">
+            <div class="panel-head">
+              <div>
+                <p class="panel-kicker">Hoja</p>
+                <h3>Configuración general</h3>
+              </div>
+              <button class="ghost-button" id="uploadCoverButton" type="button" disabled>Subir foto central</button>
+            </div>
+
+            <form class="form-grid" id="noteMetaForm">
+              <label>
+                <span>Título principal</span>
+                <input type="text" name="titulo" placeholder="No había marcha atrás">
+              </label>
+
+              <label class="full-row">
+                <span>Descripción</span>
+                <textarea name="descripcion" rows="3" placeholder="Una bajada corta para la portada y el encabezado."></textarea>
+              </label>
+
+              <label>
+                <span>Fecha</span>
+                <input type="date" name="sortDate">
+              </label>
+
+              <label>
+                <span>Tema</span>
+                <select name="theme" id="themeSelect"></select>
+              </label>
+
+              <label>
+                <span>Texto alternativo de la foto</span>
+                <input type="text" name="coverAlt" placeholder="Recuerdo de la hoja">
+              </label>
+
+              <label class="check-field">
+                <input type="checkbox" name="coverEnabled" checked>
+                <span>Mostrar foto central</span>
+              </label>
+
+              <label>
+                <span>Altura visible de la foto</span>
+                <input type="text" name="coverHeight" placeholder="420px">
+              </label>
+
+              <label>
+                <span>Encuadre de la foto</span>
+                <input type="text" name="coverPosition" placeholder="50% 50%">
+              </label>
+
+              <label class="full-row">
+                <span>Epígrafe de la foto</span>
+                <input type="text" name="coverCaption" placeholder="Texto opcional debajo de la imagen">
+              </label>
+
+              <p class="field-help full-row">
+                En el preview podés <strong>arrastrar la foto central</strong> para mover el encuadre.
+                Si querés cambiar el alto del marco, usá el campo de altura manualmente.
+              </p>
+            </form>
+          </section>
+
+          <section class="panel-card">
+            <div class="panel-head panel-head--compact">
+              <div>
+                <p class="panel-kicker">Autores</p>
+                <h3>Bloques de Mica y Leo</h3>
+              </div>
+              <div class="author-switches" id="authorToggles"></div>
+            </div>
+
+            <div class="author-tabs" id="authorTabs"></div>
+
+            <div class="author-panel" id="authorPanel">
+              <div class="empty-state">
+                <strong>Elegí una hoja para empezar.</strong>
+                <p>Cuando abras una nota vas a poder escribir y ordenar bloques desde acá mismo.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="preview-column">
+          <div class="preview-head">
+            <div>
+              <p class="panel-kicker">Preview</p>
+              <h3>Así se va a ver la nota</h3>
+            </div>
+            <div class="preview-tools">
+              <label class="preview-scale-control">
+                <span>Escala</span>
+                <select id="previewScaleSelect">
+                  <option value="1">100%</option>
+                  <option value="1.1" selected>110%</option>
+                  <option value="1.2">120%</option>
+                </select>
+              </label>
+              <span class="preview-chip" id="previewChip">Sin cambios guardados todavía</span>
+            </div>
+          </div>
+
+          <div class="preview-shell">
+            <iframe id="previewFrame" title="Previsualización de la hoja"></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <dialog class="create-dialog" id="createDialog">
+    <form method="dialog" class="create-dialog__card" id="createNoteForm">
+      <div class="panel-head">
+        <div>
+          <p class="panel-kicker">Nueva hoja</p>
+          <h3>Creación guiada</h3>
+        </div>
+        <button class="ghost-button" value="cancel" type="submit">Cerrar</button>
+      </div>
+
+      <div class="form-grid">
+        <label>
+          <span>Título principal</span>
+          <input type="text" name="titulo" placeholder="Para siempre" required>
+        </label>
+
+        <label>
+          <span>Fecha</span>
+          <input type="date" name="sortDate" required>
+        </label>
+
+        <label class="full-row">
+          <span>Descripción</span>
+          <textarea name="descripcion" rows="3" placeholder="Una frase corta para ubicar la hoja."></textarea>
+        </label>
+
+        <fieldset class="full-row author-picker">
+          <legend>Bloques iniciales</legend>
+          <label><input type="checkbox" name="authorIds" value="mica" checked> Mica</label>
+          <label><input type="checkbox" name="authorIds" value="leo" checked> Leo</label>
+        </fieldset>
+
+        <label>
+          <span>Tema</span>
+          <select name="theme" id="createThemeSelect"></select>
+        </label>
+
+        <label>
+          <span>Texto alternativo foto</span>
+          <input type="text" name="coverAlt" placeholder="Recuerdo de la hoja">
+        </label>
+      </div>
+
+      <div class="dialog-actions">
+        <button class="ghost-button" id="cancelCreateNoteButton" type="button">Cancelar</button>
+        <button class="primary-button" id="confirmCreateNoteButton" type="button">Crear hoja</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/tools/notes-manager/ui/editor.js"></script>
+</body>
+</html>

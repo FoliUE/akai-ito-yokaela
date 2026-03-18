@@ -1,0 +1,32 @@
+{
+  "numero": 57,
+  "collection": "viejas",
+  "titulo": "Un timón para vos",
+  "descripcion": "A veces hasta lo más amado da miedo, como si pudiera perder su luz; pero incluso para navegar sin rumbo, siempre puede aparecer algo —o alguien— que vuelva a sostener el camino.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/57.jpeg",
+    "alt": "Recuerdo de la hoja 57",
+    "caption": "",
+    "enabled": false,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

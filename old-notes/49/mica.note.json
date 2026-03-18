@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Donde nacen las ideas lindas",
+    "helper": "20/03/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-710bfdcb",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Te imaginás una aplicación que ponés en la mesa de luz y va escribiendo lo que soñás, desaparece y poder leerlo?”"
+      ],
+      "author": "Laura",
+      "flags": []
+    },
+    {
+      "id": "block-ce64ef89",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Te imaginás que así como cada uno tiene un número de DNI, cada persona tuviese una melodía identificatoria?”"
+      ],
+      "author": "Laura",
+      "flags": []
+    },
+    {
+      "id": "block-93f254fa",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Te imaginás reírte tan fuerte que escupís un miedo?”"
+      ],
+      "author": "Laura",
+      "flags": []
+    }
+  ]
+}

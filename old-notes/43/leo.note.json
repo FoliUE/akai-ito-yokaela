@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Estoy viviendo",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-4cc8c5e5",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Toda mi vida aconsejé o di recomendaciones que nunca seguí.\n\n¿Y sabés qué? Desde que te conozco estoy siguiendo esos consejos y recomendaciones que yo daba y no me animaba a hacer.\n\nEstoy viviendo, estoy enamorado, estoy amando, estoy proyectando, estoy imaginando, estoy soñando, y todo eso es para y por vos.\n\nNo porque si fuera por mí yo no quisiera, sino porque si yo estoy sin vos ¿para qué vivir?",
+      "preserveBreaks": false
+    }
+  ]
+}

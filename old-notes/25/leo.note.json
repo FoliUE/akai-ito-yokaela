@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Gracias por existir",
+    "helper": "12/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-bd9c68e8",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Siempre fuiste una persona querida, solo que no lo veías. Voy a dar el 500% de mí para que lo veas. Lo importante que sos para las personas, lo importante que sos para mí, y por sobre todo lo importante que sos para vos misma.\n\n¿Sabés qué se me cruza por la cabeza más de una vez por día? Qué afortunado soy en tenerte en mi vida, tan cercana como mi novia. Y cómo desearía que todas las personas buenas que conozco, tuvieran una Mica. Pero esta Mica es mía. Que se consigan la suya.\n\nGracias por existir.",
+      "preserveBreaks": false
+    }
+  ]
+}

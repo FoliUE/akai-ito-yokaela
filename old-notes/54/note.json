@@ -1,0 +1,28 @@
+{
+  "numero": 54,
+  "collection": "viejas",
+  "titulo": "Sin GPS, pero acá",
+  "descripcion": "Empujón, abrazo y linterna en medio del miedo a intentar.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "layout": "single",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/54.jpeg",
+    "alt": "Recuerdo de la hoja 54",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    }
+  ]
+}

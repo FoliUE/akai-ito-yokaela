@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Desintoxicación o sobredosis",
+    "helper": "09/03/26",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-716787c0",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Me hablo a mí misma, pienso en todo lo que te diría y mi cuerpo solo tiembla, no pude hacer otra cosa.\n\n¿Así debe sentirse una desintoxicación?... ¿o una sobredosis?",
+      "preserveBreaks": false
+    }
+  ]
+}

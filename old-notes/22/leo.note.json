@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Break me like glass",
+    "helper": "11/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-a483721c",
+      "type": "html",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "html": "<div style=\"\n            background: linear-gradient(180deg, rgba(110, 110, 110, 0.12), rgba(45, 45, 45, 0.08));\n            border: 1px solid rgba(70, 70, 70, 0.24);\n            border-radius: 18px;\n            padding: 1.2rem;\n            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12);\n          \">\n          <blockquote class=\"note-quote\" style=\"\n              margin: 0;\n              text-align: center;\n              font-family: Georgia, &#x27;Times New Roman&#x27;, serif;\n              font-size: clamp(1.7rem, 3.4vw, 2.7rem);\n              line-height: 1.2;\n              letter-spacing: 0.1em;\n              text-transform: uppercase;\n            \">\n            <p>\n              COME A LITTLE CLOSER<br>\n              AND BREAK ME LIKE GLASS.\n            </p>\n          </blockquote>\n\n          <p style=\"\n              margin-top: 1rem;\n              text-align: center;\n              font-style: italic;\n              font-size: 1rem;\n              opacity: 0.9;\n            \">\n            (Acercate un poco más y rómpeme como un vidrio.)\n          </p>\n        </div>"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "numero": 80,
+  "collection": "viejas",
+  "titulo": "No estás sola",
+  "descripcion": "Hay vacíos que se agrandan cuando sentimos que el mundo entero quedó en otro lado, pero también existen presencias que llegan para quedarse y volver abrigo aquello que antes dolía como ausencia.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/80.jpeg",
+    "alt": "Recuerdo de la hoja 80",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

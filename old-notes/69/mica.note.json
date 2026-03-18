@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Esa honestidad pura",
+    "helper": "22/09/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-507df534",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Hay una pequeña magia que se da muy de vez en cuando con muy poca gente, esa honestidad pura de no guardar un pensamiento, de compartir, generar gustos parecidos y encontrar momentos para expandirlos.\n\nEsas personas deberían estar siempre nuestro, debemos merecerlas, pero siempre cerca.",
+      "preserveBreaks": false
+    }
+  ]
+}

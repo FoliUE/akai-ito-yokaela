@@ -1,0 +1,32 @@
+{
+  "numero": 20,
+  "collection": "viejas",
+  "titulo": "Respuestas que nunca querré saber",
+  "descripcion": "Hay vínculos que dejan más preguntas que certezas, y otros que llegan después para dar un poco de paz.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/20.jpeg",
+    "alt": "Recuerdo de la hoja 20",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

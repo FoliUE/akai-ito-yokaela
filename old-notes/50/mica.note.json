@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Ser acompañada",
+    "helper": "10/04/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-d99d8a1e",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Hay una pared, más bien un domo. Puedo ver al otro lado, pero siento que el otro lado no puede verme a mí. Quiero gritar y mostrarle que puedo hacer magia, sé que puedo, pero este muro es tan alto que no puedo saltarlo y siento que sola no tengo la fuerza suficiente para derribarlo.\n\nEs miedo, puedo olerlo como cuando se acerca la lluvia y se percibe el agua en el aire o el pasto recién cortado del domingo.\n\nSé que depender de una motivación externa no es la mejor de las soluciones, pero no vendría mal un poco más de energía, ¿no, Goku? Unas palabras de aliento, pero no el cliché de “todo va a estar bien”, sino el de “si todo sale mal como el orto, yo sigo acá”, poder salir como bala de cañón y no sentir que soy expulsada al espacio sin dirección alguna.\n\nSer acompañada, sentirme acompañada.",
+      "preserveBreaks": false
+    }
+  ]
+}

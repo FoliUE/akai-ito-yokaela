@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Volver a esas canciones",
+    "helper": "28/08/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-4676d594",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "A veces salgo de Spotify Premium y voy a la vieja carpeta de música en el teléfono. ¿Quién diría la paz que trae escuchar viejos temas en la oscuridad de la noche?\n\nRecuerdos alegres y algunos tristes, por ahí camuflados; nostálgicos, diría yo...\n\nQue no se pierda la magia de esas canciones que musicalizaron tu vida un tiempo atrás. De vez en cuando está bueno recapitular para ver dónde estás parada.",
+      "preserveBreaks": false
+    }
+  ]
+}

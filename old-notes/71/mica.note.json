@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Donde cayó ese rayo",
+    "helper": "01/10/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-5a600c55",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Por una milésima de segundo el cielo se volvió verde, eléctrico, vivo. Me quedé esperando el ruido que nunca llegó y me pregunto a mí misma qué tan lejos habrá caído ese rayo. Supongo que nunca lo sabré.\n\nAsí como nunca sabré dónde caíste vos, que sos luz, encendiendo todo a su paso y yo esperando el ruido para poder sentir que estás cerca.",
+      "preserveBreaks": false
+    }
+  ]
+}

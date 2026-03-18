@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Lo que se encenderá",
+    "helper": "11/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-124dd0c1",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Más que “¿Qué será lo próximo que se apagará?”, yo te pregunto “¿Qué será lo próximo que se encenderá?”\n\n¿Un nuevo amor? ¿Hacia una personita que tenga 50% material genético tuyo y el otro 50% mío? 👧 🔵",
+      "preserveBreaks": false
+    }
+  ]
+}

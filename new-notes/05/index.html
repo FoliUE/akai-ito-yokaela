@@ -3,146 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoja nueva 05 -- Para siempre</title>
+  <title>Cargando nota...</title>
   <link rel="icon" type="image/png" href="../../favicon.png">
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body class="theme-present-notes">
-  <main class="page-shell">
-    <div class="page-topbar">
-      <a class="back-link" href="../../index.html?tab=nuevas">&larr; Volver a notas nuevas</a>
-    </div>
-
-    <header class="page-header">
-      <p class="page-number">Hoja nueva 05</p>
-      <h1>Para siempre</h1>
-      <p class="page-description">
-        Una sola pregunta puede contener toda una vida entera por delante.
-      </p>
-    </header>
-
-    <section class="page-media">
-      <figure class="note-photo-card">
-        <img
-          src="../../assets/img/new-notes/05.jpeg"
-          alt="Recuerdo de la hoja nueva 05"
-          onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');"
-        >
-        <div class="note-photo-placeholder">
-          Agregá una foto en <strong>assets/img/new-notes/05.jpeg</strong>
-        </div>
-      </figure>
+  <main class="page-shell" id="note-page">
+    <section class="page-state">
+      <strong>Cargando nota...</strong>
+      <p>Estoy armando esta hoja.</p>
     </section>
-
-    <section class="notes-layout notes-layout--single">
-      <article class="note-card note-card--leo note-card--solo">
-        <span class="note-label">Leo</span>
-        <h2>JUNTOS</h2>
-        <p class="note-helper">PARA SIEMPRE</p>
-
-        <div class="note-content">
-          <blockquote class="note-quote note-quote--hero">
-            <p>
-              <em>¿TE QUERÉS CASAR CONMIGO?</em>
-            </p>
-          </blockquote>
-        </div>
-
-        <button class="music-launcher" id="music-launcher" hidden type="button">
-          Reproducir cancion
-        </button>
-        <p class="music-status" id="music-status">Intentando reproducir la cancion al abrir esta hoja.</p>
-      </article>
-    </section>
-
-    <footer class="page-footer">
-      Hecho con amor, nota por nota.
-    </footer>
   </main>
-  <div class="youtube-audio-player" id="youtube-audio-player" aria-hidden="true"></div>
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script>
-    const MUSIC_VIDEO_ID = "lB_XmsyiL-I";
-    const MUSIC_VOLUME = 40;
-    const launcher = document.getElementById("music-launcher");
-    const status = document.getElementById("music-status");
-    const playerHost = document.getElementById("youtube-audio-player");
-
-    let musicPlayer = null;
-    let hasTriedAutoplay = false;
-
-    function updateMusicStatus(message) {
-      status.textContent = message;
-    }
-
-    function showLauncher(message) {
-      launcher.hidden = false;
-      updateMusicStatus(message);
-    }
-
-    function hideLauncher(message) {
-      launcher.hidden = true;
-      updateMusicStatus(message);
-    }
-
-    function startMusicPlayback() {
-      if (!musicPlayer || typeof musicPlayer.playVideo !== "function") {
-        return;
-      }
-
-      musicPlayer.setVolume(MUSIC_VOLUME);
-      musicPlayer.unMute();
-      musicPlayer.playVideo();
-      hideLauncher("Reproduciendo la cancion de fondo.");
-    }
-
-    launcher.addEventListener("click", () => {
-      startMusicPlayback();
-    });
-
-    function onPlayerReady() {
-      if (hasTriedAutoplay) {
-        return;
-      }
-
-      hasTriedAutoplay = true;
-      startMusicPlayback();
-    }
-
-    function onPlayerStateChange(event) {
-      if (!window.YT || !window.YT.PlayerState) {
-        return;
-      }
-
-      if (event.data === window.YT.PlayerState.PLAYING) {
-        hideLauncher("Reproduciendo la cancion de fondo.");
-      }
-    }
-
-    function onAutoplayBlocked() {
-      showLauncher("Tu navegador bloqueo el autoplay con sonido. Toca el boton para iniciar la cancion.");
-    }
-
-    window.onYouTubeIframeAPIReady = function () {
-      musicPlayer = new window.YT.Player(playerHost, {
-        videoId: MUSIC_VIDEO_ID,
-        playerVars: {
-          autoplay: 1,
-          controls: 0,
-          fs: 0,
-          loop: 1,
-          modestbranding: 1,
-          playsinline: 1,
-          rel: 0,
-          playlist: MUSIC_VIDEO_ID
-        },
-        events: {
-          onReady: onPlayerReady,
-          onStateChange: onPlayerStateChange,
-          onAutoplayBlocked
-        }
-      });
-    };
-  </script>
+  <script src="../../note-page.js"></script>
 </body>
 </html>

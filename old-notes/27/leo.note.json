@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "No bajo mi guardia",
+    "helper": "12/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-0a98158c",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No te lo voy a permitir.\n\nNo te va a vencer el miedo, voy a hacer hasta lo imposible para ser tu fuerza, así como yo venzo los miedos para llegar a vos como en la playa.\n\nNo voy a permitir que el miedo te venza. No bajo mi guardia.",
+      "preserveBreaks": false
+    }
+  ]
+}

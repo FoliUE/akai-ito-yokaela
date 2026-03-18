@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Llegué para darte este timón",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-25bb6e82",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Como si te hubiera leído que habías escrito sobre esto...\nMucho gusto!! Llegué justo para darte esto",
+      "preserveBreaks": true
+    },
+    {
+      "id": "block-9a4e8e41",
+      "type": "image",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "options": {
+        "src": "../../assets/img/timon.png",
+        "alt": "Timón para la hoja 57",
+        "caption": "",
+        "height": "",
+        "fit": "contain",
+        "padding": "24px",
+        "background": "rgba(255,255,255,0.03)",
+        "position": "",
+        "margin": "0 0 1.15rem"
+      }
+    },
+    {
+      "id": "block-db6ccdf5",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "lg",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "text": "y navegar al lado tuyo eternamente.",
+      "preserveBreaks": false
+    }
+  ]
+}

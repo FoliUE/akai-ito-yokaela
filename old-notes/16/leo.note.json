@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Vos también te lo merecés",
+    "helper": "11/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-09b3b1b5",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Hoy el mundo conspira a su favor, y a tu favor también.\n\nSos tan merecedora de todo lo bueno que existe como tus hermanos, son los 3 invaluables, únicos.\n\nTe merecés el cielo y las estrellas, y voy a hacer todo lo que sea necesario para que así sea.",
+      "preserveBreaks": false
+    }
+  ]
+}

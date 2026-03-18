@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Gracias por ese sueño",
+    "helper": "14/08/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-63e21b03",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Volví a soñar con vos, un sueño muy similar al anterior, pero con una pequeña diferencia.\n\nEsta vez vos me besabas, me abrazabas por la espalda y ¡me decías que me querías! Qué loco pensar que eso no va a pasar.\n\nFue como si el despertar implicara terminar una relación que nunca existió.\n\nAbrí los ojos y solo pude repetir ese momento en mi cabeza una y otra vez...\n\nGracias por ese sueño, por ese beso y susurrarme esas cosas hermosas al oído. Por ser mío por un rato y hacerme sentir tuya, protegida, querida y cuidada. Gracias por darme una fantasía a la cual volver cuando me siento sola.",
+      "preserveBreaks": false
+    }
+  ]
+}

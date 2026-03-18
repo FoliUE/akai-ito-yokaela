@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Abrir tu corazón",
+    "helper": "22/10/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-4ad3a874",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Abrir tu corazón - Louta\n\nQuiero que cierres los ojos\n\ny mires adentro\n\nTan lleno de agua\n\nque parezca el mar\n\nQuiero que frenes el tiempo\n\ny mires la lluvia\n\nFlotando en el aire,\n\nbuscando un lugar\n\nVas a poder abrir tu corazón\n\nMirarlo todo\n\nQuedarte con vos\n\nVas a poder abrir tu corazón\n\nMirarlo todo\n\nQuedarte con vos\n\nQuiero que mezcles colores,\n\nque muerdas las flores\n\nQue mires las cosas\n\ncambiar de lugar\n\nQuiero que inventes palabras,\n\nlas muestres abiertas\n\nQue crezcan de a poco\n\ny empiecen a hablar\n\nMasticando los momentos\n\nLas luces de los autos van\n\narmando un cuento,\n\nMe voy encandilando y\n\ntodo se hace lento,\n\nY el ruido de una grúa\n\ndice lo que siento\n\nAdentro de mi pecho se\n\nenciende un motor,\n\nLos techos de las casas\n\ncambian de color\n\nSe van mezclando las\n\nnubes y el pavimento\n\nSe está fundiendo mi\n\nvisión con la del viento\n\nVas a poder abrir tu 🖤\n\nMirarlo todo\n\nQuedarte con vos\n\nVas a poder abrir tu corazón\n\nMirarlo todo\n\nQuedarte con vos",
+      "preserveBreaks": true
+    }
+  ]
+}

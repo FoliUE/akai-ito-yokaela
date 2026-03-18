@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Bridge over troubled water",
+    "helper": "Simon & Garfunkel",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-56bcc56e",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "When you're weary, feeling small,\n\nWhen tears are in your eyes, I will dry them all;\n\nI'm on your side. When times get rough\n\nAnd friends just can't be found,\n\nLike a bridge over troubled water\n\nI will lay me down.\n\nLike a bridge over troubled water\n\nI will lay me down.\n\nWhen you're down and out,\n\nWhen you're on the street,\n\nWhen evening falls so hard\n\nI will comfort you.\n\nI'll take your part.\n\nWhen darkness comes\n\nAnd pain is all around,\n\nLike a bridge over troubled water\n\nI will lay me down.\n\nLike a bridge over troubled water\n\nI will lay me down.\n\nSail on silvergirl,\n\nSail on by.\n\nYour time has come to shine.\n\nAll your dreams are on their way.\n\nSee how they shine.\n\nIf you need a friend\n\nI'm sailing right behind.\n\nLike a bridge over troubled water\n\nI will ease your mind.\n\nLike a bridge over troubled water\n\nI will ease your mind.",
+      "preserveBreaks": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Ellos van a lograrlo",
+    "helper": "27/10/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-a3bdc1fe",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Nunca lo digo en voz alta, no siento que sea algo que la gente deba saber, pero siempre pido un deseo cuando veo pasar el tren o a las estrellas fugaces, a veces incluso, le pido un deseo a la luna o a los panaderos.\n\nPero la característica es que usualmente son deseos egoístas los que pido, algo para mí.\n\nEsta vez fue distinto, tuve la oportunidad de pedir un deseo y pensé en alguien más, pensé en mis hermanos.\n\nMerecen que el mundo conspire a su favor y los vientos los ayuden a llegar donde más quieran.\n\nY si el mundo se opone y el viento cambia el curso, yo me voy a escapar a modificarlo. Ellos van a lograrlo.",
+      "preserveBreaks": false
+    }
+  ]
+}

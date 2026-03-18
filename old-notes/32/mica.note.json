@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Así es la escritura",
+    "helper": "22/01/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-28f36707",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Escribo porque puedo, porque une y separa.\n\nEscribo lo que quiero y lo que no, porque así es la escritura, como la vida.\n\nSiempre escribo pensando que es solo para mí, privado e interno.\n\nEscribo sin culpa, desnudo las letras y anido palabras para que la imagen en mi cabeza sea plasmada, la obligo.\n\nTambién ocurre que ella me obliga a mí, me obliga a despertarme por la madrugada con una idea que escapa y no vuelve más.\n\nAsí es la escritura, egoísta y compañera. Es arte y amor, es expresión y timidez.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-eca03f92",
+      "type": "quote-strip",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "LA MUERTE Y YO FIRMAMOS\nUN PACTO\nNI ELLA ME PERSIGUE, NI YO HUYO DE ELLA\nSIMPLEMENTE... NOS ENCONTRAREMOS"
+      ],
+      "author": "Tumblr",
+      "leftImage": {
+        "src": "../../assets/img/curve.png",
+        "alt": "Imagen vertical izquierda para acompañar la cita",
+        "width": "",
+        "height": "",
+        "fit": "cover",
+        "padding": "",
+        "background": "",
+        "position": "",
+        "radius": "",
+        "border": ""
+      },
+      "rightImage": {
+        "src": "../../assets/img/curve2.png",
+        "alt": "Imagen vertical derecha para acompañar la cita",
+        "width": "",
+        "height": "",
+        "fit": "cover",
+        "padding": "",
+        "background": "",
+        "position": "",
+        "radius": "",
+        "border": ""
+      },
+      "layout": {
+        "margin": "1.5rem 0",
+        "gap": "1rem",
+        "sideWidth": "72px",
+        "minHeight": "320px",
+        "quoteMaxWidth": "320px",
+        "quotePadding": "1.25rem 1rem"
+      }
+    },
+    {
+      "id": "block-87a6ec78",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "“EL TÉ HACE QUE TODO SEA MEJOR”"
+      ],
+      "author": "FINN MFFD♥",
+      "flags": [
+        "center"
+      ]
+    }
+  ]
+}

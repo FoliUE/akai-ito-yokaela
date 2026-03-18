@@ -1,0 +1,32 @@
+{
+  "numero": 10,
+  "collection": "viejas",
+  "titulo": "La voz en la noche",
+  "descripcion": "Cantar como desahogo, como presencia, como una forma de llegar hasta quien se extraña.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/10.jpeg",
+    "alt": "Recuerdo de la hoja 10",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

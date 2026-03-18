@@ -1,0 +1,32 @@
+{
+  "numero": 67,
+  "collection": "viejas",
+  "titulo": "Tu lugar seguro",
+  "descripcion": "Hay dolores que pesan todavía más cuando incluso el consuelo parece venir con culpa, y por eso también existen abrazos que solo quieren cuidar sin reclamar nada.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/67.jpeg",
+    "alt": "Recuerdo de la hoja 67",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

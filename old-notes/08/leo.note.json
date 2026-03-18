@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "La cruda realidad",
+    "helper": "08/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-97c6037e",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Esta vez dolió, mucho más que la primera y que la segunda.\n\nMe levanté temprano para terminar el RE9, y ni bien lo terminé me bajó todo... Bajó la cruda realidad de que no estabas a mi lado, no sentí tu presencia ni tu calor, me atormentó todo el domingo.\n\nHoy volví a llorar, volví a llorar como no lo había hecho desde que te fuiste, puse la cara contra la almohada para poder llorar a los gritos y que no me escuche nadie.",
+      "preserveBreaks": false
+    }
+  ]
+}

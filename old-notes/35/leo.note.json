@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Running in the night with you",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-b671cea9",
+      "type": "song",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "Oh, I'm running in the night so soon\n\nI've got nothing left to lose\n\nI'm leaving it all behind\n\nRunning in the night with you\n\nI won't let you get away again\n\nWe can see it through to the end\n\nBut whatever we do\n\nI'm running in the night with you"
+      ],
+      "author": "",
+      "flags": []
+    }
+  ]
+}

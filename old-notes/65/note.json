@@ -1,0 +1,32 @@
+{
+  "numero": 65,
+  "collection": "viejas",
+  "titulo": "La chispa que no se olvida",
+  "descripcion": "Hay descubrimientos que llegan una sola vez, pero dejan una puerta abierta para siempre: después de eso, ya no se vuelve a mirar el mundo de la misma manera.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/65.jpeg",
+    "alt": "Recuerdo de la hoja 65",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Ese día dejé de pensar",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-ef3156cb",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Odio la palabra “fluir”, lo sabés bien, y mucho más después que me dijiste “dejemos que fluya”, lo que sí te puedo decir, es que si hoy estoy rendido a tus pies, es gracias a dejar de pensar, dejar de pensar que podía perder una nueva amiga, dejar de pensar que encima era mi profe de canto, dejar de pensar que también es más grande que yo, dejar de pensar en todas las contras que a mí me tiraban a decir “no tengo chance”.\n\nTe veía como la inalcanzable en un momento, la que me hacía pensar: “¿Cómo voy a gustarle yo con lo linda que es?” o “Debe tener miles de pretendientes o personas enamoradas, no se va a fijar en mí”.\n\nEse día tomé alcohol a propósito para dejar de pensar, y hacer lo que de verdad sentía mi corazón.",
+      "preserveBreaks": false
+    }
+  ]
+}

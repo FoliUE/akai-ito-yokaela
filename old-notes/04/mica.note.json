@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Nunca se termina de morir",
+    "helper": "14/08/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-7e8dfdcd",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Qué cosa rara esta de sentir que nunca se termina de morir...\n\nUna está ahí en ese limbo tortuoso de silencio sintiendo desfallecer, sintiendo cómo pesan los ojos con las horas y cómo las palabras quedan adentro.\n\nUna queda ahí con ganas de encontrar la forma de despertar o una pequeña ayuda, pero con una voz interna que no resulta muy alentadora.",
+      "preserveBreaks": false
+    }
+  ]
+}

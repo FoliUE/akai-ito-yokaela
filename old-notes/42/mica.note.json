@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Lo que hubiera amado tener",
+    "helper": "20/02/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-2cc0f20f",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Acabo de tener con mi hermana una conversación que hubiera amado tener yo a su edad:\n\n“Sé el adulto que hubieras querido tener en tu infancia.”\n\nHasta ese momento nunca sentí tan cierta esta frase y nunca me sentí tan bien al hablar con ella. Creo que me escuchó, espero que lo haya hecho.\n\nYo voy a dar lo mejor de mí y ser lo que necesite, para que ella al menos lo tenga.",
+      "preserveBreaks": false
+    }
+  ]
+}

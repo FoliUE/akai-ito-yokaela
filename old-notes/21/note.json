@@ -1,0 +1,32 @@
+{
+  "numero": 21,
+  "collection": "viejas",
+  "titulo": "Lo que no se borra",
+  "descripcion": "Hay gestos que intentan volver eterno un sentimiento, pero a veces lo más fuerte no está en lo que se marca afuera, sino en lo que queda adentro.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/21.jpeg",
+    "alt": "Recuerdo de la hoja 21",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Nikko",
+    "helper": "Sin fecha",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-1506c8cb",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Nikko:\n\n¿Qué te hicieron para que vos seas tu propia barrera? ¿Para que seas tan ciego de la magia que hacés, de los colores que encontrás y de las ideas que brotás?\n\n¿Qué te hiciste? ¿Qué poción tomaste para guardarte tanto y temer al error de intentar?\n\nDejanos ser “Guardaray” para que no derrapes, al menos intentar, ser linterna y poder ayudar.\n\nDejarte guiar y animate a probar, acá estamos todos sin GPS, pero algo podemos lograr.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-1bb6793c",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "hero",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "FUCK STRESS\n\nHAVE SEX!",
+      "preserveBreaks": true
+    }
+  ]
+}

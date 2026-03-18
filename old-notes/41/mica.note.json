@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Dos notas sobre conocerse",
+    "helper": "14/02/19 · 18/02/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-40f5c9f9",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "14/02/19 — “San Valentín” ❤️\n\nSé que jugás con mi mente, lo disfrutás y yo disfruto tu interés sobre mí, ¿pero hasta qué punto?\n\nMuchas de las veces te dejo, te lo hago fácil fácil difícil solo porque sé que te gustan las incógnitas, pero otras veces me superás y lográs meterte en un rincón dentro mío, uno en el que nadie debería estar.\n\nConsciente o inconscientemente termino contándote mis pequeños secretos, incluso cuando sé que no debería. El misterio sería resuelto y el aburrimiento sobre mí va a alejarte, no quiero eso, pero el nivel de confianza que me generás hace que las palabras fluyan por mi boca o que mi cuerpo te dé las respuestas de manera involuntaria.\n\nPero no puedo tener miedo a que me descubras por completo cuando es eso lo que en realidad quiero. Que me conozcas y yo conocerte, saber qué cosas pueden perturbar tu mente o los detalles que pueden alegrar tus días.\n\nSupongo que será una pileta a la que tarde o temprano tendré que saltar, ya sea para caída libre al fondo o a flotar en su superficie.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-c5139779",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "“The thing about writing is\n\nI can't tell if it's healing\n\nOr destroying me”"
+      ],
+      "author": "R.K.",
+      "flags": [
+        "breaks",
+        "center"
+      ]
+    },
+    {
+      "id": "block-3fa82353",
+      "type": "divider",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      }
+    },
+    {
+      "id": "block-464c3557",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "18/02/19\n\nCada día me asombro más de las cosas que recordás. ¿Cómo podés retener cada detalle de lo que te cuento o de lo vivido? No voy a negarte que me encanta eso, siento que de verdad me escuchás. Aunque hay otras veces donde parece a propósito tu falta de memoria...\n\nRecordás que hace muchos años estando ebrios en algún lugar del planeta te conté que existía una canción que me parte el alma a la mitad, pero no recordás aquella noche que tomaste mi mano, de la manera más íntima entre dos personas, la sostuviste largo rato en la noche para que yo pueda conciliar el sueño.\n\nPienso que tu memoria es selectiva o bien que sos capaz de recordar todo, incluso esa noche, pero algo te frena.\n\nMiedo quizás?",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "numero": 70,
+  "collection": "viejas",
+  "titulo": "Donde no alcanza la luz",
+  "descripcion": "Hay oscuridades que no se vencen de golpe, solo se atraviesan respirando como se puede, hasta que una presencia amorosa logra volverse puerto, aire y abrigo.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/70.jpeg",
+    "alt": "Recuerdo de la hoja 70",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "numero": 71,
+  "collection": "viejas",
+  "titulo": "Esperando el ruido",
+  "descripcion": "Hay luces que alcanzan a tocar el cielo entero en un instante, y presencias que se sienten como un relámpago lejano: primero iluminan, después dejan el deseo de escuchar qué tan cerca están.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/71.jpeg",
+    "alt": "Recuerdo de la hoja 71",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

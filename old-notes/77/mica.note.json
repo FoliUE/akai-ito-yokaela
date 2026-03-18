@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Solo hay oscuridad",
+    "helper": "28/10/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-4a9352aa",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Solo hay oscuridad, un vacío negro y denso como el acrílico, no veo ninguna superficie aunque no me sienta caer. Pequeños temblores me hacen sentir inestable, pero sigo parada.\n\nUn eco de voces cuyos timbres difieren unos de otros pronuncian mi nombre, algunos lo susurran como plegaria mientras que otros son gritos desgarradores.\n\nMe asombro al reconocer varios colores de voz, tan cotidianos en mi vida como el aire.\n\nSigo sin verlos y solo los escucho, pero están lejos.\n\nPor más que me encuentre parada, no puedo evitar sentir que frente a mí está la caída libre, donde soy una con esa oscuridad.\n\nLas voces siguen sonando y yo solo quiero un poco de paz.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Hoy canté para vos",
+    "helper": "10/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-ea7542a1",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Hoy fui a mi primera clase de canto sin vos, jamás pensé que iba a poder extrañarte más de lo que ya te extraño.\n\nExtraño tanto verte en esa sala y el cómo me mirás y te reís cuando hago alguna boludez. Para mí sí tenés un color hermoso, no tiene que ser el mejor, tiene que ser tuyo.\n\nEn un momento, mientras cantaba hoy, cerré los ojos y te imaginé a vos en frente mío con tus indicaciones de apertura y modulación que tanto me corregís.\n\nHoy canté para vos.\n\nSos mi favorita, en todo, ahora y siempre.",
+      "preserveBreaks": false
+    }
+  ]
+}

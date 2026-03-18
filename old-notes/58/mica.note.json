@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Ella ama acostarse con nosotros",
+    "helper": "15/07/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-61d207cb",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¿Qué tan puta puede ser la soledad que quiere estar con todos?\n\n¿Qué tanto daño tiene que hacer para sentirse conforme? ¿Será que ella misma busca sentirse acompañada y por eso siempre está cerca?\n\nQué loco cómo todos la sentimos y tan diferente... Cómo todos nos vamos a dormir sintiendo la cama grande y la mesa vacía...\n\nVer que todos buscamos hacer la vista gorda a ella, si no decimos nada en voz alta capaz desaparece, ¿verdad?\n\nLamento decirte que no, cuanto más silencio, más se acerca y más disfruta de ese calor que de a poco vamos perdiendo del cuerpo. Ella ama acostarse con nosotros y sentir nuestros pies fríos.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-c4c28efc",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“¿Te daría miedo ser inmortalizado en las palabras de alguien?” — M.Z."
+      ],
+      "author": "",
+      "flags": []
+    }
+  ]
+}

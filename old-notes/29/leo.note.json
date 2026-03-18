@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Imaginarte me da fuerzas",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-f5f459e4",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Último fin de semana sin vos, me gustaría decirte que me pone contento el pensar que el siguiente ya estamos juntos, pero me siento un poco triste por lo egoísta que es pensar así, me encantaría que estés más tiempo con Nico, más tiempo en Europa, aunque tenerte tan lejos y extrañarte tanto esté tan cerca de matarme.\n\nEstoy escribiendo esto tirado en el piso, ahogado en llanto, ya me levanto, hay que seguir adelante.\n\nImaginarte me da fuerzas para levantarme y seguir.",
+      "preserveBreaks": false
+    }
+  ]
+}

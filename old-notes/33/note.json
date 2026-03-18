@@ -1,0 +1,32 @@
+{
+  "numero": 33,
+  "collection": "viejas",
+  "titulo": "Lo que hay detrás del muro",
+  "descripcion": "A veces protegerse parece fuerza, pero lo más valioso termina apareciendo cuando alguien logra ver lo que había detrás.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/33.jpeg",
+    "alt": "Recuerdo de la hoja 33",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

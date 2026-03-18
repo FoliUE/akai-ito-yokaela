@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "No sé si querré saber",
+    "helper": "12/11/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-d07c44ce",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Suelo ser una persona determinante con las amistades y compañías de mi vida. Aunque toda regla tiene su excepción...\n\nDistancias, enojos, desconfianza... ¿Por qué seguimos con este vínculo? Suena tóxico y ni siquiera es tan cercano. ¿Por qué funciona bien cuando estamos juntos y todo mal cuando estamos separados?\n\nNo sé si son respuestas que nunca tendré, o respuestas que nunca querré saber.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Ese dolor de ser el que es olvidado",
+    "helper": "05/10/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-28df0155",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Qué poco valoramos los recuerdos hasta que es lo único que nos queda.\n\nQué poco valoramos la memoria hasta que vemos cómo alguien la pierde, algo que nosotros pensamos que va a quedar junto a nuestra alma por el resto de los días, ver cómo se va con el mismo aire que exhalamos.\n\nEse dolor de ser el que es olvidado, uno piensa que sabe lo que es, hasta que se siente disipada en el aire. Qué cosa egoísta, pensar en lo que uno siente cuando el que olvida es el otro, pero ahí está el problema. El que va olvidando siente un ligero peso en su risa, que no carga con historias y va libre por el día, inocente como lo desconocido. Mientras que quien es olvidado ve cómo todo recuerdo compartido, toda acción cómplice empieza a pedir sentido, empieza a ser solo la versión de uno y no distingue entre la presión en el pecho por ese nuevo dolor y la sensación de hacerse aire, irse borrando junto a los pequeños cuentos que antes no sabías que te contaban.",
+      "preserveBreaks": false
+    }
+  ]
+}

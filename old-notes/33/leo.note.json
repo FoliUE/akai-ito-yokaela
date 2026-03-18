@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Eso fue lo que me enamoró",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-dc97362a",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No te voy a mentir, sabés que soy una persona muy desconfiada, y cuando me empezaste a hablar por wspp y pasamos tantas horas hablando y hablando de todo, las cosas que me decías, cómo me escribías, y después en persona ver a otra persona completamente distinta, me daba una desconfianza, confianza...\n\nCon vos hubo y hay una electricidad única en mi vida, yo escapo siempre de las situaciones de esa manera, pero sentí muy en el fondo inconscientemente que conmigo realmente eras vos quien hablaba, y cuando estábamos rodeados de gente eras otra persona, dura, “cool” como vos decís, sin sentimientos, cero romántica, fría.\n\nMe alegro mucho en conocer quien sos realmente, y quiero que sepas que eso fue lo que me enamoró, cuando una vez me dijiste algo como que ibas a perder tu perfil cool conmigo, creeme que fue lo mejor que pudiste hacer, el mostrarme siempre quien sos, porque eso selló a fuego mi corazón con el tuyo.",
+      "preserveBreaks": false
+    }
+  ]
+}

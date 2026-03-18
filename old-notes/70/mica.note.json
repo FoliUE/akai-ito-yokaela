@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "No todos merecen ser inmortalizados",
+    "helper": "23/09/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-405b8ec8",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Aprendí a tener cuidado sobre quién escribo, porque no todos merecen ser inmortalizados en las palabras.\n\nLa luz está, pero no es suficiente, tan suave que apenas vislumbra la figura en la oscuridad. Sumergida en ese sueño que parece un lago, te ahoga, te sofoca, te lleva a cerrar los ojos en un sueño eterno.\n\nUno busca el puerto para aferrarse a algo y ese puerto no está, cayó por el moho de la madera y los viejos botes amarrados a él se perdieron en la corriente. Todo lago tiene su salida a algo más grande y ahí es donde no hay que llegar, perdernos en suelo arenoso con bellos colores, pero tramposos como sus habitantes.\n\nAbrís los ojos, pero tus pulmones quedaron allá, sentís como se llenan de nada y los oprime, tus ojos se sienten pesados, perdidos.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Otra vez... sola",
+    "helper": "01/03/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-f1bd1847",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "4:50 a. m. ya terminé de llorar, y esta presión en el pecho no relajó ni un poco, me siento estafada, por todas esas charlas que hablan de nudos en la garganta y cómo el llanto es liberador y solo me siento más atrapada que antes en un peso que solo me consume. Sola.\n\nOtra vez... Sola...\n\nSiento que esa palabra ya está en mi texto predeterminada de tantas veces que la escribí, se plasmó en mi cerebro de tantas veces que la pensé y mi alma quedó sellada por ella de tanto sentirla.\n\nPequeñas piezas hacen de cinta para la situación cuando lo que de verdad necesito es cemento. No algo que dure solo hasta que el pegamento se pierda, sino algo que se quede firme a pesar de todo.\n\nCuando creo ver una pequeña luz que se mete por las cortinas ZAAAAS se cierra el portón.\n\nHubo un tiempo que pensé que era yo la que boicoteaba cualquier posibilidad y con el correr del reloj descubrí que era cierto. Traté de cambiar mis actitudes pero eso hizo que me diera esperanza por una temporada y después volvió a atacar con todo.\n\nSi yo no puedo con mi propia mente cómo puedo pretender que alguien siquiera asome la cabeza por la ventana. No sería capaz de pedirle a nadie tal acto de tortura, no podría.\n\nCreo que volveré a hacer lo que mejor hago, al frío y la ironía que tanta \"compañía\" me hacen a través de los años. Al fin y al cabo me dijeron que todos morimos solos.",
+      "preserveBreaks": false
+    }
+  ]
+}
