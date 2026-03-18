@@ -1,0 +1,32 @@
+{
+  "numero": 45,
+  "collection": "viejas",
+  "titulo": "Hacia el infinito",
+  "descripcion": "Hay sentimientos que uno intenta correr a un costado, pero siempre encuentran la forma de volver a hacerse escuchar.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/45.jpeg",
+    "alt": "Recuerdo de la hoja 45",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

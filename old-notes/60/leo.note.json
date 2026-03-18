@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Aprender a ver la oportunidad",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-88fd0b2a",
+      "type": "dialogue",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "Una periodista le preguntó a Bill Gates:",
+        "—¿Cuál es el secreto de tu éxito?",
+        "Bill Gates sacó un cheque, se lo entregó y le dijo:",
+        "—Escribí la cantidad de dinero que quieras. Te la daré sin pensarlo.",
+        "La periodista se sintió ofendida y lo rechazó.",
+        "—No, gracias. Solo quiero saber cuál es tu secreto.",
+        "Entonces volvió a preguntarle:",
+        "—¿Cuál es el secreto de tu éxito?",
+        "Bill Gates volvió a darle el cheque.",
+        "—Escribí la cantidad que quieras —repitió.",
+        "La periodista volvió a rechazarlo.",
+        "Entonces Bill Gates le respondió:"
+      ],
+      "author": "El secreto de mi éxito, a diferencia tuya, es estar atento a todas las oportunidades que se me presentan. Podrías haber sido una periodista multimillonaria si hubieras querido, pero rechazaste la oportunidad. Yo veo oportunidades en todo momento; vos viste todo, menos una oportunidad. Aprendé a reconocerlas cuando se presentan.",
+      "flags": []
+    }
+  ]
+}

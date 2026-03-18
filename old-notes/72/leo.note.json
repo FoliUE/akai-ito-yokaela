@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Yo no voy a olvidar",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-429b648b",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Qué dolor tan profundo hay en estas palabras.\n\nY mientras te leo, no puedo evitar pensar en lo cruel que debe ser sentir que algo tan grande empieza a desvanecerse en la memoria, como si lo vivido alguna vez pudiera volverse apenas aire. Pero hay algo que necesito decirte, y decírtelo desde lo más sincero de mí: yo no voy a olvidar.\n\nNo voy a olvidar lo que fuiste, ni lo que sos en mí. No voy a olvidar las pequeñas cosas, los gestos, las miradas, los silencios compartidos, ni esa forma única en la que tu presencia deja amor hasta en los rincones más simples. Porque hay personas que no pasan por la vida de uno como pasan los días, hay personas que se quedan. Y vos sos una de esas personas.\n\nTal vez la memoria a veces falle, tal vez el tiempo desgaste nombres, escenas o detalles. Pero hay cosas que cuando se sienten de verdad no se borran, se vuelven parte del alma. Y todo lo que viví con vos tiene ese lugar en mí, no como un recuerdo frágil, sino como algo profundamente vivo, profundamente amado.\n\nSi alguna vez te dolió sentir que podías desaparecer en la memoria de alguien, yo quisiera abrazar esa herida con estas palabras, en mí no desaparecés. En mí seguís estando. En cada recuerdo hermoso, en cada emoción verdadera, en cada parte de mi corazón que aprendió a latir distinto desde que te encontró.\n\nPorque hay amores, presencias y momentos que el tiempo no arranca, que el olvido no alcanza, que quedan latiendo para siempre en la parte más honda de uno. Y vos, amor, sos una de esas cosas que yo voy a guardar siempre.",
+      "preserveBreaks": false
+    }
+  ]
+}

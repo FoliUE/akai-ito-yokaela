@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Where do broken hearts go?",
+    "helper": "12/02/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-91891476",
+      "type": "visual-quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "rows": [
+        {
+          "id": "row-c5d6abd8",
+          "items": [
+            {
+              "id": "item-48d0ab5b",
+              "kind": "text",
+              "text": "WHERE DO"
+            }
+          ]
+        },
+        {
+          "id": "row-48489e5d",
+          "items": [
+            {
+              "id": "item-8ff6c1a1",
+              "kind": "text",
+              "text": "BROKEN"
+            },
+            {
+              "id": "item-7d84e7ba",
+              "kind": "image",
+              "options": {
+                "src": "../../assets/img/broken-heart.png",
+                "alt": "Imagen junto a la palabra broken",
+                "width": "120px",
+                "height": "120px",
+                "fit": "cover",
+                "padding": "",
+                "background": "rgba(255, 255, 255, 0.06)",
+                "position": "",
+                "radius": "12px",
+                "border": "1px solid rgba(255, 255, 255, 0.08)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "row-60d94d85",
+          "items": [
+            {
+              "id": "item-61df82d8",
+              "kind": "text",
+              "text": "HEARTS GO??"
+            }
+          ]
+        }
+      ],
+      "author": "Tumblr",
+      "layout": {
+        "maxWidth": "min(100%, 420px)",
+        "minHeight": "340px",
+        "padding": "2rem 1.6rem",
+        "margin": "2rem auto 0",
+        "lineHeight": "1.55",
+        "letterSpacing": "0.08em",
+        "textTransform": "",
+        "fontSize": "3rem",
+        "authorSize": "1.1rem",
+        "rowGap": ""
+      }
+    }
+  ]
+}

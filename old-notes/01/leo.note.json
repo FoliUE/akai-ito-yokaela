@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "La playlist de nosotros",
+    "helper": "04/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-ad38899b",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Hoy te despedí en el aeropuerto, en tu primer viaje a Europa. Lloré muchísimo. Volví tan ahogado en llanto que sentía que me desmayaba.\n\nAhí fue cuando dije: voy a entrar a Spotify Premium y hacer una playlist, una que solo me recuerde a vos, a nosotros y a los momentos que vivimos juntos... porque...",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-f462c32d",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“I'm Running In The Night With You, hasta Verte Amanecer, y aunque haya Tormenta de Arena, y Arrecife en mis ojos, voy a encontrarte En Cualquier Otra Parte, No Matter What.”"
+      ],
+      "author": "",
+      "flags": []
+    },
+    {
+      "id": "block-c00e5776",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Hasta la música tiene esa magia. Gracias a ella es que esta primera noche con vos tan lejos voy a intentar dormir; gracias a ella es que siento que estás acá, en la misma habitación conmigo.",
+      "preserveBreaks": false
+    }
+  ]
+}

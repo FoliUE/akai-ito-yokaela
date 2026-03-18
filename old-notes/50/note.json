@@ -1,0 +1,32 @@
+{
+  "numero": 50,
+  "collection": "viejas",
+  "titulo": "Yo sigo acá",
+  "descripcion": "No siempre hace falta una solución perfecta; a veces, lo que más salva es alguien que se queda.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/50.jpeg",
+    "alt": "Recuerdo de la hoja 50",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Simplemente no pienses",
+    "helper": "12/02/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-e47557af",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "El otro día escuché a alguien decir “no pienses”. Sonaba tan convencido que me extrañó la sensación de escucharlo. No puedo comprender cómo es eso de no pensar.\n\nPero después de un rato me di cuenta que es de verdad, el no pensar genera cosas distintas, da paso a la espontaneidad, a las sorpresas e incluso a la toma de decisiones.\n\nEspero algún día poder aplicarlo con la misma naturalidad como fue dicha esa frase... simplemente no pienses... fluí...",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-14c708f4",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "~ART IS HOW WE DECORATE SPACE\n\nMUSIC IS HOW WE DECORATE TIME~"
+      ],
+      "author": "Tumblr",
+      "flags": [
+        "breaks",
+        "center"
+      ]
+    }
+  ]
+}

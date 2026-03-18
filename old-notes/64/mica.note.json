@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Como la luna y el sol",
+    "helper": "15/08/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-0feb645f",
+      "type": "song",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "Así te irás\n\nY yo vendré\n\nComo la luna que aparece\n\nCuando el sol decidió salir",
+        "Así de inevitable\n\nPero no imposible\n\nel poder cruzarte\n\nComo ese pequeño momento\n\nque somos uno",
+        "La luna brilla para guiar al sol\n\nla seduce con su lado\n\nlo invita a seguirla\n\nmientras que el sol arde\n\nagitado por no alcanzarla",
+        "Y en ese segundo que los astros chocan\n\nella se sumerge en sus brazos\n\nél aminora las llamas, ya tranquila de abrazarla\n\nahí es cuando elimina el eclipse\n\ny la historia comienza otra vez."
+      ],
+      "author": "",
+      "flags": []
+    }
+  ]
+}

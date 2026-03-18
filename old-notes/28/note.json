@@ -1,0 +1,32 @@
+{
+  "numero": 28,
+  "collection": "viejas",
+  "titulo": "Apenas me animo a susurrarlo",
+  "descripcion": "A veces el amor primero se descubre en silencio, temblando bajito, antes de animarse a decir su nombre.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/28.jpeg",
+    "alt": "Recuerdo de la hoja 28",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

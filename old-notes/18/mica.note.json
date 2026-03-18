@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Quejarme también es mío",
+    "helper": "11/11/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-898f16eb",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Quiero quejarme y descubrir la forma en la que me gustaría ser amada, quiero tener esa libertad mental de hacerlo y poder plasmarlo en estas palabras. El texto más desgarrador y romántico.\n\nPero mi cabeza está observando otra posición, otra postura, de qué pasa cuando hay alguien que te quiere como vos quisieras, pero vos no querés a esa persona.\n\nSiendo las 3:32 a. m. de un domingo decido tomar una decisión, y es la de agradecer el amor que te ofrecen porque “por más que molesta, es amor, y por eso lo agradeceremos” (Macbeth), pero también la de aceptar que no siempre tenemos la obligación de corresponder ese amor. Y que puedo escribir, plasmar y quejarme de cuantas cosas quiera.\n\nA pesar de todo esto, no recomiendo tomar decisiones un domingo tan deprimente como el de hoy.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -3,100 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoja 50 — Yo sigo acá</title>
+  <title>Cargando nota...</title>
   <link rel="icon" type="image/png" href="../../favicon.png">
   <link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="theme-archive-notes">
-  <main class="page-shell">
-    <div class="page-topbar">
-      <a class="back-link" href="../../index.html?tab=viejas">← Volver a notas viejas</a>
-    </div>
-
-    <header class="page-header">
-      <p class="page-number">Hoja 50</p>
-      <h1>Yo sigo acá</h1>
-      <p class="page-description">
-        No siempre hace falta una solución perfecta; a veces, lo que más salva es alguien que se queda.
-      </p>
-    </header>
-
-    <section class="page-media">
-      <figure class="note-photo-card">
-        <img
-          src="../../assets/img/old-notes/50.jpeg"
-          alt="Recuerdo de la hoja 50"
-          onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');"
-        >
-        <div class="note-photo-placeholder">
-          Agregá una foto en <strong>assets/img/old-notes/50.jpeg</strong>
-        </div>
-      </figure>
+<body class="theme-present-notes">
+  <main class="page-shell" id="note-page">
+    <section class="page-state">
+      <strong>Cargando nota...</strong>
+      <p>Estoy armando esta hoja.</p>
     </section>
-
-    <section class="notes-layout">
-      <article class="note-card note-card--mica note-card--spoiler">
-        <input
-          type="checkbox"
-          id="spoiler-mica-50"
-          class="spoiler-toggle"
-        >
-
-        <span class="note-label">Mica</span>
-        <h2>Ser acompañada</h2>
-        <p class="note-helper">10/04/19</p>
-
-        <div class="note-content">
-          <p>
-            Hay una pared, más bien un domo. Puedo ver al otro lado, pero siento que el otro lado no puede verme a mí. Quiero gritar y mostrarle que puedo hacer magia, sé que puedo, pero este muro es tan alto que no puedo saltarlo y siento que sola no tengo la fuerza suficiente para derribarlo.
-          </p>
-
-          <p>
-            Es miedo, puedo olerlo como cuando se acerca la lluvia y se percibe el agua en el aire o el pasto recién cortado del domingo.
-          </p>
-
-          <p>
-            Sé que depender de una motivación externa no es la mejor de las soluciones, pero no vendría mal un poco más de energía, ¿no, Goku? Unas palabras de aliento, pero no el cliché de “todo va a estar bien”, sino el de “si todo sale mal como el orto, yo sigo acá”, poder salir como bala de cañón y no sentir que soy expulsada al espacio sin dirección alguna.
-          </p>
-
-          <p>
-            Ser acompañada, sentirme acompañada.
-          </p>
-        </div>
-
-        <label for="spoiler-mica-50" class="spoiler-overlay">
-          <span class="spoiler-button">Ver nota de Mica</span>
-        </label>
-      </article>
-
-      <article class="note-card note-card--leo">
-        <span class="note-label">Leo</span>
-        <h2>Desde el momento 1</h2>
-        <p class="note-helper">13/03/26</p>
-
-        <div class="note-content">
-          <p>
-            Siento como que esto que escribiste es algo que después hiciste conmigo, rompiste mi pared, desde el momento 1, no sé cómo lo hiciste todavía, pero lo hiciste.
-          </p>
-
-          <p>
-            Venciste todas mis defensas y ¿sabés qué? Yo no lo supe hasta que ya estaba rendido a tus pies.
-          </p>
-
-          <p>
-            Me hiciste tuyo. Me hiciste amarte sin barreras de por medio, espero que siempre te sientas acompañada conmigo.
-          </p>
-
-          <p>
-            Yo siempre voy a estar para vos.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <footer class="page-footer">
-      Hecho con amor, hoja por hoja.
-    </footer>
   </main>
+  <script src="../../note-page.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "You were never just normal",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-eb1f658b",
+      "type": "song",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "Maybe life felt ordinary back then,\n\nbut you never were.\n\nThere was always something extraordinary in the way you felt,\n\nin the way you dreamed,\n\nin the way you turned even pain into words.\n\nYou were never just normal to me.\n\nYou are more..."
+      ],
+      "author": "",
+      "flags": []
+    }
+  ]
+}

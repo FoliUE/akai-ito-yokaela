@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Escuchar al corazón",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-af043f32",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "A mí me agarró el placer de leer de grande, lo que sí disfruté siempre y lo sabés, son los videojuegos y algunas películas. Hay una película que amé y me marcó por muchos años, y te voy a traer la cita que hoy en día entiendo, después de casi 15 años.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-78a1fac6",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Love is passion, obsession, someone you can't live without. I say, fall head over heels. Find someone you can love like crazy and who will love you the same way back. How do you find him? Well, you forget your head, and you listen to your heart. And I'm not hearing any heart. Cause the truth is, honey, there's no sense living your life without this. To make the journey and not fall deeply in love, well, you haven't lived a life at all. But you have to try, cause if you haven't tried, you haven't lived.”"
+      ],
+      "author": "\"Bill\" Parrish (Anthony Hopkins) x Meet Joe Black",
+      "flags": []
+    }
+  ]
+}

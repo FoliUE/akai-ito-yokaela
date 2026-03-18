@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "No una carga más",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-b3d94e64",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Qué dolor que, incluso estando mal, te hayan hecho sentir culpa por buscar consuelo. No te merecés para nada eso.\n\nNadie debería hacerte sentir peor justo cuando más necesita un abrazo. Espero ser siempre tu lugar seguro, y nunca una carga más.",
+      "preserveBreaks": false
+    }
+  ]
+}

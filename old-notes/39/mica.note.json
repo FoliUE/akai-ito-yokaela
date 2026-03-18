@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "La tormenta quería romper el mundo",
+    "helper": "13/02/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-fac967ab",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "“Nos sentamos, tomando nuestro té y mirando la lluvia caer sobre su porte delantero. El cielo estaba casi negro, y luego comenzó a granizar. Era tan hermoso y escalofriante, que me pregunté sobre la ciencia de las tormentas y cómo a veces parecía que una tormenta quería romper el mundo y cómo el mundo se rehusaba a romperse”."
+      ],
+      "author": "?",
+      "flags": [
+        "center"
+      ]
+    }
+  ]
+}

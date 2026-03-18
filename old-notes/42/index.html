@@ -3,88 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoja 42 — Ser lo que necesite</title>
+  <title>Cargando nota...</title>
   <link rel="icon" type="image/png" href="../../favicon.png">
   <link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="theme-archive-notes">
-  <main class="page-shell">
-    <div class="page-topbar">
-      <a class="back-link" href="../../index.html?tab=viejas">← Volver a notas viejas</a>
-    </div>
-
-    <header class="page-header">
-      <p class="page-number">Hoja 42</p>
-      <h1>Ser lo que necesite</h1>
-      <p class="page-description">
-        A veces crecer también es convertirse en el refugio que alguna vez nos hubiera hecho bien tener.
-      </p>
-    </header>
-
-    <section class="page-media">
-      <figure class="note-photo-card">
-        <img
-          src="../../assets/img/old-notes/42.jpeg"
-          alt="Recuerdo de la hoja 42"
-          onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');"
-        >
-        <div class="note-photo-placeholder">
-          Agregá una foto en <strong>assets/img/old-notes/42.jpeg</strong>
-        </div>
-      </figure>
+<body class="theme-present-notes">
+  <main class="page-shell" id="note-page">
+    <section class="page-state">
+      <strong>Cargando nota...</strong>
+      <p>Estoy armando esta hoja.</p>
     </section>
-
-    <section class="notes-layout">
-      <article class="note-card note-card--mica note-card--spoiler">
-        <input
-          type="checkbox"
-          id="spoiler-mica-42"
-          class="spoiler-toggle"
-        >
-
-        <span class="note-label">Mica</span>
-        <h2>Lo que hubiera amado tener</h2>
-        <p class="note-helper">20/02/19</p>
-
-        <div class="note-content">
-          <p>
-            Acabo de tener con mi hermana una conversación que hubiera amado tener yo a su edad:
-          </p>
-
-          <p>
-            <em>“Sé el adulto que hubieras querido tener en tu infancia.”</em>
-          </p>
-
-          <p>
-            Hasta ese momento nunca sentí tan cierta esta frase y nunca me sentí tan bien al hablar con ella. Creo que me escuchó, espero que lo haya hecho.
-          </p>
-
-          <p>
-            Yo voy a dar lo mejor de mí y ser lo que necesite, para que ella al menos lo tenga.
-          </p>
-        </div>
-
-        <label for="spoiler-mica-42" class="spoiler-overlay">
-          <span class="spoiler-button">Ver nota de Mica</span>
-        </label>
-      </article>
-
-      <article class="note-card note-card--leo">
-        <span class="note-label">Leo</span>
-        <h2>Para nuestros hijos</h2>
-        <p class="note-helper">13/03/26</p>
-
-        <div class="note-content">
-          <p>
-            Seamos los padres que nos hubiera gustado tener para nuestros hijos.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <footer class="page-footer">
-      Hecho con amor, hoja por hoja.
-    </footer>
   </main>
+  <script src="../../note-page.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Cuando recuerdo que volvés",
+    "helper": "10/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-ad67b9c1",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No es que quiera morir, no lo elijo si es que esa es la pregunta, solo que no me siento con ganas de vivir.\n\nNo me siento con ganas de hablar con gente, de caminar, de respirar, de nada... No quiero jugar, no quiero estudiar, no quiero hacer nada que habitualmente hago, no quiero nada si te tengo a miles de kilómetros de distancia, mi amor.\n\nQuisiera poder acostarme en este momento, e hibernar hasta que sea 18/3 y te tenga conmigo de vuelta, extraño tanto tu calor, tus mimos, tus caricias, tus besos. Extraño tanto ver tus ojitos mirarme, esos ojos profundos en los que quiero perderme toda la vida.\n\nQuiero una pausa del mundo que me rodea, la gente que habita, pero no de mis pensamientos, porque ahí vivís vos. Vivís en mi corazón, en mi mente y en mi alma, y sos quien me da fuerzas para seguir. Y es irónico porque solo te fuiste 15 días y volvés a mí, pero se siente como una eternidad.\n\nEn contraparte a este mensaje, la noche solo en mi pieza con este cuaderno y escuchando nuestra música, mi cerebro no busca apagarse ni por un segundo, porque el recordarte e imaginarte si bien es doloroso, es el momento más hermoso de mis días.\n\nCuando recuerdo que vas a volver a mí, quiero vivir, elijo vivir, tengo ganas de vivir.\n\nSiempre tuyo, mi amor.",
+      "preserveBreaks": false
+    }
+  ]
+}

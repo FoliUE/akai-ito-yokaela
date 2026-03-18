@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Sos todo lo más preciado",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-e11d571d",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No apagues la nuestra, no podría seguir mi vida de lo contrario. No quiero seguir si no puedo ver tu rostro cada mañana, tarde y noche. Sos todo lo más preciado de mi vida.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "No sos la mujer que siempre soñé",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-2cfc962b",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "La cantidad de veces que a la madrugada miraba películas románticas y soñaba con que algún día me pase... de encontrar a alguien por quien daría mi vida del amor que tengo, que me haga amarla más que a nadie nunca en la vida, que me dé razones para vivir y sentirme vivo, darme ganas de vivir, acostarme y despertarme por la mañana, mirar a mi costado y ver a la mujer más hermosa del mundo a mi lado.\n\nIncontables fueron esas noches. Y sí, fuera de la madrugada, me mostraba como quien no necesitaba a nadie para ser feliz, como quien le parece asqueroso o vomitivo lo cursi, como quien las películas románticas no le movían ni un pelo.\n\nVivía una gran mentira, que desde que te vi fue un pantallazo de realidad enfrente mío. No sos la mujer que siempre soñé, sos más, jamás jamás ni en mis sueños podía imaginarme que podía amar tanto a alguien, y que iba a ser tan amado de igual manera como me hacés sentir.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Con vos es amor",
+    "helper": "10/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-4710a1b3",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Siempre que hago el amor estoy drogado, desde que te amo que nunca estuve tan drogado.\n\nSos la droga que tiene el poder de excitarme, relajarme, hacer sentir dolor, del más doloroso que existe, y hacer sentir placer, el más placentero que existe, ese que da sensación que explotás de placer.\n\nEstoy casi seguro que lo sabes, pero por si no te lo aclaro, nunca disfruté tanto hacer el amor como con vos... Con el correr de las semanas me di cuenta de eso. ¿Por qué será que con vos es tan mágico? Yo tengo esa respuesta.\n\nSiempre fui fiel a mi creencia de que no podía hacer el amor con alguien que no ame. Estuve mintiéndome a mí mismo mucho tiempo, porque recién esto que me pasa y siento con vos es amor, es amar. Antes de vos vivía una mentira.",
+      "preserveBreaks": false
+    }
+  ]
+}

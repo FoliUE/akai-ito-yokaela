@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Extraordinary things",
+    "helper": "20/08/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-89f385c9",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "It's a normal life\n\nfor a normal person\n\nwho always wanted\n\nextraordinary things."
+      ],
+      "author": "",
+      "flags": [
+        "breaks"
+      ]
+    }
+  ]
+}

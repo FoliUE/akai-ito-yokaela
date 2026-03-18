@@ -1,0 +1,32 @@
+{
+  "numero": 7,
+  "collection": "viejas",
+  "titulo": "Cuando viene de quien querés",
+  "descripcion": "La cursilería no espanta cuando nace justo en la voz que uno esperaba.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/07.jpeg",
+    "alt": "Recuerdo de la hoja 07",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

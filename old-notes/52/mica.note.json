@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "“Es un hobby”",
+    "helper": "21/05/10",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-ef0b2e49",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "“Es un hobby”\n\nAsí llamamos al motivo que nos hace seguir vivos, o las cosas que amamos hacer, como si fueran menos, le restamos importancia y los ponemos en un segundo plano cuando sabemos que sin ese “hobby” más de uno perdería la cabeza. ¿Por qué será que nos da tanto miedo disfrutar plenamente de algo?\n\nNo importa si uno es bueno o malo, importa que es uno. No hay caretas, no hay preocupaciones, no hay nada más que la sensación de ser pleno y genuino.\n\nUno se levanta por la mañana, desayuna, y parte al trabajo, renegando porque no ama lo que hace, mientras que espera que al fin sea el toque de hora para salir disparando e ir a su “hobby”, donde se rodea de gente que le cae bien, con gustos parecidos, donde se ríe todo lo que le faltó en el trabajo y disfruta de ser uno mismo por un rato. Al menos hasta que termine la hora y vuelva a su rutina tóxica de ser alguien que el sistema necesita y no que uno mismo quiere.",
+      "preserveBreaks": false
+    }
+  ]
+}

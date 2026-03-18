@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Rodry",
+    "helper": "??/??/??",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-55ec0a43",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Rodry: Las sombras son más oscuras de lo que llegó a ver, nunca dejes de aplaudir.",
+      "preserveBreaks": false
+    }
+  ]
+}

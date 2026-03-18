@@ -3,109 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hoja 03 — Lo que solo existe al dormir</title>
+  <title>Cargando nota...</title>
   <link rel="icon" type="image/png" href="../../favicon.png">
   <link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="theme-archive-notes">
-  <main class="page-shell">
-    <div class="page-topbar">
-      <a class="back-link" href="../../index.html?tab=viejas">← Volver a notas viejas</a>
-    </div>
-
-    <header class="page-header">
-      <p class="page-number">Hoja 03</p>
-      <h1>Lo que solo existe al dormir</h1>
-      <p class="page-description">
-        Dos sueños, dos despertares.
-      </p>
-    </header>
-
-    <section class="page-media">
-      <figure class="note-photo-card">
-        <!--
-          FOTO DE LA HOJA
-          Guardá la imagen en: assets/img/old-notes/03.jpeg
-          También podés usar .png o .webp, cambiando el src.
-        -->
-        <img
-          src="../../assets/img/old-notes/03.jpeg"
-          alt="Recuerdo de la hoja 03"
-          onerror="this.style.display='none'; this.parentElement.classList.add('is-empty');"
-        >
-        <div class="note-photo-placeholder">
-          Agregá una foto en <strong>assets/img/old-notes/03.jpeg</strong>
-        </div>
-      </figure>
+<body class="theme-present-notes">
+  <main class="page-shell" id="note-page">
+    <section class="page-state">
+      <strong>Cargando nota...</strong>
+      <p>Estoy armando esta hoja.</p>
     </section>
-
-    <section class="notes-layout">
-      <article class="note-card note-card--mica note-card--spoiler">
-        <input
-          type="checkbox"
-          id="spoiler-mica-03"
-          class="spoiler-toggle"
-        >
-        <span class="note-label">Mica</span>
-        <h2>Gracias por ese sueño</h2>
-        <p class="note-helper">14/08/18</p>
-
-        <div class="note-content">
-          <p>
-            Volví a soñar con vos, un sueño muy similar al anterior, pero con una pequeña diferencia.
-          </p>
-
-          <p>
-            Esta vez vos me besabas, me abrazabas por la espalda y ¡me decías que me querías!
-            Qué loco pensar que eso no va a pasar.
-          </p>
-
-          <p>
-            Fue como si el despertar implicara terminar una relación que nunca existió.
-          </p>
-
-          <p>
-            Abrí los ojos y solo pude repetir ese momento en mi cabeza una y otra vez...
-          </p>
-
-          <p>
-            Gracias por ese sueño, por ese beso y susurrarme esas cosas hermosas al oído.
-            Por ser mío por un rato y hacerme sentir tuya, protegida, querida y cuidada.
-            Gracias por darme una fantasía a la cual volver cuando me siento sola.
-          </p>
-        </div>
-      
-
-        <label for="spoiler-mica-03" class="spoiler-overlay">
-          <span class="spoiler-button">Ver nota de Mica</span>
-        </label>
-      </article>
-
-      <article class="note-card note-card--leo">
-        <span class="note-label">Leo</span>
-        <h2>Tan real que dolía</h2>
-        <p class="note-date">09/03/26</p>
-
-        <div class="note-content">
-          <p>
-            La noche del viernes 6/3 soñé con vos, soñé que me ibas a buscar a la oficina
-            (el jueves fui), y fue medio deja vu de la noche tormentosa que me fuiste a buscar
-            a la madrugada, solo que en vez de arrancar para llevarnos a casa, te subiste arriba mío,
-            me empezaste a besar mientras me sacabas la remera y terminamos haciendo el amor en el auto.
-          </p>
-
-          <p>
-            Sentí tus besos, tus caricias, tus mimos, tu aliento, tu calor, tus gemidos.
-            Se sintió tan real, tanto que me cuesta saber si fue de los sueños más hermosos
-            que tuve con vos, o si forma parte de una tortura.
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <footer class="page-footer">
-      Hecho con amor, hoja por hoja.
-    </footer>
   </main>
+  <script src="../../note-page.js"></script>
 </body>
 </html>

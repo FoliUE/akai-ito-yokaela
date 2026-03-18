@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Desde el momento 1",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-e7323a1e",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Siento como que esto que escribiste es algo que después hiciste conmigo, rompiste mi pared, desde el momento 1, no sé cómo lo hiciste todavía, pero lo hiciste.\n\nVenciste todas mis defensas y ¿sabés qué? Yo no lo supe hasta que ya estaba rendido a tus pies.\n\nMe hiciste tuyo. Me hiciste amarte sin barreras de por medio, espero que siempre te sientas acompañada conmigo.\n\nYo siempre voy a estar para vos.",
+      "preserveBreaks": false
+    }
+  ]
+}

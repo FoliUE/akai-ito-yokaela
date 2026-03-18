@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "La pequeña revolución",
+    "helper": "20/02/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-a9b7906d",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "En el momento que tenés que dar un consejo, que tenés que guiar a otro, ahí es cuando notás lo perdido que estás.\n\nVes qué experiencias lograste superar y cuántas espinas te quedaron, qué deseos tuviste que correr a un lado y por los cuales peleaste.\n\nY en ese momento, una pequeña revolución ataca a tu cabeza, la de seguir el ritmo que tenés o la de sacudir todo y tomar tus propios consejos.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Los audios que guardo",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-59845e1b",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Espero que no escuches nunca los audios en mi anotador de whatsapp.\n\nTengo miedo que te quiebre o te rompa, tengo miedo de hacerte mal, tengo miedo de lastimarte.",
+      "preserveBreaks": false
+    }
+  ]
+}

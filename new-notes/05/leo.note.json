@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "JUNTOS",
+    "helper": "PARA SIEMPRE",
+    "spoiler": false,
+    "variant": "solo",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-6d575513",
+      "type": "hero-quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "¿TE QUERÉS CASAR CONMIGO?"
+      ],
+      "author": "",
+      "flags": [
+        "hero",
+        "center"
+      ]
+    }
+  ]
+}

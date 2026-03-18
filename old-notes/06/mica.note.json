@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Me gustan los finales felices",
+    "helper": "28/08/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-358121f3",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Ya perdí la cuenta de cuántas películas románticas vi, de cuántas historias de amor que hay en los libros...\n\nMe gusta el amor, pero me da miedo. Entiendo que el desamor forma parte del romance y que te da oportunidades a nuevas historias, pero ¿nadie se preguntó cuánto desamor puede aguantar un corazón? ¿Hay un límite de lágrimas para llorar en esto? ¿Un tiempo estipulado de luto?\n\nSiento que estoy en las últimas y a una edad muy corta, y tengo miedo que esa sensación sea real. No sé si la soledad que siento es mayor al miedo de un nuevo desamor. Y sé que pensando esto nunca voy a poder abrirme a amar a alguien.\n\nMe gustan los finales felices... esos que no son finales...",
+      "preserveBreaks": false
+    }
+  ]
+}

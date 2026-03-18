@@ -1,0 +1,32 @@
+{
+  "numero": 79,
+  "collection": "viejas",
+  "titulo": "La paz de la madrugada",
+  "descripcion": "Hay horas en las que el mundo por fin deja de exigir y el alma puede mostrarse sin disfraz, aunque a veces sea justamente la oscuridad la que mejor sabe cubrir lo que más necesita salir.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/79.jpeg",
+    "alt": "Recuerdo de la hoja 79",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

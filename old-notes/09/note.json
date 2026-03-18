@@ -1,0 +1,32 @@
+{
+  "numero": 9,
+  "collection": "viejas",
+  "titulo": "Una pausa del mundo",
+  "descripcion": "A veces lo que se necesita no es desaparecer, sino que el mundo se calle un rato.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/09.jpeg",
+    "alt": "Recuerdo de la hoja 09",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

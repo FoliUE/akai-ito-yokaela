@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Dolió el despertar",
+    "helper": "15/09/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-5a3bddec",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Esta vez dolió, dolió más que la primera y mucho más que la segunda.\n\nDolió porque me quiero resignar a los, no esperar que vayas a estar para mí, ni que me quieras alguna vez...\n\nTomé esa decisión anoche y hoy me levanté con ese beso en el recuerdo, ese beso que vos parecías disfrutar y en el que yo dejo mi alma para que sepas que te amo.\n\nDolió esa canción que sonaba atrás, esa que marcaba el adiós, que se metía por mi inconsciente y me despertaba, me traía a una realidad completamente diferente.\n\nDolió el despertar, pero más duele recordar.",
+      "preserveBreaks": false
+    }
+  ]
+}

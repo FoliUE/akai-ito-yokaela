@@ -1,0 +1,32 @@
+{
+  "numero": 19,
+  "collection": "viejas",
+  "titulo": "Conocernos de a poco",
+  "descripcion": "A veces todo empieza con el deseo de ser visto de verdad. Otras veces, con un simple hola.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/19.jpeg",
+    "alt": "Recuerdo de la hoja 19",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

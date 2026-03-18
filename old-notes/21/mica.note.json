@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "El mundo como testigo",
+    "helper": "26/11/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-30a56bfd",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Escribir las iniciales en un candado, exponerlo a la gente y tirar esa llave en algún lugar donde nadie que quiera pueda encontrarlo, ¿qué significa?\n\n¿Con ese gesto estamos estableciendo que vamos a estar juntos para siempre, que el tiempo no nos va a desgastar?\n\n¿O lo hacemos como un recuerdo, lo exponemos para hacer del mundo un testigo de que a pesar de no haber sido un “para siempre”, fuimos?",
+      "preserveBreaks": false
+    }
+  ]
+}

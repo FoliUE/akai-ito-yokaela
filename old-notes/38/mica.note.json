@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Interpretar distinto",
+    "helper": "12/02/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-c861c4cd",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Dos personas enfrentadas, cara a cara.\n\nSe ven el uno al otro, contemplan, analizan y admiran.\n\nAmbos ven ojos, nariz, boca, dientes, pelo, orejas…\n\nPero ambos interpretan todo de manera distinta.\n\nUno ve ojos cansados con pequeñas arrugas a los costados causadas por el insomnio o vaya a saber qué preocupación lo mantiene despierto por las noches, mientras que el otro ve una sonrisa con las comisuras marcadas del tanto reír o al menos fingir que las ríe.\n\nUno ve unas pequeñas pecas en forma de galaxia por toda su cara, el otro ve una delgada capa de barba en el mentón queriendo cubrir una cicatriz de la infancia.\n\nAsí como ven cosas también las sienten. Unos pueden sentir alegría, otros nervios…\n\nA uno le corre una energía que le hace picar los brazos con ganas de rodear a esa persona en un abrazo que los vuelva uno, y la otra unas mariposas hiperactivas en el estómago que la impulsan a besarle la cara sin reparo.\n\nPueden ser emociones tan agradables como oscuras.\n\nPueden ser correspondidas o no.\n\nPuedes ver similitudes o diferencias.\n\nPueden ver lo mismo e interpretar todo de manera diferente.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-448e10ab",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "“Y de la vida que soñamos aún nos queda lo mejor”"
+      ],
+      "author": "Dorian",
+      "flags": [
+        "center"
+      ]
+    }
+  ]
+}

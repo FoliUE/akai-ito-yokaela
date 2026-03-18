@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Dejar el lienzo en blanco",
+    "helper": "28/01/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-59e6aa30",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Saqué todos los posters que tenía en mi placard, los que pegué durante mi adolescencia, los que le daban la sensación de que eso era mío.\n\nAhora son puestos comunes, sin nada distinto ni particular. Pero la diferencia es que ahora noté que no necesito eso para hacerlo mío, ya lo siento así.\n\nSí es verdad que cuando abro las puertas siento una nostalgia de ver todos las fotos que saqué y mis cantantes favoritos, pero es eso solo, nostalgia.\n\nTambién saqué unos dibujos que hice hace tiempo y tenía pegados al lado de la cama, me pareció que era hora de actualizar esos dibujos.\n\nYa no soy esa persona y mi mente creció en estos años, pienso que puedo plasmar eso de una mejor manera y para que eso ocurra tenía que dejar el lienzo en blanco. Comenzar de nuevo.\n\nCreo que a eso los adultos lo llaman “empezar a crecer”.",
+      "preserveBreaks": false
+    }
+  ]
+}

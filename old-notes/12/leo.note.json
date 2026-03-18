@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Todo de vos",
+    "helper": "10/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-c31aa53f",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No sé qué es lo que dicen, o lo que se dice... Te voy a decir qué es lo que me pasó con vos.\n\nMe enamoré completamente de quien sos, te quiero completamente como sos, desde ese lado ya me encontraste, y sí que importa si me querés de igual manera, me importa más lo que vos querés, porque yo simplemente te quiero a vos...\n\nY todo de vos, sea bueno, malo, en medio. Enfrentaría todo por y para vos.",
+      "preserveBreaks": false
+    }
+  ]
+}

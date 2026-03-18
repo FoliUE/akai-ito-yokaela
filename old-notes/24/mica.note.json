@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Tu alma pide un respiro",
+    "helper": "02/12/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-919d2f98",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Acabo de leer la frase: “Tu alma pide un respiro” y rompí en llanto. Llanto silencioso, llanto doloroso, desgarrador. Pero por dentro, solo yo sabía que me dolían tanto esas palabras.\n\nPara los demás solo tengo son alergias y los ojos hinchados.\n\nEsa frase da justo en un punto de mi vida que no quiero asumir, tengo que aceptar que a veces no se puede con todo, que quien mucho abarca poco aprieta.\n\n¿Cómo hacemos que el alma respire? ¿Cómo le damos ese break que tanto necesita y tan bien le hace?",
+      "preserveBreaks": false
+    }
+  ]
+}

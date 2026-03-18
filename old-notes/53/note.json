@@ -1,0 +1,32 @@
+{
+  "numero": 53,
+  "collection": "viejas",
+  "titulo": "Ser tesoro, no reemplazo",
+  "descripcion": "Una reflexión sobre el miedo a ser solo un reemplazo para la soledad de alguien, y una respuesta que elige el amor por encima de todo.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/53.jpeg",
+    "alt": "Recuerdo de la hoja 53",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

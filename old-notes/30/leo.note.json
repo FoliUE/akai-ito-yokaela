@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Yo tampoco puedo salir",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-26625ce3",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No sé quién eras en ese sueño, pero sí sé lo que es sentir que alguien se te mete tan adentro que después no hay forma de sacarlo.\n\nA mí me pasa con vos. No necesito dormirme para sentirte en mi mente, en mi pecho, en mi cuerpo entero. Estás conmigo cuando manejo, cuando trabajo, cuando lloro, cuando intento distraerme, cuando me acuesto y cuando me despierto.\n\nY entiendo eso de que hay cosas más íntimas que sacarse la ropa. Porque sí, hacer el amor con vos es lo más hermoso que viví, pero sentir que te metiste en mi alma, en mi cabeza, en la forma que tengo de mirar el mundo, eso es todavía más profundo.\n\nVos también dejaste tu huella sobre la mía. Y yo tampoco puedo salir de ahí ni quiero.",
+      "preserveBreaks": false
+    }
+  ]
+}

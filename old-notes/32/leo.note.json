@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Cuando estés triste, estoy para vos",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-ec749461",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Estoy en el punto donde no sé si decirte que escribas, o que no lo hagas, me asusta el hecho de que quizás si te pido que escribas, termines desahogando cosas que quizás no podés conmigo, es decir, me encantaría que desahogues todo lo que te puede entristecer, preocupar o sentir insegura. Pero a la vez me sentiría muy inútil en cierta forma el no poder ayudarte. Pero amaría verte hacer siempre lo que quieras, lo que sientas. Quiero verte siempre feliz.\n\nY cuando estés triste, sabés que estoy para vos.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-b40bc030",
+      "type": "song",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "No quiero vivir esta vida sin tu boca.\n\nNo quiero seguir caminos largos\n\nsin saber que al final estás vos.\n\nNo quiero perderme en días vacíos\n\nni mirar el cielo con el alma inquieta\n\npensando que tus sueños están lejos de los míos.\n\nQuiero darte lo que soy:\n\nmi cuerpo, mi calma, mi corazón,\n\ny este temblor que me nace cuando te pienso.\n\nY sobre todo,\n\nno quiero morirme sin que me hayas amado."
+      ],
+      "author": "Readaptado de Elsa López",
+      "flags": []
+    }
+  ]
+}

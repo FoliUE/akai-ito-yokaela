@@ -1,0 +1,28 @@
+{
+  "numero": 56,
+  "collection": "viejas",
+  "titulo": "Elegir quién se queda",
+  "descripcion": "Cuidar a los demás también empieza a significar elegir mejor a quién dejar cerca.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "layout": "single",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/56.jpeg",
+    "alt": "Recuerdo de la hoja 56",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    }
+  ]
+}

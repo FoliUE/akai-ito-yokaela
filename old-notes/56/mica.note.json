@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Gracias, Romi",
+    "helper": "04/07/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-9655ac3d",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "“Desde que arrancaste terapia noto que le prestás más atención a la gente de tu alrededor”.\n\nEsa fue la frase que me dijo mi vieja hoy en el coche. Yo antes pensaba que prestaba mucha atención a la gente a mi alrededor, de ser alguien atenta y preocuparme por ellos, pero entendí a lo que mamá quiso decir.\n\nAntes me fijaba que todo el mundo a mi alrededor esté bien, si necesitaban algo, si estaban tristes, lo que sea. Ahora me fijo que la gente que está a mi alrededor sea la que yo quiera, que me haga bien y que si me preocupo por ellos, sea porque también la otra persona se preocupa por mí.\n\nGracias, Romi.",
+      "preserveBreaks": false
+    }
+  ]
+}

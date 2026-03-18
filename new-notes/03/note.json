@@ -7,18 +7,27 @@
   "fecha": "08/03/26",
   "sortDate": "2026-03-08",
   "theme": "theme-present-notes",
+  "footerText": "Hecho con amor, nota por nota.",
+  "customCss": "",
   "cover": {
     "src": "../../assets/img/new-notes/03.jpeg",
-    "alt": "Recuerdo de la hoja nueva 03"
+    "alt": "Recuerdo de la hoja nueva 03",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": "52.4% 23.7%"
   },
   "authors": [
     {
       "id": "mica",
-      "file": "mica.note"
+      "file": "mica.note.json",
+      "visible": false
     },
     {
       "id": "leo",
-      "file": "leo.note"
+      "file": "leo.note.json",
+      "visible": true
     }
-  ]
+  ],
+  "layout": "single"
 }

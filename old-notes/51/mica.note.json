@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Caer en ese juego",
+    "helper": "28/04/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-3284a06c",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Tengo miedo de estudiar tu voz.\n\nDe poner un audio de wpp y que suene ahí, de fondo.\n\nHace tanto que no la escucho. Siento que podría hipnotizarme y tengo miedo de caer en ese juego.",
+      "preserveBreaks": false
+    }
+  ]
+}

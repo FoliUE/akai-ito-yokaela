@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Nunca lo olvides",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-9f3ed6f9",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "“Nunca te olvides que te doy mi vida, te extraño de noche, te quiero de día, y quiero llevarte por siempre conmigo, hacia ningún lado, hacia el infinito.”"
+      ],
+      "author": "Airbag",
+      "flags": [
+        "center"
+      ]
+    }
+  ]
+}

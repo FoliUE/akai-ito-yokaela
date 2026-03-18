@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Lo que la cámara no logra",
+    "helper": "16/10/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-692dc1c1",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¿Qué tiene el cielo que siempre me invita a mirarlo? Siempre pone algo que llame mi atención, ya sea un color o un ave, un avión o unas nubes majestuosas...\n\nLo que sí tiene sé, es que cuando quiero captar lo que veo a través de la cámara, no lo logro.\n\nHago lo posible para que la foto se aproxime a lo que veo, pero cuando veo el resultado, me doy cuenta de que no expresa todo lo que siento en el pecho al verlo. Una sensación de vacío ante la inmensidad y de saciedad ante sus colores.\n\nSimplemente magia ❤️",
+      "preserveBreaks": false
+    }
+  ]
+}

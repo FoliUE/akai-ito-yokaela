@@ -1,0 +1,32 @@
+{
+  "numero": 48,
+  "collection": "viejas",
+  "titulo": "Nuestras canciones",
+  "descripcion": "A veces las palabras que no podemos decir en voz alta ya están escritas en las canciones que nos dedicamos.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-sadness",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/48.jpeg",
+    "alt": "Recuerdo de la hoja 48",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

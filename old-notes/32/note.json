@@ -1,0 +1,32 @@
+{
+  "numero": 32,
+  "collection": "viejas",
+  "titulo": "Es arte y amor",
+  "descripcion": "Escribir a veces salva, a veces desarma, y otras deja ver todo lo que no siempre se puede decir en voz alta.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": ".dual-quote-strip {\n      display: grid;\n      grid-template-columns: 72px minmax(0, 1fr) 72px;\n      gap: 1rem;\n      align-items: center;\n      margin: 1.5rem 0;\n    }\n\n    .side-totem {\n      margin: 0;\n      min-height: 320px;\n      border-radius: 18px;\n      overflow: hidden;\n      background: rgba(255, 255, 255, 0.03);\n      border: 1px solid rgba(255, 255, 255, 0.04);\n    }\n\n    .side-totem img {\n      display: block;\n      width: 100%;\n      height: 100%;\n      object-fit: cover;\n    }\n\n    .side-totem-placeholder {\n      display: none;\n      height: 100%;\n      min-height: 320px;\n      padding: 0.75rem 0.5rem;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      font-size: 0.82rem;\n      line-height: 1.35;\n      color: rgba(0, 0, 0, 0.68);\n      background: linear-gradient(180deg, rgba(210, 210, 210, 0.18), rgba(180, 180, 180, 0.1));\n    }\n\n    .quote-core {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      padding: 0;\n      background: transparent;\n      border: 0;\n    }\n\n    .quote-core .note-quote {\n      margin: 0;\n      width: 100%;\n      max-width: 320px;\n      text-align: center;\n      padding: 1.25rem 1rem;\n      border-radius: 18px;\n      background: rgba(255, 255, 255, 0.08);\n      border: 1px solid rgba(255, 255, 255, 0.08);\n      backdrop-filter: blur(2px);\n    }\n\n    .quote-core .note-quote p:last-child {\n      margin-bottom: 0;\n    }\n\n    @media (max-width: 720px) {\n      .dual-quote-strip {\n        grid-template-columns: 1fr;\n      }\n\n      .side-totem {\n        min-height: 180px;\n      }\n\n      .side-totem-placeholder {\n        min-height: 180px;\n      }\n    }",
+  "cover": {
+    "src": "../../assets/img/old-notes/32.jpeg",
+    "alt": "Recuerdo de la hoja 32",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

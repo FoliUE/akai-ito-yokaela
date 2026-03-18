@@ -1,0 +1,32 @@
+{
+  "numero": 18,
+  "collection": "viejas",
+  "titulo": "Una página antes de coincidir",
+  "descripcion": "A veces una decisión triste no cierra una historia; apenas deja escrita la hoja anterior a algo hermoso.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/18.jpeg",
+    "alt": "Recuerdo de la hoja 18",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

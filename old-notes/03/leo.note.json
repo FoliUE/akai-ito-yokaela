@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Tan real que dolía",
+    "helper": "09/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-8ad34079",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "La noche del viernes 6/3 soñé con vos, soñé que me ibas a buscar a la oficina (el jueves fui), y fue medio deja vu de la noche tormentosa que me fuiste a buscar a la madrugada, solo que en vez de arrancar para llevarnos a casa, te subiste arriba mío, me empezaste a besar mientras me sacabas la remera y terminamos haciendo el amor en el auto.\n\nSentí tus besos, tus caricias, tus mimos, tu aliento, tu calor, tus gemidos. Se sintió tan real, tanto que me cuesta saber si fue de los sueños más hermosos que tuve con vos, o si forma parte de una tortura.",
+      "preserveBreaks": false
+    }
+  ]
+}

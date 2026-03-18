@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Antes de nosotros",
+    "helper": "11/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-6eef8333",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Capaz ese domingo a las 3:30 pensabas en el amor como algo que a veces llega cuando uno no puede recibirlo. Y tenías razón: nadie está obligado a corresponderlo solo porque exista.\n\nPero también creo que a veces el tiempo acomoda las cosas. Las personas cambian, las miradas se encuentran en otro momento, y lo que antes no era posible después sí.\n\nAsí que, si hoy leo ese texto siendo tu novio, me gusta pensar que ese domingo deprimente no era una conclusión… era solo una página antes de que nuestras historias coincidieran.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Que busque conocernos",
+    "helper": "12/11/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-7968ffde",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¿Habrá alguien que preste atención a los libros que leemos?\n\n¿A cuál es la parte de la canción que cantamos con más emoción?\n\n¿Qué tipo de dibujo disfrutamos más o con qué pequeñas cosas reírnos?...\n\nQue busque conocernos de a poco, sin prisa, pero a fondo...",
+      "preserveBreaks": false
+    }
+  ]
+}

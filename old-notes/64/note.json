@@ -1,0 +1,32 @@
+{
+  "numero": 64,
+  "collection": "viejas",
+  "titulo": "Volver a coincidir",
+  "descripcion": "Hay encuentros que no dependen de quedarse quietos, sino de seguir girando hasta volver a reconocerse, como si el cielo insistiera una y otra vez en unir lo que nunca dejó de buscarse.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/64.jpeg",
+    "alt": "Recuerdo de la hoja 64",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

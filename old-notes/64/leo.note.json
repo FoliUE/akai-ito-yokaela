@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Te elegiría en cada galaxia",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-f3f22fc2",
+      "type": "song",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "Entonces dejame ser\n\nla calma que te espera\n\ncuando termine tu huida.",
+        "Si vos aparecés como la luna,\n\nyo no quiero apagarme por alcanzarte,\n\nquiero aprender la distancia exacta\n\npara encontrarte sin perderte.",
+        "Y cuando otra vez el cielo nos conceda\n\nese instante mínimo y sagrado,\n\nno voy a llamarlo final,\n\nsino comienzo.",
+        "Porque entendí que lo nuestro\n\nno se trata de no alejarnos,\n\nsino de volver.\n\nDe reconocernos.\n\nDe arder menos y abrazar más.",
+        "Y si los astros repiten su historia,\n\nque la repitan.\n\nYo también:\n\nte elegiría en cada galaxia,\n\nen cada órbita,\n\nen cada eclipse,\n\nen cada vida donde me toque coincidir con vos\n\ny si no, te voy a buscar incansablemente hasta encontrarte\n\nhasta que mi carne se pudra y desaparezca\n\nmis huesos se enfríen\n\ny vuelva a ser polvo de estrella"
+      ],
+      "author": "",
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Ser uno mismo en la oscuridad",
+    "helper": "02/11/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-ccbca8f3",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "La madrugada nos pone más sinceros o por lo menos es lo que la gente cree.\n\nUno no se da cuenta de que en realidad es el único horario del día en que uno tiene el tiempo para ser uno mismo. No hay horarios que cumplir ni gente con la que simpatizar, ni obligaciones en el momento.\n\nSolo la paz de ser uno mismo, cubierto con esa oscuridad que nos da un poco de misterio y nos ayuda a que no se vea tonto nuestro rostro.\n\nUna persona a las 21am es muy un ser humano sintiéndose libre con un antifaz.",
+      "preserveBreaks": false
+    }
+  ]
+}

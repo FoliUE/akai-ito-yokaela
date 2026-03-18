@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "En la oscuridad",
+    "helper": "22/09/25",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-06cbb0a4",
+      "type": "song",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "No respiro, me quema el dolor\n\nEsta asfixia me quiebra el corazón\n\nel querer decirte lo que siento y callar\n\nme desarma, me hunde y me hace sangrar",
+        "Mi lindo amor no correspondido\n\nMi chispa de fe\n\nPrefiero mil puñaladas en la piel\n\nantes que seguir a tu lado\n\nfingiendo que no te quiero",
+        "Subí tan rápido y olvidé respirar\n\nme gritaste \"No te vayas a quebrar\"\n\nAhora que estoy perdido en el mar\n\nNadie viene, nadie me va a rescatar",
+        "El ruido se hizo niebla, se hizo cristal\n\ny tu voz se apagó en mi oscuridad.\n\nMe pierdo en la oscuridad\n\nla verdad me desangra y no puedo escapar\n\nCada latido es un grito ahogado\n\nque nunca vas a escuchar",
+        "Sigo cayendo y me falta el aire\n\nMi pecho late como un secreto que arde\n\nLas palabras que no pude gritar\n\nMe perforan profundo y me vuelven a matar",
+        "Si pudiera romper las cadenas\n\nquemar el miedo y barrer las penas\n\nTe diría que sos lo que siempre escondí\n\naunque el decirlo te aleje de mí"
+      ],
+      "author": "En la oscuridad — Leo, para vos mi amor.",
+      "flags": []
+    }
+  ]
+}

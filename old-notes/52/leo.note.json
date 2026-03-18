@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Que puedas ser vos",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-2b7ba91b",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Deseo que puedas escuchar música y apreciarla completamente, sin mucha atención en las técnicas vocales.\n\nDeseo que puedas disfrutar la música de vuelta, deseo que puedas ser vos siempre, y que entiendas que tenés que ser quien vos querés, y no lo que los demás esperan de vos.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "No hay nadie",
+    "helper": "10/12/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-0fa2f261",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Hablando con un amigo me dijo “no puede ser que nadie te invite al cine”.\n\nNo pude responderle, porque es verdad, no hay nadie que me invite o que yo pueda invitar. Hace tiempo que no hay nadie, hasta me acostumbré a no hacer planes, a no tener con quién hablar sobre cómo me fue en el día o con quién pasarlo cuando no hay nada para hacer.\n\nNo hay domingos acompañada, no hay viernes con amigos y luego juntarnos a dormir o un sábado en casa juntos.\n\nNo hay quien venga conmigo a fiestas familiares y con quien irme cuando termine. No hay nadie...",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Creo en ti",
+    "helper": "11/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-2e28008c",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Creo en ti - REIK\n\n(Sabes que no me gusta REIK pero esta letra va para vos)\n\nYa no importa cada noche que esperé\n\nCada calle o laberinto que crucé\n\nPorque el cielo ha conspirado a mi favor\n\nY a un segundo de rendirme te encontré\n\nPiel con piel\n\nEl corazón se me desarma\n\nMe haces bien\n\nEnciendes luces en mi alma\n\nCreo en ti y en este amor\n\nQue me vuelve indestructible\n\nQue detuvo mi caída libre\n\nCreo en ti y mi dolor\n\nSe quedó kilómetros atrás\n\nMis fantasmas hoy, por fin,\n\nestán en paz\n\nEl pasado es un mal sueño que acabó\n\nUn incendio que en tus brazos se apagó\n\nCuando estaba a medio paso de caer\n\nMis silencios se encontraron con tu voz\n\nTe seguí y reescribiste mi futuro\n\nEs aquí, mi único lugar seguro\n\nCreo en ti y en este amor\n\nQue me ha vuelto indestructible\n\nQue detuvo mi caída libre\n\nCreo en ti y mi dolor\n\nSe quedó kilómetros atrás\n\nMis fantasmas hoy, por fin,\n\nestán en paz",
+      "preserveBreaks": true
+    }
+  ]
+}

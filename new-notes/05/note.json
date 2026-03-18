@@ -6,25 +6,38 @@
   "subtitulo": "Abrir nota actual",
   "fecha": "17/03/26",
   "sortDate": "2026-03-17",
-  "layout": "single",
   "theme": "theme-present-notes",
+  "footerText": "Hecho con amor, nota por nota.",
+  "customCss": "",
   "cover": {
     "src": "../../assets/img/new-notes/05.jpeg",
-    "alt": "Recuerdo de la hoja nueva 05"
+    "alt": "Recuerdo de la hoja nueva 05",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": "45.3% 35.2%"
   },
   "authors": [
     {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": false
+    },
+    {
       "id": "leo",
-      "file": "leo.note"
+      "file": "leo.note.json",
+      "visible": true
     }
   ],
   "music": {
     "youtubeId": "lB_XmsyiL-I",
     "volume": 40,
     "autoplay": true,
+    "attachToAuthor": "leo",
     "buttonLabel": "Reproducir canción",
     "loadingMessage": "Intentando reproducir la canción al abrir esta hoja.",
     "playingMessage": "Reproduciendo la canción de fondo.",
     "blockedMessage": "Tu navegador bloqueó el autoplay con sonido. Tocá el botón para iniciar la canción."
-  }
+  },
+  "layout": "single"
 }

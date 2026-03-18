@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "La anestesia de las emociones",
+    "helper": "08/03/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-d55846cd",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Digo \"olvidar\" sabiendo que nunca puedo, solo corro a un costado todo y espero a que duela menos, pero en la primera que hago un paso afuera todo eso me golpea como bola de salva y duele el doble.\n\nMantener el camino recto es lo único que me da una anestesia de las putas emociones que no hacen más que nublar los juicios.\n\nObvio que en ese momento de vacío existencial recurro al romanticismo que me brindan las artes, pero no son lo mismo.\n\nEspero a la madrugada donde todos están tocados por el sueño más profundo, me recuesto con los auriculares a tope sonando la canción más triste del momento y derrapo por mis sentimientos solo para recordar que están ahí y que todavía no me volví un fantasma que deambula por las calles con un corazón muerto.",
+      "preserveBreaks": false
+    }
+  ]
+}

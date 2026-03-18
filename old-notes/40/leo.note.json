@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Citas y diálogos",
+    "helper": "",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-c67d7af0",
+      "type": "dialogue",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "Lucifer: Are you okay?\n\nChloe : If I pushed this into your chest... it would kill you?\n\nLucifer: Yes\n\nChloe : Because I'm close to you?\n\nLucifer: Yes\n\nChloe : But you jumped in front of it anyway\n\nLucifer: Yes...\n\nLucifer: And I would do it again... and again...\n\nLucifer: Don't you know that, Detective?"
+      ],
+      "author": "Lucifer",
+      "flags": []
+    }
+  ]
+}

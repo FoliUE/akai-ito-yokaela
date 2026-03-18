@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Como",
+    "helper": "12/01/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-7992ec31",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Ayer perdi el sello que le di\n\nAl filo de las cosas que elegi\n\nQue corta si, es tan sutil\n\nPide con estilo ganas de salir\n\nY si no tiene ese poder no es para mi\n\nComo se llega a sentir ?\n\nque de amor puedo morir?\n\nComo se puede respirar?\n\nsi tengo que decir?\n\nQue prefiero una ilusion\n\na entregar mi corazon\n\nSi lo que me mataba hoy me resucito\n\nY ahora no entiendo que haces\n\nque no estas aqui\n\nMientras, te pido, no vengas\n\nque no puedo seguir asi\n\nComo se llega a sentir ?\n\nque de amor puedo morir?\n\nComo se puede respirar?\n\nsi tengo que decir?\n\nQue prefiero una ilusion\n\na entregar mi corazon\n\nSi lo que me mataba hoy me resucito",
+      "preserveBreaks": true
+    },
+    {
+      "id": "block-59be6c81",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "right"
+      },
+      "text": "-- Como -- Benjamin Amadeo",
+      "preserveBreaks": false
+    }
+  ]
+}

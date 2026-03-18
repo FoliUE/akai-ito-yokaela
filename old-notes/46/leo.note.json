@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Al menos te tengo en mis sueños",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-fa08c1d6",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Está siendo el día más emotivo de todos, volví a llorar baldes, también me hablo a mí mismo, te recuerdo, te imagino, y se me aflojan las rodillas.\n\nMejor me voy a dormir, y esperar soñar con vos una vez más, al menos te tengo en mis sueños.",
+      "preserveBreaks": false
+    }
+  ]
+}

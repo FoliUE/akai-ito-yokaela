@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "No puedo respirar",
+    "helper": "09/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-17c2d9ef",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Qué cosa rara esto de sentir que no puedo respirar si no te tengo cerca.\n\nEstoy en este limbo tortuoso de silencio sintiendo desfallecer, siento que me pesan los ojos con las horas y las palabras quedan adentro.\n\nPero encontré la forma de apaciguar el dolor que tengo en el pecho. Llorar a los gritos en el auto, yendo de camino al trabajo, es la sesión de terapia más barata y terapéutica que encontré para sobrellevar aunque sea 5 minutos la falta que me haces.",
+      "preserveBreaks": false
+    }
+  ]
+}

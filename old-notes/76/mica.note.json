@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Qué pasó con el arte en el tiempo",
+    "helper": "11/10/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-95f34ae2",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Qué pasó con el arte en el tiempo. Algo que siempre nos trajo historias, ayuda a juntar momentos, lo más bello que tenemos y nadie lo observa.",
+      "preserveBreaks": false
+    }
+  ]
+}

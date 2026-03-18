@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Una parte de ella va a nacer en vos",
+    "helper": "10/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-a4d582f1",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Las personas que nos cuidaron con amor nunca se van del todo. Viven en cada gesto bueno que aprendimos de ellas y en cada paso que damos gracias a lo que nos enseñaron.\n\nUna parte de ella va a nacer en vos nuevamente cuando te toque cumplir el rol de madre. Y yo voy a estar ahí con vos para acompañarte, no tengo dudas de que vas a ser una madraza.",
+      "preserveBreaks": false
+    }
+  ]
+}

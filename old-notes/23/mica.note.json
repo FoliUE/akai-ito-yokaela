@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "La inseguridad física",
+    "helper": "02/12/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-07c2f040",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Cuando no es mi peso, es mi cara, o mis piernas, mi altura, o mi espalda.\n\nSiempre caigo en la inseguridad física como si todo dependiera de ello. Sé que no es así, sé que hay cosas que importan más, pero mi mente es débil por momentos y la soledad que me rodea no es la mejor de las compañías.",
+      "preserveBreaks": false
+    }
+  ]
+}

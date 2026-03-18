@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Citas y diálogos",
+    "helper": "",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-04cb8c53",
+      "type": "dialogue",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "• Jackie: I can fit my whole world in the palm of my hands!\n\n• Hyde: That’s impos-\n\n• Jackie: [Cups Hyde’s face]\n\n• Hyde: [Blushing] Jackie, I have a reputation."
+      ],
+      "author": "THAT 70’s SHOW",
+      "flags": []
+    },
+    {
+      "id": "block-c61047d7",
+      "type": "dialogue",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "• Hyde: Okay, yeah, I LOVE Jackie! I have loving feelings for Jackie. But does that mean that I am IN love with her? NO.\n\n• Hyde: Oh my god. I’m in love with Jackie!\n\n• Hyde to the rest of the squad: Why didn’t you guys tell me?\n\n• Fez: We thought you knew."
+      ],
+      "author": "THAT 70’s SHOW",
+      "flags": []
+    },
+    {
+      "id": "block-aa3ce93a",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "My hidden talents include remembering everything, overthinking, crying and overthinking."
+      ],
+      "author": "TUMBLR 25",
+      "flags": []
+    }
+  ]
+}

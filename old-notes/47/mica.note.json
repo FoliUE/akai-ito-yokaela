@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "¿Ya no les sirve?",
+    "helper": "11/03/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-3e18e6f7",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¿Será que todos los humanos hacemos lo mismo de jugar con el cariño de la otra persona?\n\n“Oh, me siento solx... vamos a boludear a X!” y ahí dan su mejor actuación de afecto a alguien que en un futuro no muy lejano, no recordarán ni su nombre.\n\n¿Y en cuanto vuelve la persona que le hace lo mismo a ustedes abandonan a la otra, a pesar de que la otra persona da todo por ustedes?\n\n¿Qué sucede? ¿Ya no les sirve?",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Ya basta de desear ser querida",
+    "helper": "22/07/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-5dbcd8bf",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Ya no más, ya basta de desear ser querida.\n\nVa a pasar el tren bajo el puente y no lo voy a pensar, voy a ver el post y no voy a rebloguear pidiendo algo que no debía rogárselo al polvo de estrella.\n\nNo estoy diseñada para ser amada y ninguna fuerza podrá cambiar eso.\n\nBasta de soplar dientes de león y verlos irse junto a mi esperanza de buscar estrellas fugaces y sentir que pasan igual de rápido que mi ilusión.",
+      "preserveBreaks": false
+    }
+  ]
+}

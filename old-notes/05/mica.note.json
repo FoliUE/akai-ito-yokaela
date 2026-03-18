@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Una señal",
+    "helper": "21/08/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-7b2c7cea",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Anoche tomé un vino, como quien le pone pegamento a una taza rota para después guardarla, y me envolví en mi manta favorita, simulando que eras vos abrazándome para que esos pedazos rotos se pudieran unir finalmente...\n\nMe desperté con dolor de cabeza y la manta en el suelo, creo que eso fue una señal.",
+      "preserveBreaks": false
+    }
+  ]
+}

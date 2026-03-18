@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "La música es todo",
+    "helper": "30/01/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-dc94a79b",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "La gente que suma música a mi vida, a esa quiero cerca. No importa si es triste, excitante, feliz, o melancólica, solo importa que sea música.\n\nQue lo represente, que lo escuche y su cara aparezca en mis retinas o un momento juntos cruce mi cabeza.\n\nLa música es todo, sé que algún día la gente lo va a entender.",
+      "preserveBreaks": false
+    }
+  ]
+}

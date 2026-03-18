@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Domingo eterno",
+    "helper": "12/08/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-58f8c9bc",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Otra vez...\n\nOtra vez me encuentro sola por la noche, igual que hoy a la mañana. Otra vez se hace domingo y otra vez se hace eterno.\n\n¿Por qué será que “otra vez” es como la otra vez? Sola.\n\nSola con la televisión, con un plato en la mesa y el mate frío.\n\nCama de una plaza, para que el estar sola duela menos.\n\nLibros en los estantes, cuadernos de dibujo, la música de compañía...\n¡Pero que no te engañe! Esa pequeña compañía que brindan las melodías,\nhace que el estar sola duela más.",
+      "preserveBreaks": true
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "No estás más sola",
+    "helper": "12/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-4bdc0786",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¡Hola! Te invito a ver Scream 7 ni bien vuelvas de Europa.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-944432b3",
+      "type": "image",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "options": {
+        "src": "../../assets/img/scream.jpeg",
+        "alt": "Imagen de Scream 7",
+        "caption": "",
+        "height": "",
+        "fit": "cover",
+        "padding": "",
+        "background": "",
+        "position": "",
+        "margin": "1rem 0 1.25rem"
+      }
+    },
+    {
+      "id": "block-2033873c",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Espero que vos también tengas planes, porque yo tengo muchos planes con vos. Un casamiento, una casa, unos niños...\n\nAcá estoy para que me cuentes cómo te fue en el día, acá estoy para pasar el día cuando no hay nada para hacer. Acá estoy para acompañarte los domingos, para salir los viernes con amigos y volver a casa juntos, o sábado en casa juntos.\n\nSoy quien va a ir con vos a todas las fiestas familiares y con quien volver cuando termine. Acá estoy, mi amor. No estás más sola.",
+      "preserveBreaks": false
+    }
+  ]
+}

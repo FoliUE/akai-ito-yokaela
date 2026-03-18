@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Me alegra estar en tu historia",
+    "helper": "11/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-4b4fb8e6",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No sé todas las respuestas que buscabas cuando escribiste esto, pero sí sé que a veces las relaciones que funcionan de esa manera, mejor dicho no funcionan, y son de las que más aprendemos.\n\nMe alegra poder estar hoy en tu historia.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Ese guiño cómplice",
+    "helper": "31/07/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-8d546679",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Qué cosa tan íntima ese guiño cómplice entre dos personas.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-8a30a980",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "—Nadie le preguntó al tornado, si lo que busca es destruir o ser destruido."
+      ],
+      "author": "Tumblr",
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Tesoros, no reemplazos",
+    "helper": "22/05/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-c2ba36dc",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "¿Realmente es amor o es hartazgo de la soledad?\n\nQué cosa eso, ¿no? Que las personas podamos hacer algo, pero no porque lo sentimos real, sino que lo necesitamos para no tolerarnos más.\n\n“Estoy saliendo con alguien que no me convence mucho, pero antes de estar sola...”\n\nEsa frase la escuché más veces de las que quisiera. ¿La otra persona sabrá que está siendo usada para tapar una mancha que molesta al otro? ¿Sabrá que no está siendo nadie nuevo en su vida, solo un mero reemplazo?\n\nNadie debería ser eso. Romi me lo dijo.\n\nTodos merecemos ser tesoros y no yeso, tenemos un valor.",
+      "preserveBreaks": false
+    }
+  ]
+}

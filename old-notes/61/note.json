@@ -1,0 +1,32 @@
+{
+  "numero": 61,
+  "collection": "viejas",
+  "titulo": "Hasta que algo lo detenga",
+  "descripcion": "Hay fuerzas que parecen hechas para arrasar, pero a veces solo están girando en busca de un punto donde por fin poder quedarse.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/61.jpeg",
+    "alt": "Recuerdo de la hoja 61",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

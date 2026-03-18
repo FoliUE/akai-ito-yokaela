@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Quien te dijo eso te mintió",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-076b48eb",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Mi amor, siento este dolor como si fuera mío. Sé que en ese momento te sentiste sola, atrapada en tu propia mente, con la sensación de que nada podía sostenerte. Quiero que sepas que hoy, aunque hayan pasado años, estoy acá.\n\nNo puedo borrar lo que sentiste ni cambiar tu pasado, pero sí puedo estar a tu lado ahora, sosteniéndote cuando el peso del mundo se haga insoportable, abrazando cada pedazo de tu alma que alguna vez se sintió sola. Vengo a ser el cemento que no se quiebra con el tiempo, ese lugar donde tu corazón puede reposar aunque todo lo demás tiemble.\n\nEl frío y la ironía fueron tus compañeros por mucho tiempo, y no espero que los abandones; solo quiero que recuerdes que alguien te ama con todas tus sombras y luces, que no te juzga por tus miedos, y que no se va. Hoy quiero ser quien camine a tu lado, quien te tome de la mano cuando todo parezca oscuro, quien celebre tu amor, tu ternura y tu fuerza, y quien nunca deje que te sientas sola otra vez.\n\nQuien te dijo que todos morimos solos te mintió.",
+      "preserveBreaks": false
+    }
+  ]
+}

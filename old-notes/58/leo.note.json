@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Si fui eterno en tu corazón",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-901faec5",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Hay algo muy crudo y muy real en tus palabras, como si hubieras sabido ponerle voz a eso que casi todos sentimos, pero pocos pueden explicar así.\n\nMe da tristeza pensar en la soledad con la que te habrás sentado a escribir esto, en ese frío que describís, en esa cama grande, en esa mesa vacía. Y al mismo tiempo me dan ganas de abrazarte, incluso a la distancia de todos esos años.\n\nNo puedo cambiar lo que sentías en ese momento, ni borrar esa oscuridad que te acompañaba, pero sí puedo decirte que leerte hoy me hace admirarte más. Porque de ese dolor salió algo profundo, sensible y hermoso, aunque nazca de un lugar triste.\n\nY también me nace decirte algo más: hoy ya no sos solo eso que escribió desde la soledad. Hoy también sos compañía, calor, ternura, risa, refugio. Sos la persona más hermosa del universo, mi persona más especial, mi persona favorita, y ojalá, de a poquito, yo también pueda ser un poco de todo eso para vos.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-8cb88b37",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“No tanto, porque si soy eterno en tus palabras, significa que alguna vez fui importante en tu corazón.”"
+      ],
+      "author": "",
+      "flags": []
+    }
+  ]
+}

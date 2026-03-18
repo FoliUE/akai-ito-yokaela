@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Yo te voy a cuidar",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-06dba349",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Sentí la desesperación de querer aferrarte a algo y no encontrar puerto, de abrir los ojos y aun así seguir perdida. Y me parte pensar que hablabas desde un lugar tan oscuro, donde ni la luz alcanzaba a salvarte del todo.\n\nPerdóname por estar tan lejos, perdóname ahora también por estar tan lejos. Te dije que de mi vida pasada no me arrepiento de nada, porque de una u otra manera todo lo vivido y sufrido, todas las decisiones buenas y malas que tomé, me llevaron hasta este momento con vos.\n\nPero a veces quisiera poder acariciar a esa Mica, abrazarla fuerte y decirle “aguantá, aguantá un poquito más que ya llego, sacá la fuerza hasta donde no está para seguir aguantando que ya llego, y una vez que llegue voy a estar para que puedas bajar los guantes y vulnerarte, yo te voy a cuidar hasta con mi último aliento en este plano, y te voy a cuidar infinito en el otro”.",
+      "preserveBreaks": false
+    }
+  ]
+}

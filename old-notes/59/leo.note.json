@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Sí estás hecha para ser amada",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-30b8c605",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Me alegra saber que no te rendiste pese a esto, que no te rendiste al amor, que te la jugaste por mí.\n\nQué fuerza debo estar ejerciendo para demostrarte que sí estás hecha para ser amada, lo que pasaba es que estamos diseñados para estar juntos también, quizás fueron los dientes de león los que me trajeron a tu vida, quizás fueron las estrellas fugaces las que me guiaron hasta vos, quizás fue esa ráfaga en el cielo, aquella vez en el patio de tu abuela, el aviso de que nuestras almas fueron hechas para estar juntas, y nuestros corazones para latir juntos al unísono.",
+      "preserveBreaks": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Lo nuestro no tiene final",
+    "helper": "10/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-191e41bf",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Yo no sabía qué tanto me gustaba el amor hasta que apareciste en mi vida. Creí que tuve amores y desamores, pero nunca lloré por nadie. Tampoco estuve abierto a amar a alguien.\n\nVan 6 días desde que te fuiste a Europa (solo por 15 días) y podría llenar un balde solo con mis lágrimas. Por momentos me siento muy solo, por momentos el extrañarte me hunde el pecho, me asfixia, me desvanece, y la vista se vuelve completamente borrosa por las cataratas de lágrimas que tengo en los ojos.\n\nTrato de pensar que ya solo falta una semana para que vuelvas a mí.\nDesconozco qué tan sano es esta \"dependencia\" a vos, pero de lo que puedo estar seguro,\nes que todo lo que te amo nunca va a tener final.\n\n\n\n\nComo los finales felices... esos que no son finales...\nPor estas cosas se que sos la primera persona que amo y voy a amar el resto de mi vida.",
+      "preserveBreaks": true
+    }
+  ]
+}

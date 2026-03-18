@@ -1,0 +1,32 @@
+{
+  "numero": 75,
+  "collection": "viejas",
+  "titulo": "La mano extra",
+  "descripcion": "A veces animarse no alcanza por sí solo; a veces también hace falta una presencia capaz de volver más liviano el miedo y más posible el salto.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/75.jpeg",
+    "alt": "Recuerdo de la hoja 75",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

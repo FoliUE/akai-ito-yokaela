@@ -1,0 +1,32 @@
+{
+  "numero": 42,
+  "collection": "viejas",
+  "titulo": "Ser lo que necesite",
+  "descripcion": "A veces crecer también es convertirse en el refugio que alguna vez nos hubiera hecho bien tener.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/42.jpeg",
+    "alt": "Recuerdo de la hoja 42",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

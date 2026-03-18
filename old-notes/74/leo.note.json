@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Micaela hay una sola",
+    "helper": "15/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-ed8e0983",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Capaz el mundo sería menos frío si la gente se animara a sentir con esa intensidad, sin guardarse tanto, sin dejar todo para después. Pero para eso todos tendrían que tener una Micaela, y Micaela hay una sola y es mía. (Si! Con lo tóxico que eso suena)\n\nGracias por enseñarme a sentir con intensidad, gracias por darme ganas de vivir, gracias por hacerme amarte y desear mi corto viaje en la tierra a tu lado.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-d2f756e8",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "paragraphs": [
+        "“Y de la vida que soñamos, aún nos queda lo mejor”"
+      ],
+      "author": "Dorian",
+      "flags": []
+    }
+  ]
+}

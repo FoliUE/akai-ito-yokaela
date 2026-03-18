@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Que me quieran completa",
+    "helper": "15/10/18",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-ed605611",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Dicen que para gustarle a alguien debe ser por ser como es uno, no solo lo físico, debe ser completo.\n\nPero, si la persona que nosotros queremos, ¿no nos quiere completo? Ahí es donde uno arranca a cambiar un poco para gustarle más, pero si hacés eso no te va a querer como sos, sino por como cambiaste.\n\n“Ya vas a encontrar a alguien que te quiera de forma ‘completa’”, eso quiere decir que cuando encuentre a alguien, ¿no importa si YO lo quiero a él? Yo tengo que renunciar al que de verdad quiero, porque el que me quiere me quiere completa? Qué cosa confusa...\n\n“Cuando te quieran completa, vos también vas a querer a esa persona”. No lo creo, hubieron personas que creo, me quisieron completa, pero yo no los quise solo o más por eso. Dudo que esa regla se aplique en todos...",
+      "preserveBreaks": false
+    }
+  ]
+}

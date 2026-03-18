@@ -1,0 +1,32 @@
+{
+  "numero": 44,
+  "collection": "viejas",
+  "titulo": "El cemento que no se quiebra",
+  "descripcion": "Hay noches en las que todo parece romperse; otras veces, alguien llega para quedarse cuando todo tiembla.",
+  "subtitulo": "Abrir hoja del archivo",
+  "fecha": "",
+  "sortDate": "",
+  "theme": "theme-archive-notes",
+  "footerText": "Hecho con amor, hoja por hoja.",
+  "customCss": "",
+  "cover": {
+    "src": "../../assets/img/old-notes/44.jpeg",
+    "alt": "Recuerdo de la hoja 44",
+    "caption": "",
+    "enabled": true,
+    "height": "",
+    "position": ""
+  },
+  "authors": [
+    {
+      "id": "mica",
+      "file": "mica.note.json",
+      "visible": true
+    },
+    {
+      "id": "leo",
+      "file": "leo.note.json",
+      "visible": true
+    }
+  ]
+}

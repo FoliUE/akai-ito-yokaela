@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Cuando ya no puedo ignorarlo",
+    "helper": "04/01/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-d8964dee",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Yo no me doy cuenta cuando comienza a crecer, cuando se hace presente todos los días o los detalles que el resto nota.\n\nYo recién puedo verlo cuando es tan grande que me nubla la visión, me aprieta el corazón y hace temblar en mis pulmones, ahí lo noto.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-a8dfa1d4",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "Me gusta la\n\ncerveza fría y tú\n\ncuando te ríes..."
+      ],
+      "author": "Tumblr",
+      "flags": [
+        "breaks",
+        "center"
+      ]
+    }
+  ]
+}

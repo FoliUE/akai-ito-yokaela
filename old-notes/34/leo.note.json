@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Acá estoy yo",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-06a9e1e1",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "Lo que dicen los adultos es aburrido, y vos no sos así. Yo creo que todos tenemos etapas. Lo importante es que no cambie nuestra esencia, quien realmente somos.\n\nAmo que conmigo te puedas sentir como una niña consentida, esa niña interior hermosa que tenés y que tuvo que crecer tan de golpe.\n\nAcá estoy yo para cumplir tus caprichos.",
+      "preserveBreaks": false
+    }
+  ]
+}

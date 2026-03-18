@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Tu corazón nunca más",
+    "helper": "13/03/26",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": [
+    {
+      "id": "block-d54ee014",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No sé dónde van los corazones rotos, pero te puedo jurar por mi vida y la de nuestros futuros hijos, que tu corazón nunca más va a ser herido.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-5d504448",
+      "type": "image",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "options": {
+        "src": "../../assets/img/heartviolet.png",
+        "alt": "Imagen para acompañar la nota de Leo",
+        "caption": "",
+        "height": "",
+        "fit": "contain",
+        "padding": "",
+        "background": "",
+        "position": "",
+        "margin": "1rem 0 0"
+      }
+    }
+  ]
+}

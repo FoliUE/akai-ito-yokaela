@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "label": "Mica",
+    "title": "Tu huella sobre mi huella",
+    "helper": "08/01/19",
+    "spoiler": true,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Esta hoja queda abierta para cuando quieras escribir."
+  },
+  "blocks": [
+    {
+      "id": "block-45af4664",
+      "type": "paragraph",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "default"
+      },
+      "text": "No creo poder seguir manejando estos sueños con tanta cercanía, si en la vida real hay tanta distancia.\n\nSon los sueños más vividos que tuve en mucho tiempo, los que más disfruto, los que dejan el gustito amargo al despertar y ver que no estás acostado a mi lado.\n\nEsa noche de tormenta donde te acostaste al lado mío, me abrazaste para olvidar el miedo y agarraste mi mano para perdernos juntos en un sueño profundo.\n\nFue mucho más íntimo que habernos sacado la ropa y tener sexo. Fue mucho más que eso, porque entraste en mi mente y de ahí es imposible salir.\n\nPorque tu huella sobre mi huella, fueron una, y ese ensamble no se encuentra más de una vez en la vida.",
+      "preserveBreaks": false
+    },
+    {
+      "id": "block-930fb52c",
+      "type": "quote",
+      "style": {
+        "fontSize": "default",
+        "fontFamily": "default",
+        "align": "center"
+      },
+      "paragraphs": [
+        "LOS ESCRITORES NUNCA\n\nOLVIDAN A UNA PERSONA;\n\nESCRIBEN DE ELLA HASTA\n\nDESGARRARSE EL ALMA"
+      ],
+      "author": "",
+      "flags": [
+        "breaks",
+        "center"
+      ]
+    }
+  ]
+}
