@@ -1,1 +1,4 @@
 asset
+__pycache__/
+*.pyc
+tools/notes-manager/build/
