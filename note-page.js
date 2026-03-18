@@ -158,9 +158,15 @@ function extractQuoteAuthor(lines = []) {
   contentLines.pop();
 
   return {
-    author: lastLine.replace(/^[-—]\s+/, "").trim(),
+    author: normalizeSignatureText(lastLine.replace(/^[-—]\s+/, "").trim()),
     lines: contentLines
   };
+}
+
+function normalizeSignatureText(value = "") {
+  return String(value || "")
+    .trim()
+    .replace(/\s+-\s+/g, " — ");
 }
 
 function linesToParagraphs(lines = []) {
@@ -334,7 +340,7 @@ function buildBlock(rawBlock = {}) {
       type: "visual-quote",
       style,
       rows: normalizeVisualQuoteRows(rawBlock.rows),
-      author: String(rawBlock.author || "").trim(),
+      author: normalizeSignatureText(rawBlock.author),
       layout: normalizeVisualQuoteLayout(rawBlock.layout)
     };
   }
@@ -350,7 +356,7 @@ function buildBlock(rawBlock = {}) {
       id: rawBlock.id || `block-${Math.random().toString(36).slice(2, 8)}`,
       type: "quote-strip",
       style,
-      author: String(rawBlock.author || "").trim(),
+      author: normalizeSignatureText(rawBlock.author),
       paragraphs: paragraphSource
         .map((paragraph) => String(paragraph || "").replace(/\n\s*\n+/g, "\n").trim())
         .filter(Boolean),
@@ -408,7 +414,7 @@ function buildBlock(rawBlock = {}) {
     type: normalizedType,
     style,
     flags: normalizeFlags(rawBlock.flags || [], normalizedType),
-    author: String(rawBlock.author || "").trim(),
+    author: normalizeSignatureText(rawBlock.author),
     paragraphs: paragraphSource
       .map((paragraph) => String(paragraph || "").trim())
       .filter(Boolean)
@@ -546,16 +552,28 @@ function normalizeAuthorDocument(authorId, rawDocument = {}) {
   const blocks = Array.isArray(document.blocks)
     ? compactAuthorBlocks(document.blocks.map((block) => buildBlock(block)))
     : [];
+  const readMetaString = (field, fallback = "") => {
+    if (!Object.prototype.hasOwnProperty.call(meta, field)) {
+      return fallback;
+    }
+
+    const value = meta[field];
+    if (value === null || value === undefined) {
+      return "";
+    }
+
+    return String(value).trim();
+  };
 
   return {
     meta: {
       label: String(meta.label || preset.label).trim() || preset.label,
-      title: String(meta.title || preset.emptyTitle).trim() || preset.emptyTitle,
+      title: readMetaString("title", preset.emptyTitle),
       helper: String(meta.helper || "").trim(),
       spoiler: meta.spoiler === true || meta.spoiler === "true",
       variant: String(meta.variant || "").trim(),
       placeholder: meta.placeholder === true || meta.placeholder === "true",
-      placeholderBody: String(meta.placeholderBody || preset.emptyBody).trim() || preset.emptyBody
+      placeholderBody: readMetaString("placeholderBody", preset.emptyBody)
     },
     blocks
   };
@@ -573,8 +591,8 @@ function buildLoadedAuthor(authorConfig = {}, document = {}) {
     cardClass: preset.cardClass,
     meta,
     blocks: normalizedDocument.blocks,
-    emptyTitle: meta.title || preset.emptyTitle,
-    emptyBody: meta.placeholderBody || preset.emptyBody
+    emptyTitle: preset.emptyTitle,
+    emptyBody: preset.emptyBody
   };
 }
 
@@ -1089,9 +1107,17 @@ async function loadAuthor(authorConfig = {}) {
 }
 
 function buildPlaceholderHtml(author) {
+  const placeholderBody = author.meta && typeof author.meta.placeholderBody === "string"
+    ? author.meta.placeholderBody.trim()
+    : "";
+
+  if (!placeholderBody) {
+    return "";
+  }
+
   return `
     <p class="note-placeholder">
-      ${formatInline(author.emptyBody)}
+      ${formatInline(placeholderBody)}
     </p>
   `;
 }
@@ -1121,12 +1147,15 @@ function renderAuthorCard(author, noteMeta, cardIndex) {
     cardClasses.push("note-card--spoiler");
   }
 
-  const title = author.meta.title || author.emptyTitle;
+  const title = author.meta && typeof author.meta.title === "string"
+    ? author.meta.title.trim()
+    : "";
   const helper = author.meta.helper || "";
   const hasContent = author.blocks.length > 0;
   const noteContentHtml = hasContent
     ? author.blocks.map((block) => renderBlock(block)).join("")
     : buildPlaceholderHtml(author);
+  const titleHtml = title ? `<h2>${escapeHtml(title)}</h2>` : "";
   const spoilerId = `spoiler-${author.id}-${pad(noteMeta.numero || cardIndex + 1)}`;
   const helperHtml = helper
     ? `<p class="note-helper">${formatInline(helper)}</p>`
@@ -1153,7 +1182,7 @@ function renderAuthorCard(author, noteMeta, cardIndex) {
     <article class="${cardClasses.join(" ")}">
       ${spoiler ? `<input type="checkbox" id="${escapeHtml(spoilerId)}" class="spoiler-toggle">` : ""}
       <span class="note-label">${escapeHtml(author.label)}</span>
-      <h2>${escapeHtml(title)}</h2>
+      ${titleHtml}
       ${helperHtml}
       <div class="note-content">
         ${noteContentHtml}

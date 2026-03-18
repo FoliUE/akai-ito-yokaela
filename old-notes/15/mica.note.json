@@ -11,14 +11,25 @@
   "blocks": [
     {
       "id": "block-4ad3a874",
-      "type": "paragraph",
+      "type": "song",
       "style": {
         "fontSize": "default",
         "fontFamily": "default",
         "align": "default"
       },
-      "text": "Abrir tu corazón - Louta\n\nQuiero que cierres los ojos\n\ny mires adentro\n\nTan lleno de agua\n\nque parezca el mar\n\nQuiero que frenes el tiempo\n\ny mires la lluvia\n\nFlotando en el aire,\n\nbuscando un lugar\n\nVas a poder abrir tu corazón\n\nMirarlo todo\n\nQuedarte con vos\n\nVas a poder abrir tu corazón\n\nMirarlo todo\n\nQuedarte con vos\n\nQuiero que mezcles colores,\n\nque muerdas las flores\n\nQue mires las cosas\n\ncambiar de lugar\n\nQuiero que inventes palabras,\n\nlas muestres abiertas\n\nQue crezcan de a poco\n\ny empiecen a hablar\n\nMasticando los momentos\n\nLas luces de los autos van\n\narmando un cuento,\n\nMe voy encandilando y\n\ntodo se hace lento,\n\nY el ruido de una grúa\n\ndice lo que siento\n\nAdentro de mi pecho se\n\nenciende un motor,\n\nLos techos de las casas\n\ncambian de color\n\nSe van mezclando las\n\nnubes y el pavimento\n\nSe está fundiendo mi\n\nvisión con la del viento\n\nVas a poder abrir tu 🖤\n\nMirarlo todo\n\nQuedarte con vos\n\nVas a poder abrir tu corazón\n\nMirarlo todo\n\nQuedarte con vos",
-      "preserveBreaks": true
+      "paragraphs": [
+        "Quiero que cierres los ojos\ny mires adentro\nTan lleno de agua\nque parezca el mar",
+        "Quiero que frenes el tiempo\ny mires la lluvia\nFlotando en el aire,\nbuscando un lugar",
+        "Vas a poder abrir tu corazón\nMirarlo todo\nQuedarte con vos\nVas a poder abrir tu corazón\nMirarlo todo\nQuedarte con vos",
+        "Quiero que mezcles colores,\nque muerdas las flores\nQue mires las cosas\ncambiar de lugar",
+        "Quiero que inventes palabras,\nlas muestres abiertas\nQue crezcan de a poco\ny empiecen a hablar",
+        "Masticando los momentos\nLas luces de los autos van\narmando un cuento,\nMe voy encandilando y\ntodo se hace lento,",
+        "Y el ruido de una grúa\ndice lo que siento\nAdentro de mi pecho se\nenciende un motor,",
+        "Los techos de las casas\ncambian de color\nSe van mezclando las\nnubes y el pavimento\nSe está fundiendo mi\nvisión con la del viento",
+        "Vas a poder abrir tu 🖤\nMirarlo todo\nQuedarte con vos\nVas a poder abrir tu corazón\nMirarlo todo\nQuedarte con vos"
+      ],
+      "author": "Abrir tu corazón - Louta",
+      "flags": []
     }
   ]
 }

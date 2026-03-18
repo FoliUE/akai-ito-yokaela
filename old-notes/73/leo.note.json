@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "label": "Leo",
+    "title": "Tu respuesta",
+    "helper": "Este espacio queda listo para cuando quieras sumar tu nota.",
+    "spoiler": false,
+    "variant": "",
+    "placeholder": false,
+    "placeholderBody": "Este espacio queda abierto para cuando quieras sumar tu nota."
+  },
+  "blocks": []
+}
