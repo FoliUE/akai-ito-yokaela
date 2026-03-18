@@ -204,6 +204,12 @@ function defaultVisualQuoteImageItem() {
   };
 }
 
+function normalizeSignatureText(value = "") {
+  return String(value || "")
+    .trim()
+    .replace(/\s+-\s+/g, " — ");
+}
+
 function ensureVisualQuoteBlockState(block) {
   block.layout = {
     ...defaultVisualQuoteLayout(),
@@ -1633,10 +1639,16 @@ function bindAuthorPanelEvents(author) {
     blockElement.querySelectorAll("[data-block-field]").forEach((input) => {
       input.addEventListener("input", () => {
         applyBlockFieldChange(block, input.dataset.blockField, input.value);
+        if (input.dataset.blockField === "author" && input.value !== (block.author || "")) {
+          input.value = block.author || "";
+        }
       });
 
       input.addEventListener("change", () => {
         applyBlockFieldChange(block, input.dataset.blockField, input.value);
+        if (input.dataset.blockField === "author" && input.value !== (block.author || "")) {
+          input.value = block.author || "";
+        }
       });
     });
 
@@ -2081,8 +2093,8 @@ function applyBlockFieldChange(block, field, value) {
       .split(/\n\s*\n/)
       .map((paragraph) => paragraph.trim())
       .filter(Boolean);
-  } else if (field === "author" && block.type === "visual-quote") {
-    block.author = value;
+  } else if (field === "author") {
+    block.author = normalizeSignatureText(value);
   } else {
     block[field] = value;
   }

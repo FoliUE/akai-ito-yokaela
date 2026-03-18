@@ -391,6 +391,13 @@ def normalize_inline_text(raw_text: str, *, preserve_breaks: bool = False) -> st
     return re.sub(r"\s+", " ", text).strip()
 
 
+def normalize_signature_text(raw_text: object) -> str:
+    text = str(raw_text or "").strip()
+    if not text:
+        return ""
+    return re.sub(r"\s+-\s+", " — ", text)
+
+
 def contains_tag(node: LegacyHtmlNode, tag_name: str) -> bool:
     return any(candidate.tag == tag_name for candidate in walk_nodes(node))
 
@@ -911,14 +918,22 @@ def normalize_author_document(author_id: str, raw_document: object) -> dict[str,
     meta = raw_meta if isinstance(raw_meta, dict) else {}
     blocks = raw_blocks if isinstance(raw_blocks, list) else []
 
+    def normalize_meta_string(field: str, fallback: str = "") -> str:
+        if field not in meta:
+            return fallback
+        value = meta.get(field)
+        if value is None:
+            return ""
+        return str(value).strip()
+
     normalized_meta: dict[str, object] = {
         "label": str(meta.get("label") or preset["label"]).strip() or preset["label"],
-        "title": str(meta.get("title") or preset["default_title"]).strip() or preset["default_title"],
+        "title": normalize_meta_string("title", preset["default_title"]),
         "helper": str(meta.get("helper") or "").strip(),
         "spoiler": bool(meta.get("spoiler", False)),
         "variant": str(meta.get("variant") or "").strip(),
         "placeholder": bool(meta.get("placeholder", False)),
-        "placeholderBody": str(meta.get("placeholderBody") or preset["default_placeholder"]).strip(),
+        "placeholderBody": normalize_meta_string("placeholderBody", preset["default_placeholder"]),
     }
 
     normalized_blocks = compact_author_blocks([normalize_block(block) for block in blocks])
@@ -953,7 +968,7 @@ def normalize_block(raw_block: object) -> dict[str, object]:
             "visual-quote",
             id=str(block.get("id") or f"block-{uuid.uuid4().hex[:8]}"),
             rows=block.get("rows", []),
-            author=str(block.get("author") or "").strip(),
+            author=normalize_signature_text(block.get("author")),
             layout=block.get("layout", {}),
             style=block.get("style", {}),
         )
@@ -963,7 +978,7 @@ def normalize_block(raw_block: object) -> dict[str, object]:
             "quote-strip",
             id=str(block.get("id") or f"block-{uuid.uuid4().hex[:8]}"),
             paragraphs=block.get("paragraphs", []),
-            author=str(block.get("author") or "").strip(),
+            author=normalize_signature_text(block.get("author")),
             leftImage=block.get("leftImage", {}),
             rightImage=block.get("rightImage", {}),
             layout=block.get("layout", {}),
@@ -1000,7 +1015,7 @@ def normalize_block(raw_block: object) -> dict[str, object]:
         block_type,
         id=str(block.get("id") or f"block-{uuid.uuid4().hex[:8]}"),
         paragraphs=block.get("paragraphs", []),
-        author=str(block.get("author") or "").strip(),
+        author=normalize_signature_text(block.get("author")),
         flags=block.get("flags", []),
         style=block.get("style", {}),
     )
