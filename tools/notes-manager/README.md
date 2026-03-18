@@ -45,3 +45,93 @@ Comandos útiles:
 - `python tools/notes-manager/note_manager.py sync-archive --force`: reimporta `old-notes/*` desde cada `legacy-index.html`.
 - `python tools/notes-manager/note_manager.py normalize-notes`: compacta textos consecutivos y convierte bloques legacy al formato editable actual.
 - `python tools/notes-manager/note_manager.py build`: construye el ejecutable visual.
+
+## Dependencias Previas
+
+La app usa Python, Pillow, PyInstaller y pywebview. Para que en macOS se vea y se comporte igual que en Windows, hay que instalar también los paquetes de PyObjC que usa pywebview sobre Cocoa/WebKit.
+
+### Windows
+
+Desde la raíz del repo:
+
+```powershell
+py -3 -m venv .venv-notes
+.venv-notes\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install pillow pyinstaller pywebview
+```
+
+### macOS Apple Silicon M2
+
+1. Verificá que la terminal y Python estén corriendo en `arm64`:
+
+```bash
+python3 -c "import platform; print(platform.machine())"
+```
+
+2. Si necesitás compilación local de alguna dependencia, instalá las Command Line Tools:
+
+```bash
+xcode-select --install
+```
+
+3. Creá el entorno e instalá todo:
+
+```bash
+python3 -m venv .venv-notes
+source .venv-notes/bin/activate
+python -m pip install --upgrade pip
+python -m pip install pillow pyinstaller pywebview pyobjc-core pyobjc-framework-Cocoa pyobjc-framework-Quartz pyobjc-framework-WebKit pyobjc-framework-Security
+```
+
+## Uso Diario
+
+### Windows
+
+```powershell
+.venv-notes\Scripts\Activate.ps1
+tools\notes-manager\nueva_hoja.bat
+```
+
+### macOS
+
+```bash
+source .venv-notes/bin/activate
+./tools/notes-manager/nueva_hoja.sh
+```
+
+O con doble click:
+
+- `tools/notes-manager/nueva_hoja.command`
+
+## Compilar Localmente
+
+### Windows
+
+```powershell
+.venv-notes\Scripts\Activate.ps1
+tools\notes-manager\construir_ejecutable.bat
+```
+
+Salida esperada:
+
+- `tools/notes-manager/dist/nueva_hoja.exe`
+
+### macOS Apple Silicon M2
+
+```bash
+source .venv-notes/bin/activate
+./tools/notes-manager/construir_ejecutable.sh
+```
+
+Salida esperada:
+
+- `tools/notes-manager/dist/nueva_hoja`
+- `tools/notes-manager/dist/nueva_hoja.app`
+
+Notas importantes para tu caso:
+
+- compilá siempre desde la propia Mac M2;
+- usá un Python nativo `arm64`, no uno abierto bajo Rosetta;
+- mantené el ejecutable o la app dentro de este repo, porque el editor lee los archivos reales del proyecto (`hojas.js`, `new-notes/`, `old-notes/`, `assets/`);
+- si te fallara el arranque del `.app`, probá primero el binario de terminal `tools/notes-manager/dist/nueva_hoja`, porque PyInstaller en macOS siempre genera ambos cuando se usa `--windowed`.

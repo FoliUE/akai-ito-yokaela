@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import platform
 import sys
 
 from notes_core import (
@@ -50,6 +51,13 @@ def build_executable() -> int:
     print(f"Carpeta detectada del proyecto: {ROOT}")
     print()
 
+    if sys.platform == "darwin":
+        current_arch = platform.machine().lower()
+        print(f"Arquitectura detectada en esta Mac: {current_arch}")
+        if current_arch != "arm64":
+            print("Aviso: para una Mac M2 conviene compilar con un Python nativo arm64, no bajo Rosetta.")
+        print()
+
     try:
         import PyInstaller.__main__ as pyinstaller_main
     except ImportError:
@@ -89,10 +97,17 @@ def build_executable() -> int:
 
     pyinstaller_main.run(pyinstaller_args)
 
-    executable_name = "nueva_hoja.exe" if sys.platform.startswith("win") else "nueva_hoja"
-
     print()
-    print(f"Listo. Ejecutable generado en: {(dist_dir / executable_name).relative_to(ROOT)}")
+    if sys.platform.startswith("win"):
+        print(f"Listo. Ejecutable generado en: {(dist_dir / 'nueva_hoja.exe').relative_to(ROOT)}")
+    elif sys.platform == "darwin":
+        print(f"Listo. Binario generado en: {(dist_dir / 'nueva_hoja').relative_to(ROOT)}")
+        app_bundle = dist_dir / "nueva_hoja.app"
+        if app_bundle.exists():
+            print(f"App bundle generado en: {app_bundle.relative_to(ROOT)}")
+        print("Usalo dentro de este repo, igual que en Windows: la app lee hojas.js, old-notes/, new-notes/ y assets/.")
+    else:
+        print(f"Listo. Binario generado en: {(dist_dir / 'nueva_hoja').relative_to(ROOT)}")
     if FAVICON_FILE.exists():
         print(f"Icono aplicado desde: {FAVICON_FILE.relative_to(ROOT)}")
     print("En Mac M2 tenés que correr este mismo comando desde una Mac para obtener el binario nativo.")

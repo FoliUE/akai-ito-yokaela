@@ -24,6 +24,47 @@ Sitio estatico para GitHub Pages.
 - Normalizar bloques y conversiones: `python tools/notes-manager/note_manager.py normalize-notes`
 - Documentacion del gestor: `tools/notes-manager/README.md`
 
+## Preparación Del Entorno
+
+Para que el editor funcione igual de bien en Windows y en tu Mac M2, conviene usar un entorno virtual dentro del repo y dejar instalado el stack del editor visual.
+
+### Windows
+
+```powershell
+cd A:\FoliUE\akai-ito-yokaela
+py -3 -m venv .venv-notes
+.venv-notes\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install pillow pyinstaller pywebview
+```
+
+### macOS Apple Silicon
+
+Usá una terminal nativa de Apple Silicon y comprobá que Python esté corriendo en `arm64`:
+
+```bash
+cd /ruta/a/FoliUE/akai-ito-yokaela
+python3 -c "import platform; print(platform.machine())"
+```
+
+Si no devuelve `arm64`, no compiles todavía: primero abrí una terminal nativa y usá un Python arm64.
+
+Después instalá el entorno:
+
+```bash
+cd /ruta/a/FoliUE/akai-ito-yokaela
+python3 -m venv .venv-notes
+source .venv-notes/bin/activate
+python -m pip install --upgrade pip
+python -m pip install pillow pyinstaller pywebview pyobjc-core pyobjc-framework-Cocoa pyobjc-framework-Quartz pyobjc-framework-WebKit pyobjc-framework-Security
+```
+
+Si alguna dependencia necesitara compilarse en vez de bajar wheel, instalá antes las Command Line Tools:
+
+```bash
+xcode-select --install
+```
+
 ## Flujo recomendado
 
 1. Abrir `tools/notes-manager/nueva_hoja.bat` en Windows o `tools/notes-manager/nueva_hoja.command` / `tools/notes-manager/nueva_hoja.sh` en macOS.
@@ -42,5 +83,6 @@ Sitio estatico para GitHub Pages.
 ## Ejecutables
 
 - Windows: desde este repo, correr `tools\notes-manager\construir_ejecutable.bat` genera `tools/notes-manager/dist/nueva_hoja.exe`.
-- macOS Apple Silicon: desde una Mac M2, correr `./tools/notes-manager/construir_ejecutable.sh` genera `tools/notes-manager/dist/nueva_hoja` nativo para esa maquina.
+- macOS Apple Silicon: desde una Mac M2, correr `./tools/notes-manager/construir_ejecutable.sh` genera `tools/notes-manager/dist/nueva_hoja` y, al usar build windowed, también `tools/notes-manager/dist/nueva_hoja.app`.
 - El build se hace con Python a traves de `tools/notes-manager/note_manager.py build` y usa PyInstaller + pywebview.
+- En ambos casos el binario se usa dentro de este mismo repo. No conviene moverlo afuera, porque el editor necesita encontrar `hojas.js`, `new-notes/`, `old-notes/` y `assets/` alrededor del proyecto.
