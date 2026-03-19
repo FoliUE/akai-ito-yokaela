@@ -83,6 +83,7 @@ xcode-select --install
 ## Ejecutables
 
 - Windows: desde este repo, correr `tools\notes-manager\construir_ejecutable.bat` genera `tools/notes-manager/dist/nueva_hoja.exe`.
-- macOS Apple Silicon: desde una Mac M2, correr `./tools/notes-manager/construir_ejecutable.sh` genera `tools/notes-manager/dist/nueva_hoja` y, al usar build windowed, también `tools/notes-manager/dist/nueva_hoja.app`.
+- macOS Apple Silicon: desde una Mac M2, correr `./tools/notes-manager/construir_ejecutable.sh` genera `tools/notes-manager/dist/nueva_hoja/` y también `tools/notes-manager/dist/nueva_hoja.app`.
 - El build se hace con Python a traves de `tools/notes-manager/note_manager.py build` y usa PyInstaller + pywebview.
+- En macOS, el ejecutable de terminal queda en `tools/notes-manager/dist/nueva_hoja/nueva_hoja`.
 - En ambos casos el binario se usa dentro de este mismo repo. No conviene moverlo afuera, porque el editor necesita encontrar `hojas.js`, `new-notes/`, `old-notes/` y `assets/` alrededor del proyecto.

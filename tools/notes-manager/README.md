@@ -12,7 +12,7 @@ Archivos principales:
 - `nueva_hoja.sh`: lanzador para terminales Unix/macOS.
 - `nueva_hoja.command`: lanzador para macOS con doble click.
 - `construir_ejecutable.bat`: build local del `.exe` en Windows.
-- `construir_ejecutable.sh`: build local del binario en macOS/Linux.
+- `construir_ejecutable.sh`: build local del paquete/app en macOS/Linux.
 - `dist/`: salida del ejecutable generado.
 - `build/`: archivos temporales de PyInstaller.
 
@@ -126,7 +126,8 @@ source .venv-notes/bin/activate
 
 Salida esperada:
 
-- `tools/notes-manager/dist/nueva_hoja`
+- `tools/notes-manager/dist/nueva_hoja/`
+- `tools/notes-manager/dist/nueva_hoja/nueva_hoja`
 - `tools/notes-manager/dist/nueva_hoja.app`
 
 Notas importantes para tu caso:
@@ -134,4 +135,4 @@ Notas importantes para tu caso:
 - compilá siempre desde la propia Mac M2;
 - usá un Python nativo `arm64`, no uno abierto bajo Rosetta;
 - mantené el ejecutable o la app dentro de este repo, porque el editor lee los archivos reales del proyecto (`hojas.js`, `new-notes/`, `old-notes/`, `assets/`);
-- si te fallara el arranque del `.app`, probá primero el binario de terminal `tools/notes-manager/dist/nueva_hoja`, porque PyInstaller en macOS siempre genera ambos cuando se usa `--windowed`.
+- si te fallara el arranque del `.app`, probá primero el ejecutable de terminal `tools/notes-manager/dist/nueva_hoja/nueva_hoja`.
