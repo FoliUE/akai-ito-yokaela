@@ -77,7 +77,6 @@ def build_executable() -> int:
     pyinstaller_args = [
         "--noconfirm",
         "--clean",
-        "--onefile",
         "--windowed",
         "--name",
         "nueva_hoja",
@@ -92,6 +91,13 @@ def build_executable() -> int:
         str(TOOL_HOME / "note_manager.py"),
     ]
 
+    # On macOS, PyInstaller is deprecating onefile app bundles. Keep the .app
+    # in onedir mode there and preserve onefile output for the other platforms.
+    if sys.platform == "darwin":
+        pyinstaller_args.insert(2, "--onedir")
+    else:
+        pyinstaller_args.insert(2, "--onefile")
+
     if FAVICON_FILE.exists():
         pyinstaller_args[0:0] = ["--icon", str(FAVICON_FILE)]
 
@@ -101,8 +107,10 @@ def build_executable() -> int:
     if sys.platform.startswith("win"):
         print(f"Listo. Ejecutable generado en: {(dist_dir / 'nueva_hoja.exe').relative_to(ROOT)}")
     elif sys.platform == "darwin":
-        print(f"Listo. Binario generado en: {(dist_dir / 'nueva_hoja').relative_to(ROOT)}")
+        onedir_dir = dist_dir / "nueva_hoja"
         app_bundle = dist_dir / "nueva_hoja.app"
+        if onedir_dir.exists():
+            print(f"Paquete onedir generado en: {onedir_dir.relative_to(ROOT)}")
         if app_bundle.exists():
             print(f"App bundle generado en: {app_bundle.relative_to(ROOT)}")
         print("Usalo dentro de este repo, igual que en Windows: la app lee hojas.js, old-notes/, new-notes/ y assets/.")
